@@ -1,0 +1,9 @@
+
+=head1 NAME
+
+cassava - mason components that override SGN mason components to customize the cassavabase interface.
+
+=head1 AUTHOR
+
+Lukas Mueller <lam87@cornell.edu>
+
