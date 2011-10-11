@@ -41,7 +41,7 @@
 
     <table cellspacing="0" cellpadding="0" id="sequencing" class="toolbar_popmenu">
        <tr><td class="toolbar_item_title" >Organisms</td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/organism/Cassava/genome">Cassava Genome</a></td></tr>
+       <tr><td class="toolbar_item"><a class="toolbar_item" href="http://phytozome.org/cassava">Cassava Genome</a></td></tr>
 
     </table>
 
