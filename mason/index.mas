@@ -1,0 +1,30 @@
+<%args>
+$schema
+</%args>
+
+<table cellpadding="0">
+
+<tr><td colspan="2">
+<& homepage/iconmenu.mas &>
+</td></tr>
+
+<tr>
+<td width="300"><& homepage/news.mas &><br />
+
+<& homepage/locus_of_the_week.mas &> <br />
+</td><td width="300">
+<& homepage/events.mas &>
+<& homepage/publication_of_the_week.mas &><br />
+<& homepage/image_of_the_week.mas &><br />
+
+
+</td></tr>
+
+
+</table>
+
+
+
+
+
+
