@@ -86,9 +86,11 @@
 	 },
 	 {
 	     name => 'maps',
-	     link => '/cview/',
+	     link => '',
 	     desc => 'View and compare chromosomes from various organisms.',
-	     menu => [ ]
+	     menu => [
+		      { name=> 'None available' },
+		     ]
 		 
 	 },
 	 {
@@ -105,7 +107,7 @@
 		 },
 		 {
 		     name => 'Manage cassava genome projects',
-		     link => '/organism/sol100/view',
+		     link => '/organism/5/view',
 		     desc => '',
 		 },
 		 ],
