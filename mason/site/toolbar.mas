@@ -1,99 +1,241 @@
-<table class="toolbar" summary="" cellspacing="0" cellpadding="0">
-<tr class="toolbar_content">
-  <td class="toolbar_l"><img src="/documents/img/toolbar_l.gif" alt="" /></td>
-  <td class="toolbar_content" onmouseover="CXGN.Page.Toolbar.showmenu('search')" onmouseout="CXGN.Page.Toolbar.hidemenu()" style="text-align: left">
 
-    <a class="toolbar_menuname" href="/search">search</a>
-    <div style="position: relative; text-align: left">
-    <table cellspacing="0" cellpadding="0" id="search" class="toolbar_popmenu">
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/search/organisms">Organisms</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/search/loci">Genes</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/search/phenotypes">Phenotypes</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/search/qtl">QTLs</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/search/markers">Markers</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/search/est">ESTs and libraries</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/insitu/">Insitu database</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/search/images">Images</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/search/template">Expression</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/search/directory">People</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/help/faq.pl">FAQ</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/search/glossarysearch.pl">Glossary</a></td></tr>
-      
-    </table>
+<%args>
+</%args>
 
-    </div>
-  </td>
-  <td class="toolbar_content" onmouseover="CXGN.Page.Toolbar.showmenu('maps')" onmouseout="CXGN.Page.Toolbar.hidemenu()" style="text-align: center">
-    <a class="toolbar_menuname" href="/cview/">maps</a>
+<%perl>
+    $c->view('Toolbar')->toolbar_data( 
+	[
+	 {
+	     name => 'search',
+	     link => '/search/direct_search.pl?search=loci',
+	     desc => 'Search our database.',
+	     menu => [
+		 {
+		     name => 'Organisms',
+		     link => '/search/organisms',
+		     desc => 'search for organisms'
+		 },
+		 {
+		     name => 'Genes',
+		     link => '/search/loci',
+		     desc => 'Gene search.'
+		 },
+		 {
+		     name => 'Genome features',
+		     link => '/search/features',
+		     desc => 'Search for many types of annotations and sequences.'
+		 },
+		 {
+		     name => 'Phenotypes',
+		     link => '/search/phenotypes/stock',
+		     desc => 'Search for mutants, accessions, and traits.'
+		 },
+		 {
+		     name => 'QTLs',
+		     link => '/search/phenotypes/qtl',
+		     desc => 'A web interface for uploading QTL raw data, on-the-fly QTL mapping and search interface for QTLs.'
+		 },
+		 {
+		     name => 'Unigenes',
+		     link => '/search/transcripts/unigene',
+		     desc => 'Unigene search.'
+		 },
+		 {
+		     name => "Gene Families",
+		     link => "/search/family",
+		     desc => "Unigene family search."
+		 },
+		 {
+		     name => 'Markers',
+		     link => '/search/markers',
+		     desc => 'Marker search.'
+		 },
+		 {
+		     name => 'BACs',
+		     link => '/search/genomic/clones',
+		     desc => 'BAC (Bacterial Artificial Chromosome) search.'
+		 },
+		 {
+		     name => 'ESTs and libraries',
+		     link => '/search/transcripts/est',
+		     desc =>
+			 'Find EST (Expressed Sequence Tag) libraries by keyword, e.g. library name, organism, tissue, development stage, or authors.'
+		 },
+		 
+		 {
+		     name => 'Images',
+		     link => '/search/images',
+		     desc => 'Search images contained in the SGN database.'
+		 },
+		 {
+		     name => 'Expression',
+		     link => '/search/expression',
+		     desc => 'Search images contained in the SGN database.'
+		 },
+		 {
+		     name => 'People',
+		     link => '/search/directory',
+		     desc => 'Search database of researchers who use SGN.'
+		 },
+		 {
+		     name => 'FAQ',
+		     link => '/help/faq.pl',
+		     desc => 'Frequently asked questions from users of SGN.',
+		 },
+		 ]
+	 },
+	 {
+	     name => 'maps',
+	     link => '/cview/',
+	     desc => 'View and compare chromosomes from various organisms.',
+	     menu => [ ]
+		 
+	 },
+	 {
+	     name => 'sequencing',
+	     link => '',
+	     desc => 'Read about sequencing projects.',
+	     menu => [
+		 {  name => 'Organisms' },
+		 {
+		     name => 'Cassava genome browser at JGI',
+		     link => 'http://www.phytozome.net/cgi-bin/gbrowse/cassava/',
+		     desc =>
+			 'The cassava genome, sequenced by the Joint Genome Initiative',
+		 },
+		 {
+		     name => 'Manage cassava genome projects',
+		     link => '/organism/sol100/view',
+		     desc => '',
+		 },
+		 ],
+	 },
+	 {
+	     name => 'tools',
+	     link => '/tools/',
+	     desc => 'Tools for biologists.',
+	     menu => [
+		 
+		 #Sequence Analysis
+		 { name => 'Sequence Analysis' },
+		 {
+		     name => 'BLAST',
+		     link => '/tools/blast/',
+		     desc =>
+			 'Compare a given sequence to known sequences using the Basic Local Alignment Search Tool, NCBI BLAST v. 2.2.9 [May-01-2004]'
+		 },
+		 {
+		     name => 'Alignment Analyzer',
+		     link => '/tools/align_viewer/',
+		     desc =>
+			 'Calculate alignments using Muscle v3.6, or view existing alignments using our navigator.'
+		 },
+		 {
+		     name => 'Tree Browser',
+		     link => '/tools/tree_browser/',
+		     desc =>
+			 'Visualize and manipulate phylogenetic trees from a newick-formatted string.'
+		 },
+		 {
+		     name => 'Intron Finder',
+		     link => '/tools/intron_detection/find_introns.pl',
+		     desc =>
+			 'The SGN Intron Finder works by doing a BLAST search for <em>Arabidopsis thaliana</em> proteins that are similar to the translated protein sequence of the DNA input.'
+		 },
+		 
+		 #Mapping
+		 { name => 'Mapping' },
+		 
+		 {
+		     name => 'Genome Browser',
+		     link => '/gbrowse/bin/gbrowse/',
+		     desc => 'browse genomic annotations',
+		 },
+		 {
+		     name => 'Comparative Viewer',
+		     link =>
+			 '/cview/view_chromosome.pl?show_offsets=1&amp;show_ruler=1&amp;show_offsets=1',
+			 desc =>
+			 'Compare chromosomes from different maps, side by side.',
+		 },
+		 {
+		     name => 'CAPS Designer',
+		     link => '/tools/caps_designer/caps_input.pl',
+		     desc =>
+			 'Designs CAPS (Cleaved Amplified Polymorphic Sequence) assays for up to twelve sequences. Two types of nucleotide inputs are accepted: fasta sequences and clustal aligment. It generates a list of polymorphic enzymes that cut the sequences into different length products.'
+		 },
+		 {
+		     name => 'Seed BAC Finder',
+		     link => '/tools/seedbac/',
+		     desc =>
+			 'Lists all anchored BACs for a given chromosome to help identify seed BACs, or suggests a seed BAC given a marker name. '
+		 },
+		 {
+		     name => 'solQTL: QTL Mapping',
+		     link => '/search/phenotypes/qtl',
+		     desc =>
+			 'A web interface for uploading raw QTL data, on-the-fly QTL mapping, linking predicted QTLs to relevant genetic and genomic data in SGN, and search interface for QTLs.'
+		 },
+		 #Molecular Biology
+		 { name => "Molecular Biology" },
+		 
+		 {
+		     name => 'Signal Peptide Finder',
+		     link => '/tools/sigpep_finder/input.pl',
+		     desc =>
+			 'This method of searching for signal sequences is designed to complement SignalP, and has similar success rates.'
+		 },
+		 {
+		     name => 'In Silico PCR',
+		     link => '/tools/insilicopcr',
+		     desc => 'In Silico PCR tool based on BLAST'
+		 },
+		 
+		 #Systems Biology
+		 { name => "Systems Biology" },
+		 {
+		     name => 'SolCyc Biochemical Pathways',
+		     link => '/tools/solcyc/',
+		     desc => 'An interactive map of metabolic pathways.'
+		 },
+		 
+		 #Bulk Query
+		 { name => 'Bulk Query' },
+		 
+		 {
+		     name => 'Unigene and BAC information',
+		     link => '/bulk/input.pl',
+		     desc =>
+			 'Rather than sifting through SGN page by page, here you can download large quantities of information in a single step.'
+		 },
+		 {
+		     name => 'FTP Site',
+		     link => '/bulk/input.pl?mode=ftp',
+		     desc =>
+			 'FTP (File Transfer Protocol) is more efficient than HTTP (HyperText Transfer Protocol) for transferring large files. Many of our larger archive files are accessible here.'
+		 },
+		 {
+		     name => 'ID Converter (SGN <=> TIGR)',
+		     link => '/tools/convert/input.pl',
+		     desc =>
+			 'The Institute for Genomic Research and SGN maintain independent unigene databases, entries in which tend to have common member ESTs (Expressed Sequence Tags), although they tend not to correspond completely. This tool uses common members to convert back and forth between the two identifier sets.'
+		 },
+		 
+		 #Other
+		 { name => "Other" },
+		 {
+		     name => 'SGN Ontology Browser [beta]',
+		     link => '/tools/onto/',
+		     desc => 'AJAX ontology browser.'
+		 },
+		 ]
+	 }
+	]);
+    
+    print $c->view('Toolbar')->as_html;
 
-    <div style="position: relative; text-align: left">
-    <table cellspacing="0" cellpadding="0" id="maps" class="toolbar_popmenu">
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/cview/view_chromosome.pl?show_offsets=1&amp;show_ruler=1&amp;show_offsets=1">Comparative viewer...</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/cview/index.pl">See all available maps...</a></td></tr>
+</%perl>
 
-    </table>
-
-    </div>
-  </td>
-  <td class="toolbar_content" onmouseover="CXGN.Page.Toolbar.showmenu('sequencing')" onmouseout="CXGN.Page.Toolbar.hidemenu()" style="text-align: center">
-    <a class="toolbar_menuname" href="/about/tomato_sequencing/">genomes</a>
-    <div style="position: relative; text-align: left">
-
-    <table cellspacing="0" cellpadding="0" id="sequencing" class="toolbar_popmenu">
-       <tr><td class="toolbar_item_title" >Organisms</td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="http://phytozome.org/cassava">Cassava Genome</a></td></tr>
-
-    </table>
-
-    </div>
-  </td>
-  <td class="toolbar_content" onmouseover="CXGN.Page.Toolbar.showmenu('tools')" onmouseout="CXGN.Page.Toolbar.hidemenu()" style="text-align: center">
-
-    <a class="toolbar_menuname" href="/tools/">tools</a>
-    <div style="position: relative; text-align: left">
-    <table cellspacing="0" cellpadding="0" id="tools" class="toolbar_popmenu">
-       <tr><td class="toolbar_item_title">Sequence Analysis</td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/tools/blast/">BLAST</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/tools/align_viewer/">Alignment Analyzer</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/tools/tree_browser/">Tree Browser</a></td></tr>
-
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/tools/intron_detection/find_introns.pl">Intron Finder</a></td></tr>
-       <tr><td class="toolbar_item_title">Mapping</td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/gbrowse/bin/gbrowse">Genome Browser</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/cview/view_chromosome.pl?show_offsets=1&amp;show_ruler=1&amp;show_offsets=1">Comparative Map Viewer</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/tools/caps_designer/caps_input.pl">CAPS Designer</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/tools/seedbac/">Seed BAC Finder</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/qtl">solQTL: QTL Mapping</a></td></tr>
-       <tr><td class="toolbar_item_title">Molecular Biology</td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/tools/sigpep_finder/input.pl">Signal Peptide Finder</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/tools/insilicopcr">In Silico PCR</a></td></tr>
-       <tr><td class="toolbar_item_title">Systems Biology</td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/tools/solcyc/">SolCyc Biochemical Pathways</a></td></tr>
-       <tr><td class="toolbar_item_title">Bulk Query</td></tr>
-
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/bulk/input.pl">Unigene and BAC information</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/bulk/input.pl?mode=ftp">FTP Site</a></td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/tools/convert/input.pl">ID Converter (SGN <=> TIGR)</a></td></tr>
-       <tr><td class="toolbar_item_title">Other</td></tr>
-       <tr><td class="toolbar_item"><a class="toolbar_item" href="/tools/onto/">SGN Ontology Browser [beta]</a></td></tr>
-    </table>
-
-    </div>
-  </td>
-
-  <td class="toolbar_search toolbar_content">
-    <form name="quicksearch" class="quicksearch" action="/search/quick">
-      <input type="hidden" name="showtimes" value="" />
-      <input class="quicksearch field" type="text" name="term" value="<% $m->request_args->{'quick_search_term'} || '' |h%>" size="14" />
-      <input class="quicksearch imgbutton" type="image" src="/documents/img/sol_search_button.gif" value="sol search" />
-    </form>
-
-  </td>
-  <td class="toolbar_r" height="1">
-    <img src="/documents/img/toolbar_r.gif" alt="" />
-  </td>
-</tr>
-</table>
 <& /util/import_javascript.mas, classes => ['CXGN.Page.Toolbar','jquery'] &>
 <script language="JavaScript" type="text/javascript">
 jQuery( function() {
