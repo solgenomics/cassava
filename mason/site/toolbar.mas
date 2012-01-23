@@ -94,11 +94,10 @@
 		 
 	 },
 	 {
-	     name => 'sequencing',
+	     name => 'genomes',
 	     link => '',
-	     desc => 'Read about sequencing projects.',
+	     desc => 'About the cassava genome sequencing projects and related initiatives.',
 	     menu => [
-		 {  name => 'Organisms' },
 		 {
 		     name => 'Cassava genome browser at JGI',
 		     link => 'http://www.phytozome.net/cgi-bin/gbrowse/cassava/',
@@ -243,7 +242,7 @@
 jQuery( function() {
   CXGN.Page.Toolbar.addmenu('search');
   CXGN.Page.Toolbar.addmenu('maps');
-  CXGN.Page.Toolbar.addmenu('sequencing');
+  CXGN.Page.Toolbar.addmenu('genomes');
   CXGN.Page.Toolbar.addmenu('tools');
   CXGN.Page.Toolbar.hideall();
 });
