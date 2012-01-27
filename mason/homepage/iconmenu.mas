@@ -1,0 +1,223 @@
+
+
+<%doc>
+
+=head1 NAME
+
+/homepage/iconmenu.mas - a graphical way to present information on SGN
+
+=head1 DESCRIPTION
+
+Displays an icon-based menu of top level option. Mousing over the
+icons pops up menus with further links to guide the users to useful
+pages.
+
+=head1 AUTHORS
+
+ Camilo Rosero
+ Lukas Mueller (integration into SGN, some changes to the menus)
+
+ June 9, 2010
+
+=cut
+
+
+</%doc>
+
+<style type="text/css">
+    @import url("/css/icon_nav.css");
+
+    #icon_nav {
+        width: 720px;
+        height: 480px;
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+
+    .MapsMarkers {
+            position: relative; 
+    	top: 80px;
+    	left: 50px;
+    }
+
+    .MapsMarkersSubMenu {
+            position: relative;
+    	left: 190px;
+    	top: -160px;
+    	width: 220px;
+            height: 100px;
+    }
+
+    .MapsMarkersSubMenu a {
+     /* padding-left: 15px; */
+    }
+
+    .Genes {
+    	position: relative;
+        top: 40px; 
+    	left: 120px;
+    }
+
+    .GenesSubMenu {
+    	width: 227px;
+    	height: 100px;
+    	position: relative;
+    	top: -120px;
+    	left: 100px;
+    }
+
+    .GenesSubMenu a {
+    /* padding-left: 15px; */
+     }
+
+    .Phenotypes {
+    	position: relative; 
+    	top: 80px;
+    	left: 100px;
+    }
+
+    .PhenotypesSubMenu {
+    	width: 227px;
+    	height: 100px; 
+    	position: relative;
+    	top: -110px;
+    	left: 115px;
+    }
+
+
+    .BreedersToolBox {
+    	position: relative; 
+    	top: 140px;
+    	left: -360px;
+        z-index: 1;
+    }
+
+    .BreedersToolBoxSubMenu {
+    	width: 227px;
+    	height: 341px;
+    	padding-top: 15px;
+    	position: relative;
+    	top: -100px;
+    	left: 115px;
+    }
+
+    .GenomesSequences {
+    	position: relative; 
+    	top: 40px;
+    	left: 260px;
+    }
+
+    .GenomesSequencesSubMenu {
+    	width: 227px;
+    	height: 90px;
+    	padding-top: 15px;
+    	position: relative;
+    	top: -110px;
+    	left: 200px;
+    }
+
+    .Pathways {
+    	position: relative; 
+    	top: -10px;
+    	left: 310px;
+    }
+
+    .PathwaysSubMenu {
+    	width: 227px;
+    	height: 341px;
+    	position: relative;
+    	top: -110px;
+    	left: 115px;
+    }
+
+    .Divider { 
+            line-height:4px;
+            font-size: 4px;
+    }
+
+</style>
+
+<div id="icon_nav">
+<ul>
+	<li class="MapsMarkers"><a href="/cview/" ><img src="/img/soliconmenu/MapsMarkers.png" title="Maps and Markers" /></a>
+
+   		<ul>
+        	  <div class="submenu MapsMarkersSubMenu">
+		    <li><a href="/cview/index.pl">Available maps</a></li>
+                    <li><a href="/cview/view_chromosome.pl?show_offsets=1&show_ruler=1&show_offsets=1">Comparative viewer</a></li>
+                    <li><a href="/search/direct_search.pl?search=markers">Search markers</a></li>
+		    <li><a href="">&nbsp;</a></li>
+		    <li><a href="/cview/help/map_submission">Submit map information</a></li>
+		  </div>
+		</ul>
+	</li>
+
+	<li class="Genes"><a href="/search/direct_search.pl?search=loci" style="background: none"><img src="/img/soliconmenu/Genes.png" title="Genes" /></a>
+	  <ul>
+            <div class="submenu GenesSubMenu"  >
+              <li><a href="/search/direct_search.pl?search=loci">Search loci</a></li>
+              <li><a href="/search/direct_search.pl?search=unigene">Search unigenes</a></li>
+              <li><a href="/search/direct_search.pl?search=template">Expression</a></li>
+              <li><a href="/phenome/">Become a Cassava locus editor</a></li>              
+	      </div>
+	      
+	  </ul>
+
+
+
+	<li class="Phenotypes"><a href="/search/direct_search.pl?search=phenotypes" style="background: none"><img src="/img/soliconmenu/Phenotypes.png" alt="Phenotypes and QTLs" title="Phenotypes and QTLs" /></a>
+	  <ul>
+	    <div class="submenu PhenotypesSubMenu">
+              <li><a href="/search/direct_search.pl?search=phenotypes">Search phenotypes</a></li>
+
+              <li><a href="/qtl/">Analyze QTLs</a></li>
+              <li><a href="/tools/onto/">Ontology browser</a></li>
+	      <li><a href="">&nbsp;</a></li>
+	      <li><a href="/phenome/">Submit phenotype data</a></li>
+            </div>
+          </ul>
+
+	</li>
+    
+    <li class="BreedersToolBox"><a href="/breeders/"><img src="/img/soliconmenu/BreedersToolBox.png" alt="Breeders Toolbox" title="Click to access the Breeder's toolbox" /></a>
+    	<!--
+		<ul>
+            <div class="submenu BreedersToolBoxSubMenu">
+            	<li><a href="#">Test1</a></li>
+                <li><a href="#">Test2</a></li>
+                <li><a href="#">Test3</a></li>
+            </div>
+        </ul>
+        -->
+	</li>
+    
+    <li class="GenomesSequences"><a href="/genomes"><img src="/img/soliconmenu/GenomesSequences.png" alt="GenomesSequences" alt="Genomes and Sequences" title="Genomes and Sequences" /></a>
+      <ul>
+            <div class="submenu GenomesSequencesSubMenu">
+                <li><a href="/organism/5/view/">Cassava Information</a></li>
+		<li><a href="http://www.phytozome.net/cgi-bin/gbrowse/cassava/">Cassava Genome at JGI</a></li>
+		<li><a href=""></a>&nbsp;<li>
+
+            </div>
+        </ul>
+
+	</li>
+    
+    <li class="Pathways"><a href="http://solcyc.solgenomics.net/"><img src="/img/soliconmenu/Pathways.png" alt="Pathways" alt="Pathways" title="Click to access SolCyc" /></a>
+    	<!--
+		<ul>
+            <div class="submenu PathwaysSubMenu">
+            	<li><a href="#">Test1</a></li>
+                <li><a href="#">Test2</a></li>
+                <li><a href="#">Test3</a></li>
+            </div>
+        </ul>
+        -->
+	</li>
+    
+    
+</ul>
+
+</div>
+
+<& /util/import_javascript.mas, classes=>[qw[ icon_nav ]] &>
