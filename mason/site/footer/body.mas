@@ -11,12 +11,12 @@
 <tr><td  id="pagecontent_footer">
     <table width="100%" cellspacing="0" cellpadding="0" id="pagefooter">
       <tr><td style="vertical-align: top; width: 370px; font-size:smaller" colspan="2" >
-	  SGN is supported by the <a class="footer" href="/about/tomato_project/">NSF (#0116076)</a>,
+	  CassavaBase is based on <a class="footer" href="http://solgenomics.net/">SGN</a> software created with support by the <a class="footer" href="/about/tomato_project/">NSF (#0116076)</a>,
     <a class="footer" href="http://www.usda.gov">USDA CSREES</a> and hosted at the <a class="footer" href="http://bti.cornell.edu">Boyce Thompson Institute.</a>
     <br />
     Subscribe to the <a class="footer" href="http://rubisco.sgn.cornell.edu/mailman/listinfo/sgn-announce/">sgn-announce mailing list</a> for updates. 
     Send comments and feedback to <% $feedback_email %><br />
-Cite SGN using <a class="footer" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3013765/?tool=pubmed" target="_new"> Bombarely et al, 2011</a> | 
+
     <a href="/legal.pl">Disclaimer</a></td></tr>
       <tr><td>
                 <a href="http://bti.cornell.edu/" class="footer">
