@@ -50,7 +50,7 @@
 % } elsif ( $c->user_exists ) {
   <b><% $c->user->get_object->get_first_name || '' %> <% $c->user->get_object->get_last_name  || '' %></b>
   (<a class="toplink" style="text-decoration: underline" href="/solpeople/login.pl?logout=yes">log out</a>)
-  <a class="mytools" href="/solpeople/top-level.pl">My SGN</a>
+  <a class="mytools" href="/solpeople/top-level.pl">my account</a>
 % } else {
     <a class="toplink" style="text-decoration: underline" href="/solpeople/login.pl"      >log in</a>
   | <a class="toplink" style="text-decoration: underline" href="/solpeople/new-account.pl">new user</a>
