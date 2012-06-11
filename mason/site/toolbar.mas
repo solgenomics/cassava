@@ -89,7 +89,10 @@
 	     link => '',
 	     desc => 'View and compare chromosomes from various organisms.',
 	     menu => [
-		      { name=> 'None available' },
+		      { name => 'Cassava 2011',
+		        link => '/cview/map.pl?map_id=1',
+			desc => 'Cassava Genetic Map (Rabbi et al, 2011)',
+		      },
 		     ]
 		 
 	 },
