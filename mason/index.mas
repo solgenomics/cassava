@@ -12,7 +12,7 @@ $static_content_path => undef
 <tr>
 <td colspan="2">
 
-<& /util/include_file.mas, file=>  $static_content_path."/cassava/general_info.txt" &>
+<& /util/include_file.mas, file=>  $static_content_path."/general_info.txt" &>
 
 </td>
 </tr>
