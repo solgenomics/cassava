@@ -15,63 +15,63 @@
 		     link => '/search/organisms',
 		     desc => 'search for organisms'
 		 },
-		 {
-		     name => 'Genes',
-		     link => '/search/loci',
-		     desc => 'Gene search.'
-		 },
-		 {
-		     name => 'Genome features',
-		     link => '/search/features',
-		     desc => 'Search for many types of annotations and sequences.'
-		 },
+		 #{
+		 #    name => 'Genes',
+		 #    link => '/search/loci',
+		 #    desc => 'Gene search.'
+		 #},
+		 #{
+		 #    name => 'Genome features',
+		 #    link => '/search/features',
+		 #    desc => 'Search for many types of annotations and sequences.'
+		 #},
 		 {
 		     name => 'Phenotypes',
 		     link => '/search/phenotypes/stock',
 		     desc => 'Search for mutants, accessions, and traits.'
 		 },
-		 {
-		     name => 'QTLs',
-		     link => '/search/phenotypes/qtl',
-		     desc => 'A web interface for uploading QTL raw data, on-the-fly QTL mapping and search interface for QTLs.'
-		 },
-		 {
-		     name => 'Unigenes',
-		     link => '/search/transcripts/unigene',
-		     desc => 'Unigene search.'
-		 },
-		 {
-		     name => "Gene Families",
-		     link => "/search/family",
-		     desc => "Unigene family search."
-		 },
+		 #{
+		 #    name => 'QTLs',
+		 #    link => '/search/phenotypes/qtl',
+		 #    desc => 'A web interface for uploading QTL raw data, on-the-fly QTL mapping and search interface for QTLs.'
+		 #},
+		 #{
+		 #    name => 'Unigenes',
+		 #    link => '/search/transcripts/unigene',
+		 #    desc => 'Unigene search.'
+		 #},
+		 #{
+		 #    name => "Gene Families",
+		 #    link => "/search/family",
+		 #    desc => "Unigene family search."
+		 #},
 		 {
 		     name => 'Markers',
 		     link => '/search/markers',
 		     desc => 'Marker search.'
 		 },
-		 {
-		     name => 'BACs',
-		     link => '/search/genomic/clones',
-		     desc => 'BAC (Bacterial Artificial Chromosome) search.'
-		 },
-		 {
-		     name => 'ESTs and libraries',
-		     link => '/search/transcripts/est',
-		     desc =>
-			 'Find EST (Expressed Sequence Tag) libraries by keyword, e.g. library name, organism, tissue, development stage, or authors.'
-		 },
+		 #{
+		 #    name => 'BACs',
+		 #    link => '/search/genomic/clones',
+		 #    desc => 'BAC (Bacterial Artificial Chromosome) search.'
+		 #},
+		 #{
+		 #    name => 'ESTs and libraries',
+		 #    link => '/search/transcripts/est',
+		 #    desc =>
+		 #	 'Find EST (Expressed Sequence Tag) libraries by keyword, e.g. library name, organism, tissue, development stage, or authors.'
+		 #},
 		 
 		 {
 		     name => 'Images',
 		     link => '/search/images',
 		     desc => 'Search images contained in the SGN database.'
 		 },
-		 {
-		     name => 'Expression',
-		     link => '/search/expression',
-		     desc => 'Search images contained in the SGN database.'
-		 },
+		 #{
+		 #    name => 'Expression',
+		 #    link => '/search/expression',
+		 #    desc => 'Search images contained in the SGN database.'
+		 #},
 		 {
 		     name => 'People',
 		     link => '/search/directory',
@@ -119,6 +119,20 @@
 	     link => '/tools/',
 	     desc => 'Tools for biologists.',
 	     menu => [
+
+		      { name => 'Breeder Tools' },
+		      { name=> 'Breeder Home',
+			link=> '/breeders/home',
+			desc=> 'Access breeder functionalities from the breeders homepage. Requires login.'
+		      },
+		      { name => 'Barcode Tools',
+			link => '/barcode/',
+			desc => 'Tools to create and manage barcodes.',
+},
+			
+		      
+
+		      
 		 
 		 #Sequence Analysis
 		 { name => 'Sequence Analysis' },
@@ -150,11 +164,11 @@
 		 #Mapping
 		 { name => 'Mapping' },
 		 
-		 {
-		     name => 'Genome Browser',
-		     link => '/gbrowse/bin/gbrowse/',
-		     desc => 'browse genomic annotations',
-		 },
+	#	 {
+	#	     name => 'Genome Browser',
+	#	     link => '/gbrowse/bin/gbrowse/',
+	#	     desc => 'browse genomic annotations',
+	#	 },
 		 {
 		     name => 'Comparative Viewer',
 		     link =>
@@ -168,27 +182,27 @@
 		     desc =>
 			 'Designs CAPS (Cleaved Amplified Polymorphic Sequence) assays for up to twelve sequences. Two types of nucleotide inputs are accepted: fasta sequences and clustal aligment. It generates a list of polymorphic enzymes that cut the sequences into different length products.'
 		 },
-		 {
-		     name => 'Seed BAC Finder',
-		     link => '/tools/seedbac/',
-		     desc =>
-			 'Lists all anchored BACs for a given chromosome to help identify seed BACs, or suggests a seed BAC given a marker name. '
-		 },
-		 {
-		     name => 'solQTL: QTL Mapping',
-		     link => '/search/phenotypes/qtl',
-		     desc =>
-			 'A web interface for uploading raw QTL data, on-the-fly QTL mapping, linking predicted QTLs to relevant genetic and genomic data in SGN, and search interface for QTLs.'
-		 },
+		 #{
+		 #    name => 'Seed BAC Finder',
+		 #    link => '/tools/seedbac/',
+		 #    desc =>
+		#	 'Lists all anchored BACs for a given chromosome to help identify seed BACs, or suggests a seed BAC given a marker name. '
+		# },
+		# {
+		 #    name => 'solQTL: QTL Mapping',
+		 #    link => '/search/phenotypes/qtl',
+		 #    desc =>
+	#		 'A web interface for uploading raw QTL data, on-the-fly QTL mapping, linking predicted QTLs to relevant genetic and genomic data in SGN, and search interface for QTLs.'
+	#	 },
 		 #Molecular Biology
 		 { name => "Molecular Biology" },
 		 
-		 {
-		     name => 'Signal Peptide Finder',
-		     link => '/tools/sigpep_finder/input.pl',
-		     desc =>
-			 'This method of searching for signal sequences is designed to complement SignalP, and has similar success rates.'
-		 },
+	#	 {
+	#	     name => 'Signal Peptide Finder',
+	#	     link => '/tools/sigpep_finder/input.pl',
+	#	     desc =>
+	#		 'This method of searching for signal sequences is designed to complement SignalP, and has similar success rates.'
+	#	 },
 		 {
 		     name => 'In Silico PCR',
 		     link => '/tools/insilicopcr',
@@ -218,17 +232,17 @@
 		     desc =>
 			 'FTP (File Transfer Protocol) is more efficient than HTTP (HyperText Transfer Protocol) for transferring large files. Many of our larger archive files are accessible here.'
 		 },
-		 {
-		     name => 'ID Converter (SGN <=> TIGR)',
-		     link => '/tools/convert/input.pl',
-		     desc =>
-			 'The Institute for Genomic Research and SGN maintain independent unigene databases, entries in which tend to have common member ESTs (Expressed Sequence Tags), although they tend not to correspond completely. This tool uses common members to convert back and forth between the two identifier sets.'
-		 },
+	#	 {
+	#	     name => 'ID Converter (SGN <=> TIGR)',
+	#	     link => '/tools/convert/input.pl',
+	#	     desc =>
+	#		 'The Institute for Genomic Research and SGN maintain independent unigene databases, entries in which tend to have common member ESTs (Expressed Sequence Tags), although they tend not to correspond completely. This tool uses common members to convert back and forth between the two identifier sets.'
+	#	 },
 		 
 		 #Other
 		 { name => "Other" },
 		 {
-		     name => 'SGN Ontology Browser [beta]',
+		     name => 'Ontology Browser',
 		     link => '/tools/onto/',
 		     desc => 'AJAX ontology browser.'
 		 },
