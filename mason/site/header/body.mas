@@ -15,9 +15,9 @@
 
 <table border="0" title="cassavabase" cellpadding="0" cellspacing="0" ><tr><td valign="bottom" >
 <img style="margin-left:18pt;margin-top:3pt; " src="/documents/img/cassava/cassava.png" width="100" />
-</td><td valign="top" >
+</td><td valign="bottom">
 
-<span style="font-family:times; font-size:16pt; color:#5b3a19; margin-bottom:10pt;">BASE</span>
+<span style="font-family:times; font-size:16pt; color:#5b3a19; margin-top:0px; ">BASE</span>
 
 </td></tr></table>
 
@@ -69,7 +69,10 @@
 </tr>
 </table>
 
-  <table id="pagecontent_t" summary="" width="740" cellpadding="0" cellspacing="0" border="0">
+
+  <table id="pagecontent_t" summary="" width="740" cellpadding="0" cellspacing="0" border="0" align="center">
   <tr><td id="pagecontent_td">
 
+
 <!-- END HEADER -->
+
