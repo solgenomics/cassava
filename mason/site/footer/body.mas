@@ -5,10 +5,10 @@
 </%init>
 
 </td></tr></table>
-<hr />
-
 
 <!-- BEGIN FOOTER-->
+
+<div class="divider"><br /></div>
 
     <div id="footer" class="white">
      
@@ -31,11 +31,11 @@
             
              <hr>			 
              <ul>
-              <li><a href="http://ip.cals.cornell.edu">International Programs, College of Agriculture and Life Sciences (IP/CALS), Cornell University</a></li>
-              <li><a href="http://www.nacrri.go.ug/">National Crops Resources Research Institute (NaCRRI)</a></li>
-              <li><a href="http://www.nrcri.gov.ng/">National Root Crops Research Institute (NRCRI)</a></li>
-              <li><a href="http://www.iita.org/">International Institute of Tropical Agriculture (IITA)</a></li>
-              <li><a href="http://www.jgi.doe.gov/">US Department of Energy (DOE) Joint Genome Institute (JGI)</a></li>              
+              <li><a class="footer" href="http://ip.cals.cornell.edu">International Programs, College of Agriculture and Life Sciences (IP/CALS), Cornell University</a></li>
+              <li><a class="footer" href="http://www.nacrri.go.ug/">National Crops Resources Research Institute (NaCRRI)</a></li>
+              <li><a class="footer" href="http://www.nrcri.gov.ng/">National Root Crops Research Institute (NRCRI)</a></li>
+              <li><a class="footer" href="http://www.iita.org/">International Institute of Tropical Agriculture (IITA)</a></li>
+              <li><a class="footer" href="http://www.jgi.doe.gov/">US Department of Energy (DOE) Joint Genome Institute (JGI)</a></li>              
              </ul>                
              </div>
                      
@@ -47,11 +47,11 @@
             <hr>
             
             <div class="center">
-            <a href="http://www.cornell.edu"><img src="/static/img/cu_logo.png" alt="Cornell University" class="logo"></a>
+            <a class="footer" href="http://www.cornell.edu"><img src="/static/img/cu_logo.png" alt="Cornell University" class="logo"></a>
             </div>
         
 
-	    <h3>Hosted at:</h3>
+	    <h3>Hosted By:</h3>
 	    <hr>
 	    <div class="center">
 	      <a class="footer" href="http://bti.cornell.edu"><img src="/static/img/bti_logo.png" alt="BTI" class="footer" /></a>
@@ -73,16 +73,14 @@
         
             <div class="is-padded">
      	
-        	<p class="pull-left">Contact: Contact for CassavaBase
-            <br/><a href="#">email</a>  ||  phone</p>        	 
+        	<p class="pull-left"><a href="/contact/form">Contact</a>
+            | <a href="mailto:sgn-feedback@solgenomics.net">Feedback</a></p>        	 
    			
             <!-- p class="pull-right">&copy; 2012 The Boyce Thompson Institute for Plant Research</p -->
             
             <br style="clear:both;">
             
    			</div>
-            
-              
         </div>
         
         </div><!-- container -->

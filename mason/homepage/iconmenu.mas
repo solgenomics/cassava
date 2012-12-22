@@ -55,7 +55,7 @@ pages.
     .Genes {
     	position: relative;
         top: 40px; 
-    	left: 120px;
+    	left: 90px;
     }
 
     .GenesSubMenu {
@@ -72,8 +72,8 @@ pages.
 
     .Phenotypes {
     	position: relative; 
-    	top: 80px;
-    	left: 100px;
+    	top: -50px;
+    	left: 300px;
     }
 
     .PhenotypesSubMenu {
@@ -87,8 +87,8 @@ pages.
 
     .BreedersToolBox {
     	position: relative; 
-    	top: 140px;
-    	left: -360px;
+    	top: 30px;
+    	left: 140px;
         z-index: 1;
     }
 
@@ -104,7 +104,7 @@ pages.
     .GenomesSequences {
     	position: relative; 
     	top: 40px;
-    	left: 260px;
+    	left: 140px;
     }
 
     .GenomesSequencesSubMenu {
@@ -116,19 +116,6 @@ pages.
     	left: 200px;
     }
 
-    .Pathways {
-    	position: relative; 
-    	top: -10px;
-    	left: 310px;
-    }
-
-    .PathwaysSubMenu {
-    	width: 227px;
-    	height: 341px;
-    	position: relative;
-    	top: -110px;
-    	left: 115px;
-    }
 
     .Divider { 
             line-height:4px;
@@ -165,7 +152,7 @@ pages.
 
 
 
-	<li class="Phenotypes"><a href="/search/direct_search.pl?search=phenotypes" style="background: none"><img src="/img/soliconmenu/Phenotypes.png" alt="Phenotypes and QTLs" title="Phenotypes and QTLs" /></a>
+	<li class="Phenotypes"><a href="/search/direct_search.pl?search=phenotypes" style="background: none"><img src="/img/soliconmenu/Phenotypes_cassava.png" alt="Phenotypes and QTLs" title="Phenotypes and QTLs" /></a>
 	  <ul>
 	    <div class="submenu PhenotypesSubMenu">
               <li><a href="/search/direct_search.pl?search=phenotypes">Search phenotypes</a></li>
@@ -180,15 +167,12 @@ pages.
 	</li>
     
     <li class="BreedersToolBox"><a href="/breeders/"><img src="/img/soliconmenu/BreedersToolBox.png" alt="Breeders Toolbox" title="Click to access the Breeder's toolbox" /></a>
-    	<!--
 		<ul>
             <div class="submenu BreedersToolBoxSubMenu">
-            	<li><a href="#">Test1</a></li>
-                <li><a href="#">Test2</a></li>
-                <li><a href="#">Test3</a></li>
+            	<li><a href="#">Breeder Home</a></li>
+                <li><a href="#">Barcode Tools</a></li>
             </div>
         </ul>
-        -->
 	</li>
     
     <li class="GenomesSequences"><a href="/genomes"><img src="/img/soliconmenu/GenomesSequences.png" alt="GenomesSequences" alt="Genomes and Sequences" title="Genomes and Sequences" /></a>
@@ -203,18 +187,7 @@ pages.
 
 	</li>
     
-    <li class="Pathways"><a href="http://solcyc.solgenomics.net/"><img src="/img/soliconmenu/Pathways.png" alt="Pathways" alt="Pathways" title="Click to access SolCyc" /></a>
-    	<!--
-		<ul>
-            <div class="submenu PathwaysSubMenu">
-            	<li><a href="#">Test1</a></li>
-                <li><a href="#">Test2</a></li>
-                <li><a href="#">Test3</a></li>
-            </div>
-        </ul>
-        -->
-	</li>
-    
+       
     
 </ul>
 
