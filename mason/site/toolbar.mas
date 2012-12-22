@@ -210,12 +210,12 @@
 		 },
 		 
 		 #Systems Biology
-		 { name => "Systems Biology" },
-		 {
-		     name => 'SolCyc Biochemical Pathways',
-		     link => '/tools/solcyc/',
-		     desc => 'An interactive map of metabolic pathways.'
-		 },
+#		 { name => "Systems Biology" },
+#		 {
+#		     name => 'SolCyc Biochemical Pathways',
+#		     link => '/tools/solcyc/',
+#		     desc => 'An interactive map of metabolic pathways.'
+#		 },
 		 
 		 #Bulk Query
 		 { name => 'Bulk Query' },
