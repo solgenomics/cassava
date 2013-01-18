@@ -1,3 +1,5 @@
+<& /util/import_javascript.mas, classes=> [ 'jqueryui', 'CXGN.List' ] &>
+
 <div id="outercontainer">
   <a name="top"></a>
 
@@ -12,6 +14,41 @@
   <td style="vertical-align: bottom">
     <!-- span style="font-family:arial; font-size:14pt; font-weight:bold; color:#DD2200; margin-left:18px; margin-top:1px;">cassava</span> 
 <span style="font-family:arial; font-size:14pt; font-weight:bold; color:#229900;">base</span -->
+
+<!-- Lists dialog -->
+<div id="list_dialog" overflow="auto" >
+</div>
+
+
+<script>
+  jQuery( function() { 
+  
+  jQuery('#list_dialog').dialog( {
+     height: 300,
+     width: 500,
+     autoOpen: false,
+     buttons: { "Done" :  function() { 
+           jQuery('#list_dialog').dialog("close"); }
+     },
+     modal: true 
+  });
+
+  
+  jQuery('#lists_link').click(
+      function() { show_lists(); })
+  });
+
+
+  function show_lists() { 
+
+     jQuery('#list_dialog').dialog("open");
+     var l = new CXGN.List();
+     l.renderLists('list_dialog');
+  }
+
+</script>
+
+
 
 <table border="0" title="cassavabase" cellpadding="0" cellspacing="0" ><tr><td valign="bottom" >
 <img style="margin-left:18pt;margin-top:3pt; " src="/documents/img/cassava/cassava.png" width="100" />
@@ -58,8 +95,10 @@
     <span style="visibility: hidden">site login disabled</span>
 % } elsif ( $c->user_exists ) {
   <b><% $c->user->get_object->get_first_name || '' %> <% $c->user->get_object->get_last_name  || '' %></b>
-  (<a class="toplink" style="text-decoration: underline" href="/solpeople/login.pl?logout=yes">log out</a>)
+<a class="mytools" id="lists_link">lists</a> 
+  
   <a class="mytools" href="/solpeople/top-level.pl">my account</a>
+<a class="toplink" style="text-decoration: underline" href="/solpeople/login.pl?logout=yes">log out</a>
 % } else {
     <a class="toplink" style="text-decoration: underline" href="/solpeople/login.pl"      >log in</a>
   | <a class="toplink" style="text-decoration: underline" href="/solpeople/new-account.pl">new user</a>
@@ -68,6 +107,10 @@
   </td>
 </tr>
 </table>
+
+
+
+
 
 
   <table id="pagecontent_t" summary="" width="740" cellpadding="0" cellspacing="0" border="0" align="center">
