@@ -19,6 +19,8 @@
 <div id="list_dialog" overflow="auto" >
 </div>
 
+<div id="list_item_dialog" overflow="auto" >
+</div>
 
 <script>
   jQuery( function() { 
@@ -33,6 +35,29 @@
      modal: true 
   });
 
+  jQuery('#list_item_dialog').dialog( { 
+     height: 300,
+     width: 300,
+     autoOpen: false,
+     buttons: { 
+         "Done": function() { 
+           jQuery('#list_item_dialog').dialog("close"); }
+     },
+     modal: true,
+     title: 'List contents'
+  });
+
+  jQuery('#confirm_delete_dialog').dialog( { 
+     height: 300,
+     width:  300,
+     autoOpen: true,
+     buttons: { 
+         "Yes" : function() {}, 
+         "No"  : function() {}
+     },
+     modal: true,
+     title: 'Delete?'
+  });
   
   jQuery('#lists_link').click(
       function() { show_lists(); })
@@ -45,6 +70,14 @@
      var l = new CXGN.List();
      l.renderLists('list_dialog');
   }
+
+//  function show_list_items() { 
+//     jQuery('#list_item_dialog').dialog("open");
+//     var l= new CXGN.List();
+//     l.renderItems('list_item_dialog');
+
+//  }
+
 
 </script>
 
