@@ -22,64 +22,9 @@
 <div id="list_item_dialog" overflow="auto" >
 </div>
 
-<script>
-  jQuery( function() { 
-  
-  jQuery('#list_dialog').dialog( {
-     height: 300,
-     width: 500,
-     autoOpen: false,
-     buttons: { "Done" :  function() { 
-           jQuery('#list_dialog').dialog("close"); }
-     },
-     modal: true 
-  });
-
-  jQuery('#list_item_dialog').dialog( { 
-     height: 300,
-     width: 300,
-     autoOpen: false,
-     buttons: { 
-         "Done": function() { 
-           jQuery('#list_item_dialog').dialog("close"); }
-     },
-     modal: true,
-     title: 'List contents'
-  });
-
-  jQuery('#confirm_delete_dialog').dialog( { 
-     height: 300,
-     width:  300,
-     autoOpen: true,
-     buttons: { 
-         "Yes" : function() {}, 
-         "No"  : function() {}
-     },
-     modal: true,
-     title: 'Delete?'
-  });
-  
-  jQuery('#lists_link').click(
-      function() { show_lists(); })
-  });
-
-
-  function show_lists() { 
-
-     jQuery('#list_dialog').dialog("open");
-     var l = new CXGN.List();
-     l.renderLists('list_dialog');
-  }
-
-//  function show_list_items() { 
-//     jQuery('#list_item_dialog').dialog("open");
-//     var l= new CXGN.List();
-//     l.renderItems('list_item_dialog');
-
-//  }
-
-
-</script>
+<div id="confirm_delete_dialog" overlow="auto" >
+  Delete list named <div id="delete_dialog_list_name"></div> with id <div id="delete_dialog_list_id"></div>?
+</div>
 
 
 
@@ -140,6 +85,12 @@
   </td>
 </tr>
 </table>
+
+<script>
+
+setUpLists();
+
+</script>
 
 
 
