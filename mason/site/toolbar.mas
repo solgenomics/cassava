@@ -128,8 +128,11 @@
 		      { name => 'Barcode Tools',
 			link => '/barcode/',
 			desc => 'Tools to create and manage barcodes.',
-},
-			
+		      },
+		      { name => 'Genomic Selection',
+			link => '/gs/',
+			desc => 'Genomic Selection Tools.',
+		      },
 		      
 
 		      
