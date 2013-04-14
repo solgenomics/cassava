@@ -26,10 +26,11 @@ $show_accept_dialog => undef
 
 <td width="300">
 
-<div class="boxbgcolor1" style="margin:0px; ">
+
 
 <& homepage/news.mas &>
 
+<div class="boxbgcolor1" style="margin:0px; ">
 <div class="boxheading">News Feed</div>
 <div class="boxcontent">
 
