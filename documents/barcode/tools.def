@@ -22,11 +22,11 @@ CO:0000031	0	1	1,2,3,4,5	Cassava bacterial blight severity
 CO:0000032	0		1,2,3,4,5	Cassava anthracnose disease severity
 CO:0000033	0		1,2,3,4,5	Cassava green mite  severity
 CO:0000034	0		1,2,3,4,5	Cassava mealy bug severity
-CO:0000035	0	1	1,2,3,4,5	Cassava Mosaic Disease Severity 1 month
+CO:0000035	0	1	1,2,3,4,5	Cassava Mosaic Disease Severity
 CO:0000036	0	1	1,2,3,4,5	Cassava brown streak disease leaf symptoms severity
-CO:0000037	0	1	numeric	Proportion of plants within a plot showing symptoms of cassava bacterial blight in third month after planting
-CO:0000038	0		numeric	Proportion of plants within a plot showing symptoms of cassava anthracnose disease in sixth month after planting
-CO:0000039	0	1	numeric	Proportion of plants within a plot showing symptoms of cassava mosaic disease in the first month after planting
+CO:0000037	0	1	numeric	Proportion of plants within a plot showing symptoms of cassava bacterial blight
+CO:0000038	0		numeric	Proportion of plants within a plot showing symptoms of cassava anthracnose disease
+CO:0000039	0	1	numeric	Proportion of plants within a plot showing symptoms of cassava mosaic disease
 CO:0000040	0	1	numeric	Proportion of plants within a plot showing leaf symptoms of cassava brown streak disease
 CO:0000041	0		numeric	Proportion of plants within a plot showing symptoms of cassava mealy-bug damage
 CO:0000042	0		1,2,3,4,5	Spiraling whitefly severity
