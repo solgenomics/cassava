@@ -166,7 +166,7 @@ pages.
 
 	</li>
     
-    <li class="BreedersToolBox"><a href="/breeders/"><img src="/img/soliconmenu/BreedersToolBox.png" alt="Breeders Toolbox" title="Click to access the Breeder's toolbox" /></a>
+    <li class="BreedersToolBox"><a href="/breeders/home"><img src="/img/soliconmenu/BreedersToolBox.png" alt="Breeders Toolbox" title="Click to access the Breeder's toolbox" /></a>
 		<ul>
             <div class="submenu BreedersToolBoxSubMenu">
             	<li><a href="#">Breeder Home</a></li>
