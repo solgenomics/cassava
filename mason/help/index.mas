@@ -1,0 +1,47 @@
+
+<& /page/page_title.mas, title=>"CassavaBase Help" &>
+
+
+The complete CassavaBase help is available from the <a href="http://cassavabase.wikispaces.com">CassavaBase Wiki</a>.
+
+<h4>Basic functions</h4>
+<ul>
+<li><a href="http://cassavabase.wikispaces.com/Create+account">Create account</a></li>
+
+<li><a href="http://cassavabase.wikispaces.com/Manage+account">Manage account</a></li>
+
+<li><a href="http://cassavabase.wikispaces.com/Lists">Lists</a></li>
+</ul>
+
+
+
+<h4>Managing Breeding Functions</h4>
+<ul>
+<li><a href="http://cassavabase.wikispaces.com/Enter+trial+data">Create Trials</a></li>
+
+<li><a href="http://cassavabase.wikispaces.com/Add+stocks">Add stocks</a></li>
+
+<li><a href="http://cassavabase.wikispaces.com/Enter+location+data">Enter location Data</a></li>
+
+<li><a href="http://cassavabase.wikispaces.com/Add+phenotype+data+in+bulk">Add phenotype data in bulk</a></li>
+
+<li>Entering cross information</li>
+
+<li>Manage field layouts</li>
+</ul>
+
+
+<h4>Genomic Selection using solGS</h4>
+<ul>
+<li>Create prediction models</li>
+
+<li>Make predictions</li>
+</ul>
+
+
+<h4>Barcode Functions</h4>
+<ul>
+<li>Print barcodes for selected accessions and plots</li>
+
+<li>Print barcode tools</li>
+</ul>
