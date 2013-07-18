@@ -36,11 +36,11 @@
   </td>
   <td class="toplink" width="50%">
 
-          <a class="toplink" href="/">home</a>
-        | <a class="toplink" href="/forum/topics.pl">forum</a>
-        | <a class="toplink" href="/contact/form">contact</a>
-        | <a class="toplink" href="/help/index.pl">help</a>
-        | <a class="toplink" href="/help/faq.pl">faq</a>
+          <a class="footer" href="/">home</a>
+        | <a class="footer" href="/forum/topics.pl">forum</a>
+        | <a class="footer" href="/contact/form">contact</a>
+        | <a class="footer" href="/help/">help</a>
+        | <a class="footer" href="http://cassavabase.wikispaces.com">wiki</a>
 		<span id="open_developer_toolbar" style="display:none">
 
 		| <a class="toplink" href="#" onclick="openDeveloperToolbar(); return false">devbar</a>
@@ -78,9 +78,11 @@
 </tr>
 </table>
 
-<script defer>
+<script defer="defer">
 
-setUpLists();
+jQuery(document).ready( function() { 
+  setUpLists();
+});
 
 </script>
 
