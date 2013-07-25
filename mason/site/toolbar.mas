@@ -130,7 +130,7 @@
 			desc => 'Tools to create and manage barcodes.',
 		      },
 		      { name => 'Genomic Selection',
-			link => '/gs/',
+			link => '/solgs/search/',
 			desc => 'Genomic Selection Tools.',
 		      },
 		      
