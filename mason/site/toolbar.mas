@@ -221,20 +221,20 @@
 #		 },
 		 
 		 #Bulk Query
-		 { name => 'Bulk Query' },
+#		 { name => 'Bulk Query' },
 		 
-		 {
-		     name => 'Unigene and BAC information',
-		     link => '/bulk/input.pl',
-		     desc =>
-			 'Rather than sifting through SGN page by page, here you can download large quantities of information in a single step.'
-		 },
-		 {
-		     name => 'FTP Site',
-		     link => '/bulk/input.pl?mode=ftp',
-		     desc =>
-			 'FTP (File Transfer Protocol) is more efficient than HTTP (HyperText Transfer Protocol) for transferring large files. Many of our larger archive files are accessible here.'
-		 },
+#		 {
+#		     name => 'Unigene and BAC information',
+#		     link => '/bulk/input.pl',
+#		     desc =>
+#			 'Rather than sifting through SGN page by page, here you can download large quantities of information in a single step.'
+#		 },
+#		 {
+#		     name => 'FTP Site',
+#		     link => '/bulk/input.pl?mode=ftp',
+#		     desc =>
+#			 'FTP (File Transfer Protocol) is more efficient than HTTP (HyperText Transfer Protocol) for transferring large files. Many of our larger archive files are accessible here.'
+#		 },
 	#	 {
 	#	     name => 'ID Converter (SGN <=> TIGR)',
 	#	     link => '/tools/convert/input.pl',
