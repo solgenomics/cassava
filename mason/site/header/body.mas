@@ -20,6 +20,18 @@
 <div id="list_item_dialog" overflow="auto" >
 </div>
 
+<div id="working" >
+  <img src="/img/wheel.gif" />
+</div>
+
+<div id="login_window" >
+    <table>
+    <tr><td>Username</td><td><input type="text" size="20" id="username_field" name="username_field" /></td></tr>
+    <tr><td>Password</td><td><input type="password" size="20" id="password_field" name="password_field" /></td></tr>
+  </table>
+
+</div>
+
 <table border="0" title="cassavabase" cellpadding="0" cellspacing="0" ><tr><td valign="bottom" >
 <img style="margin-left:18pt;margin-top:3pt; " src="/documents/img/cassava/cassava.png" width="100" />
 </td><td valign="bottom">
@@ -80,9 +92,39 @@
 
 <script defer="defer">
 
-jQuery(document).ready( function() { 
-  setUpLists();
-});
+
+  jQuery(document).ready( function() { 
+    jQuery('#working').dialog( { 
+      height: 80,
+      width:  50,
+      modal: true,
+      autoOpen: false,
+      title: 'Working...'
+    });
+
+  jQuery('#login_window').dialog( { 
+    height: 180,
+    width: 300,
+    modal: true,
+    title: 'Login',
+    autoOpen: false,
+    buttons: { 
+      "Login" : 
+        function() { 
+          login();
+        },
+      "Cancel": 
+        function() { 
+          jQuery('#login_window').dialog("close");
+        }
+    }
+     
+   
+  });
+
+
+    setUpLists();
+  });
 
 </script>
 
