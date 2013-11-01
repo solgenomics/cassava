@@ -75,7 +75,7 @@
 		   },
 		   {
 		    name => 'Barcodes',
-		    link => '/breeders/barcodes',
+		    link => '/barcode',
 		    desc => 'Access barcode functions.',
 		   },
 		   {
