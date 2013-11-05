@@ -24,7 +24,7 @@
 
 
 
-  <& /util/import_javascript.mas, classes => [qw[ sgn jquery.simpletooltip CXGN.Effects CXGN.Page.FormattingHelpers CXGN.UserPrefs CXGN.Page.Toolbar ]] &>
+  <& /util/import_javascript.mas, classes => [qw[ sgn jquery.simpletooltip CXGN.Effects CXGN.Page.FormattingHelpers CXGN.UserPrefs CXGN.Page.Toolbar CXGN.Login ]] &>
 
  <!-- Google Analytics code -->
  <script type="text/javascript">
