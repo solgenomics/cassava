@@ -86,6 +86,7 @@
 		  ]
 	 },
 	 {
+
 	  name => 'analyze',
 	  link => '/tools/',
 	  desc => 'Tools for biologists.',
@@ -102,6 +103,7 @@
 		   },
 		   { name => 'Genomic Selection',
 		     link => '/solgs/search/',
+
 			desc => 'Genomic Selection Tools.',
 		   },
 		   #Sequence Analysis
