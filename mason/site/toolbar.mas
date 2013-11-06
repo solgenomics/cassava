@@ -74,6 +74,11 @@
 		    desc => 'Upload and manage phenotypes.',
 		   },
 		   {
+		    name => 'Field Book App',
+		    link => '/fieldbook',
+		    desc => 'Manage files for Field Book App',
+		   },
+		   {
 		    name => 'Barcodes',
 		    link => '/barcode',
 		    desc => 'Access barcode functions.',
