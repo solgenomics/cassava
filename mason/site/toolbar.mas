@@ -22,7 +22,7 @@
 #		    desc => 'search for organisms'
 #		   },
 		   {
-		       name => 'Stocks and plots',
+		       name => 'Accessions and plots',
 		    link => '/search/phenotypes/stock',
 		    desc => 'Search for mutants, accessions, and traits.'
 		   },
