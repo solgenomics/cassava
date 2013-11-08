@@ -54,6 +54,12 @@
 	  desc => 'Manage breeding trials and data.',
 	  menu => [
 		   { 
+		    name => 'Breeding programs',
+		    link => '/breeders/manage_programs',
+		    desc => 'Manage breeding programs.',
+		   },
+
+		   { 
 		    name => 'Trials',
 		    link => '/breeders/trials',
 		    desc => 'Set up and manage trials.',
