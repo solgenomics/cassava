@@ -12,7 +12,7 @@
 	  menu => [
 		   {
 		    name => 'Wizard',
-		    link => '/breeder_search',
+		    link => '/breeders/search',
 		    desc => 'quickly retrieve datasets'
 		   },
 		   
