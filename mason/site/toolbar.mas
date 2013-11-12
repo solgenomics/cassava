@@ -90,8 +90,8 @@
 		    desc => 'Access barcode functions.',
 		   },
 		   {
-		    name => 'Downloads',
-		    link => '/breeders/downloads',
+		    name => 'Download',
+		    link => '/breeders/download',
 		    desc => 'Download data using lists.',
 		   },
 		  ]
