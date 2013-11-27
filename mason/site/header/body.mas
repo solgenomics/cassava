@@ -20,8 +20,8 @@
 <div id="list_item_dialog" overflow="auto" >
 </div>
 
-<div id="working" >
-  <img src="/img/wheel.gif" />
+<div id="working" style="text-align : center;" >
+    <img src="/img/wheel.gif"/>
 </div>
 
 <div id="login_window" >
@@ -95,10 +95,12 @@
 
   jQuery(document).ready( function() { 
     jQuery('#working').dialog( { 
-      height: 80,
+      height: 100,
       width:  50,
       modal: true,
       autoOpen: false,
+      closeOnEscape: false,
+      open: function() { jQuery(this).closest('.ui-dialog').find('.ui-dialog-titlebar-close').hide(); },
       title: 'Working...'
     });
 
