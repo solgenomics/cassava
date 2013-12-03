@@ -9,7 +9,7 @@
 <table id="siteheader" cellpadding="0" cellspacing="0">
 <tr>
   <td rowspan="3" width="15">
-    <a href="/"><img src="/img/cassava/nextgen_cassava_icon.png" width="70"  border="0" alt="CassavaBase Home" title="Cassavabase Home" id="sgnlogo" /></a>
+    <a href="/"><img src="/img/cassava/nextgen_cassava_icon.png" width="70"  border="0" style="margin-top:1px" alt="CassavaBase Home" title="Cassavabase Home" id="sgnlogo" /></a>
   </td>
   <td style="vertical-align: bottom">
 
@@ -33,7 +33,7 @@
 </div>
 
 <table border="0" title="cassavabase" cellpadding="0" cellspacing="0" ><tr><td valign="bottom" >
-<img style="margin-left:18pt;margin-top:3pt; " src="/documents/img/cassava/cassavabase.png" width="180" />
+      <img style="margin-left:-2pt;margin-top:0px; " src="/documents/img/cassava/cassavabase.png" width="160px" />
 </td><td valign="bottom">
 
 </td></tr></table>
