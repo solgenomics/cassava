@@ -38,7 +38,7 @@ $show_accept_dialog => undef
 </div>
 </div>
 
-</td><td width="300">
+</td><td width="300" valign="top">
 <div class="boxbgcolor1" style="margin:0px;">
 <div class="boxheading">Community</div>
 <div class="boxcontent">
