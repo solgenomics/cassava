@@ -60,6 +60,12 @@
 		   },
 
 		   { 
+		    name => 'Accessions',
+		    link => '/breeders/accessions',
+		    desc => 'Manage accessions.',
+		   },
+
+		   { 
 		    name => 'Trials',
 		    link => '/breeders/trials',
 		    desc => 'Set up and manage trials.',
@@ -124,44 +130,44 @@
 		    desc =>
 		    'Compare a given sequence to known sequences using the Basic Local Alignment Search Tool, NCBI BLAST v. 2.2.9 [May-01-2004]'
 		   },
-		   {
-		    name => 'Alignment Analyzer',
-		    link => '/tools/align_viewer/',
-		    desc =>
-		    'Calculate alignments using Muscle v3.6, or view existing alignments using our navigator.'
-		   },
-		   {
-		     name => 'Tree Browser',
-		    link => '/tools/tree_browser/',
-		    desc =>
-		    'Visualize and manipulate phylogenetic trees from a newick-formatted string.'
-		   },
-		   {
-		    name => 'Intron Finder',
-		    link => '/tools/intron_detection/find_introns.pl',
-		     desc =>
-		    'The SGN Intron Finder works by doing a BLAST search for <em>Arabidopsis thaliana</em> proteins that are similar to the translated protein sequence of the DNA input.'
-		   },
+		   # {
+		   #  name => 'Alignment Analyzer',
+		   #  link => '/tools/align_viewer/',
+		   #  desc =>
+		   #  'Calculate alignments using Muscle v3.6, or view existing alignments using our navigator.'
+		   # },
+		   # {
+		   #   name => 'Tree Browser',
+		   #  link => '/tools/tree_browser/',
+		   #  desc =>
+		   #  'Visualize and manipulate phylogenetic trees from a newick-formatted string.'
+		   # },
+		   # {
+		   #  name => 'Intron Finder',
+		   #  link => '/tools/intron_detection/find_introns.pl',
+		   #   desc =>
+		   #  'The SGN Intron Finder works by doing a BLAST search for <em>Arabidopsis thaliana</em> proteins that are similar to the translated protein sequence of the DNA input.'
+		   # },
 		   #Mapping
-		   { name => 'Mapping' },
-		   {
-		    name => 'Comparative Viewer',
-		    link =>
-		    '/cview/view_chromosome.pl?show_offsets=1&amp;show_ruler=1&amp;show_offsets=1',
-		    desc =>
-		    'Compare chromosomes from different maps, side by side.',
-		   },
-		   {
-		    name => 'CAPS Designer',
-		    link => '/tools/caps_designer/caps_input.pl',
-		    desc =>
-		    'Designs CAPS (Cleaved Amplified Polymorphic Sequence) assays for up to twelve sequences. Two types of nucleotide inputs are accepted: fasta sequences and clustal aligment. It generates a list of polymorphic enzymes that cut the sequences into different length products.'
-		   },
-		   {
-		    name => 'In Silico PCR',
-		    link => '/tools/insilicopcr',
-		     desc => 'In Silico PCR tool based on BLAST'
-		   },
+		   # { name => 'Mapping' },
+		   # {
+		   #  name => 'Comparative Viewer',
+		   #  link =>
+		   #  '/cview/view_chromosome.pl?show_offsets=1&amp;show_ruler=1&amp;show_offsets=1',
+		   #  desc =>
+		   #  'Compare chromosomes from different maps, side by side.',
+		   # },
+		   # {
+		   #  name => 'CAPS Designer',
+		   #  link => '/tools/caps_designer/caps_input.pl',
+		   #  desc =>
+		   #  'Designs CAPS (Cleaved Amplified Polymorphic Sequence) assays for up to twelve sequences. Two types of nucleotide inputs are accepted: fasta sequences and clustal aligment. It generates a list of polymorphic enzymes that cut the sequences into different length products.'
+		   # },
+		   # {
+		   #  name => 'In Silico PCR',
+		   #  link => '/tools/insilicopcr',
+		   #   desc => 'In Silico PCR tool based on BLAST'
+		   # },
 
 		   { name => "Other" },
 		   {
