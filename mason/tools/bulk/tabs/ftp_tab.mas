@@ -1,0 +1,14 @@
+
+    <h3 style="margin-bottom: 0.3em">Cassavabase FTP site</h3>
+	<div style="margin: 0 1em 0 1em">Download complete datasets.</div><br />
+
+    <div style="margin: 0; padding: 1em; border: 1px solid #ccccff">
+	<a class="folderlink" href="ftp://ftp.cassavabase.org">ftp top level</a>
+	
+	<dl style="margin: 1em 0 0 0; list-style: none">
+	  <dt><a href="ftp://ftp.cassavabase.org/maps"><b>Maps</b></a></dt>
+	  <dd>Cassava map data</dd>
+	  <dt><a href="ftp://ftp.cassavabase.org/annotation"><b>Annotation</b></a></dt>
+	  <dd>Chromosomes, genes, and protein files, in fasta and gff3.</dd>
+
+	  </dl>
