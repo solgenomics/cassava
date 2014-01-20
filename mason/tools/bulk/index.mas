@@ -1,0 +1,3 @@
+
+
+<& /generic_message.mas, message=>"The bulk download function is not supported on Cassavabase." &>
