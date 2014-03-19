@@ -25,7 +25,7 @@ pages.
 </%doc>
 
 <style type="text/css">
-    @import url("/css/icon_nav.css");
+    @import url("/css/icon_nav_cassava.css");
 
     #icon_nav {
         width: 720px;
