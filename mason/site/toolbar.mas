@@ -188,6 +188,11 @@
 		    link => '/cview/map.pl?map_id=1',
 		    desc => 'Cassava Genetic Map (Rabbi et al, 2011)',
 		   },
+		   {
+		    name => 'Cassava 2013 GBS map',
+		    link => '/cview/map.pl?map_id=2',
+		    desc => 'Cassava 2013 GBS consensus map',
+		   },
 		   { name => 'Genome' },
                    {
                      name => 'Cassava genome browser at JGI',
