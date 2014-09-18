@@ -27,6 +27,12 @@
 		    desc => 'Search for mutants, accessions, and traits.'
 		   },
 		   {
+		       name => 'Trials',
+		    link => '/search/trials',
+		    desc => 'Search trials.'
+		   },
+
+		   {
 		    name => 'Markers',
 		    link => '/search/markers',
 		    desc => 'Marker search.'
