@@ -32,12 +32,27 @@
             
              <hr>			 
              <ul>
+
+<li><a class="footer" href="http://cals.cornell.edu">College of Agriculture and Life Sciences, Cornell University, USA</a></li>
+<li><a class="footer" href="http://www.nacrri.go.ug/">National Crops Resources Research Institute (NaCRRI), Uganda</a></li>
+<li><a class="footer" href="http://www.nrcri.gov.ng/">National Root Crops Research Institute (NRCRI), Nigeria</a></li>
+ <li><a class="footer" href="http://www.iita.org/">International Institute of Tropical Agriculture (IITA), Nigeria</a></li>
+<li><a href="http://bti.cornell.edu">Boyce Thompson Institute (BTI) for Plant Research, USA</a></li>
+<li><a class="footer" href="http://www.jgi.doe.gov/">US Department of Energy (DOE) Joint Genome Institute (JGI), USA</a></li>
+<li><a class="footer" href="http://mak.ac.ug">Makerere University, Uganda</a></li>
+<li><a class="footer" href=""West African Centre for Crop Improvement (WACCI), Ghana</a></li>
+</ul>
+
+
+
+
+<!-- ul>
               <li><a class="footer" href="http://ip.cals.cornell.edu">International Programs, College of Agriculture and Life Sciences (IP/CALS), Cornell University</a></li>
               <li><a class="footer" href="http://www.nacrri.go.ug/">National Crops Resources Research Institute (NaCRRI)</a></li>
               <li><a class="footer" href="http://www.nrcri.gov.ng/">National Root Crops Research Institute (NRCRI)</a></li>
               <li><a class="footer" href="http://www.iita.org/">International Institute of Tropical Agriculture (IITA)</a></li>
               <li><a class="footer" href="http://www.jgi.doe.gov/">US Department of Energy (DOE) Joint Genome Institute (JGI)</a></li>              
-             </ul>                
+             </ul  -->                
              </div>
                      
         </div>
