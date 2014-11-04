@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="/documents/inc/nextgen-cassava-base.css" type="text/css" />
   <link rel="stylesheet" href="/documents/inc/jquery-cassava-theme/jquery-ui-1.10.3.custom.css" type="text/css" />
   <link rel="stylesheet" href="/documents/inc/colorbox/colorbox.css" type="text/css" />
-
+  <link rel="stylesheet" href="/css/jstree/themes/default/style.min.css" />
   <link rel="search" type="application/opensearchdescription+xml" title="SGN Sol Search" href="/documents/sgn_sol_search.xml" />
 
   <script language="javascript" type="text/javascript">
