@@ -15,19 +15,13 @@
 		    link => '/breeders/search',
 		    desc => 'quickly retrieve datasets'
 		   },
-		   
-#		   {
-#		    name => 'Organisms',
-#		    link => '/search/organisms',
-#		    desc => 'search for organisms'
-#		   },
 		   {
-		       name => 'Accessions and plots',
+		    name => 'Accessions and plots',
 		    link => '/search/phenotypes/stock',
 		    desc => 'Search for mutants, accessions, and traits.'
 		   },
 		   {
-		       name => 'Trials',
+		    name => 'Trials',
 		    link => '/search/trials',
 		    desc => 'Search trials.'
 		   },
@@ -64,37 +58,40 @@
 		    link => '/breeders/manage_programs',
 		    desc => 'Manage breeding programs.',
 		   },
+		   {
+		    name => 'Locations',
+		    link => '/breeders/locations',
+		    desc => 'Set up and manage locations.',
+		   },
 
 		   { 
 		    name => 'Accessions',
 		    link => '/breeders/accessions',
 		    desc => 'Manage accessions.',
 		   },
-
-		   { 
-		    name => 'Trials',
-		    link => '/breeders/trials',
-		    desc => 'Set up and manage trials.',
-		   },
-		   {
-		    name => 'Locations',
-		    link => '/breeders/locations',
-		    desc => 'Set up and manage locations.',
-		   },
 		   {
 		    name => 'Crosses',
 		    link => '/breeders/crosses',
 		    desc => 'Set up and manage crosses.',
 		   },
-		   {
-		    name => 'Phenotyping',
-		    link => '/breeders/phenotyping',
-		    desc => 'Upload and manage phenotypes.',
+		   { 
+		    name => 'Field Trials',
+		    link => '/breeders/trials',
+		    desc => 'Set up and manage trials.',
+		   },
+		   { name => 'Genotyping Trials',
+		     link => '/breeders/genotyping',
+		     desc => 'Manage genotyping workflows',
 		   },
 		   {
 		    name => 'Field Book App',
 		    link => '/fieldbook',
 		    desc => 'Manage files for Field Book App',
+		   },
+		   {
+		    name => 'Phenotyping',
+		    link => '/breeders/phenotyping',
+		    desc => 'Upload and manage phenotypes.',
 		   },
 		   {
 		    name => 'Barcodes',
