@@ -129,7 +129,7 @@
 		   { name => 'Sequence Analysis' },
 		   {
 		    name => 'BLAST',
-		    link => '/tools/blast/',
+		    link => 'http://www.phytozome.net/search.php?show=blast',
 		    desc =>
 		    'Compare a given sequence to known sequences using the Basic Local Alignment Search Tool, NCBI BLAST v. 2.2.9 [May-01-2004]'
 		   },
@@ -204,7 +204,7 @@
 		   { name => 'Genome' },
                    {
                      name => 'Cassava genome browser at JGI',
-                     link => 'http://www.phytozome.net/cgi-bin/gbrowse/cassava/',
+                     link => 'http://phytozome.jgi.doe.gov/jbrowse/index.html?data=genomes%2FMesculenta&loc=scaffold00224%3A275001..325000&tracks=Transcripts%2CAlt_Transcripts%2CPASA_assembly%2CBlastx_protein%2CBlatx_Plant_protein&highlight=',
                      desc =>
                          'The cassava genome, sequenced by the Joint Genome Initiative',
                  },
