@@ -125,6 +125,10 @@
 		     link => '/solgs/search/',
                      desc => 'Estimate genomic estimated breeding values (GEBVs) of your selection populations using prediction models.',
 		   },
+		   { name=> 'Population Structure',
+		     link=> '/pca/analysis',
+		     desc=> 'Analyzes population structure using principal component. Requires login.'
+		   },
 		   #Sequence Analysis
 		   { name => 'Sequence Analysis' },
 		   {
