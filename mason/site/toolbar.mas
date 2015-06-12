@@ -206,9 +206,14 @@
 		    desc => 'Cassava 2014 GBS consensus map',
 		   },
 		   { name => 'Genome' },
+		   {
+		   name => 'Cassava genome browser with VCF tracks',
+		   link => '/jbrowse_cassavabase/JBrowse-1.11.6/?data=data/json/cassavaV6_1',
+		   desc => 'Cassava genome browser using build V6, gene models and imputed vcf tracks',
+		   }, 
                    {
                      name => 'Cassava genome browser at JGI',
-                     link => 'http://phytozome.jgi.doe.gov/jbrowse/index.html?data=genomes%2FMesculenta&loc=scaffold00224%3A275001..325000&tracks=Transcripts%2CAlt_Transcripts%2CPASA_assembly%2CBlastx_protein%2CBlatx_Plant_protein&highlight=',
+                     link => 'http://phytozome.jgi.doe.gov/jbrowse/index.html?data=genomes%2FMesculenta_er&loc=Chromosome01%3A311731..318655&tracks=DNA%2CGaps%2CBlastx_protein%2Cinitial_gatk_filtered%2CRepeatMasker&highlight=',
                      desc =>
                          'The cassava genome, sequenced by the Joint Genome Initiative',
                  },
