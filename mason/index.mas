@@ -4,57 +4,78 @@ $static_content_path => undef
 $show_accept_dialog => undef
 </%args>
 
-<& /util/import_javascript.mas, classes=>[ "jquery", "jqueryui", "jquery.cookie"] &>
+<center>
+  <& homepage/iconmenu.mas &>
+</center>
 
-<table cellpadding="0">
+<div class="container-fluid">
+  <hr>
 
-<tr><td colspan="2">
-<& homepage/iconmenu.mas &>
-</td></tr>
+  <div class="well well-sm">
+    <& /util/include_file.mas, file=>  $static_content_path."/general_info.txt" &>
+  </div>
 
-<tr>
-<td colspan="2">
-
-<& /util/include_file.mas, file=>  $static_content_path."/general_info.txt" &>
-
-<& /homepage/usage_popup.mas &>
-
-</td>
-</tr>
-
-<tr>
-
-<td width="300">
-
-
-
-<& homepage/news.mas &>
-
-<div class="boxbgcolor1" style="margin:0px; ">
-<div class="boxheading">News Feed</div>
-<div class="boxcontent">
-
-<& /feed/xmlfeed.mas, uri=>"http://meltwaternews.com/magenta/xml/html/42/93/rss/v2_412463.rss2.XML" &><br />
-</div>
+  <& /homepage/usage_popup.mas &>
 </div>
 
-</td><td width="300" valign="top">
-<div class="boxbgcolor1" style="margin:0px;">
-<div class="boxheading">Community</div>
-<div class="boxcontent">
-<a href="/forum/topics.pl">CassavaBase Forum</a><br />
-<a href="http://cassavabase.wikispaces.com">Cassava Wiki</a><br />
-<a href="http://rubisco.sgn.cornell.edu/cgi-bin/mailman/listinfo/cassava-discussion">Cassava Discussion Mailing List</a><br />
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6">
+
+      <div class="panel panel-info">
+        <div class="panel-heading">News</div>
+        <div class="panel-body" style="overflow:hidden">
+          <& homepage/news.mas &>
+        </div>
+      </div>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">News Feed</div>
+        <div class="panel-body" style="overflow:hidden">
+          <& /feed/xmlfeed.mas, uri=>"http://meltwaternews.com/magenta/xml/html/42/93/rss/v2_412463.rss2.XML" &>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6">
+     
+      <div class="panel panel-info">
+        <div class="panel-heading">Community</div>
+	  <table class="table table-hover">
+	    <tbody>
+	      <tr>
+	        <td><a href="/forum/topics.pl">CassavaBase Forum</a></td>
+	      </tr>
+	      <tr>
+	        <td><a href="http://cassavabase.wikispaces.com">Cassava Wiki</a></td>
+	      </tr>
+	      <tr>
+	        <td><a href="http://rubisco.sgn.cornell.edu/cgi-bin/mailman/listinfo/cassava-discussion">Cassava Discussion Mailing List</a></td>
+	      </tr>
+	    </tbody>
+	  </table>
+          
+      </div>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">Events</div>
+        <div class="panel-body" style="overflow:hidden">
+          <& homepage/events.mas &>
+        </div>
+      </div>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">Featued Publication</div>
+        <div class="panel-body" style="overflow:hidden">
+          <& homepage/publication_of_the_week.mas &><br />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </div>
-</div>
-<& homepage/events.mas &>
-<& homepage/publication_of_the_week.mas &><br />
 
-
-</td></tr>
-
-
-</table>
 
 
 

@@ -1,242 +1,85 @@
 
-<%args>
-</%args>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <& toolbar/logo_and_name.mas &>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <& toolbar/search_menu.mas &>
+        <& toolbar/manage.mas &>
+        <& toolbar/analyze.mas &>
+        <& toolbar/maps.mas &>
+        <& toolbar/about.mas &>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <& toolbar/search.mas &>
+        <& toolbar/login.mas &>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
 
-<%perl>
-    $c->view('Toolbar')->toolbar_data(
-	[
-	 {
-	  name => 'search',
-	  link => '/search/direct_search.pl?search=loci',
-	  desc => 'Search our database.',
-	  menu => [
-		   {
-		    name => 'Wizard',
-		    link => '/breeders/search',
-		    desc => 'quickly retrieve datasets'
-		   },
-		   {
-		    name => 'Accessions and plots',
-		    link => '/search/phenotypes/stock',
-		    desc => 'Search for mutants, accessions, and traits.'
-		   },
-		   {
-		    name => 'Trials',
-		    link => '/search/trials',
-		    desc => 'Search trials.'
-		   },
+<style>
+  li {
+    margin-bottom:0;
+  }
+  body {
+    padding-top: 30px;
+  }
+  
+  @media (min-width: 0px) and (max-width: 768px) {
+    body {
+      padding-top: 30px;
+    }
+  }
 
-		   {
-		    name => 'Markers',
-		    link => '/search/markers',
-		    desc => 'Marker search.'
-		   },
-		   {
-		    name => 'Images',
-		    link => '/search/images',
-		    desc => 'Search images contained in the SGN database.',
-		   },
-		   {
-		    name => 'People',
-		    link => '/search/people',
-		    desc => 'Search database of researchers who use SGN.',
-		   },
-		   {
-		    name => 'FAQ',
-		    link => '/help/faq.pl',
-		    desc => 'Frequently asked questions from users of SGN.',
-		   },
-		  ]
-	 },
-	 {
-	  name => 'manage',
-	  link => '',
-	  desc => 'Manage breeding trials and data.',
-	  menu => [
-		   { 
-		    name => 'Breeding programs',
-		    link => '/breeders/manage_programs',
-		    desc => 'Manage breeding programs.',
-		   },
-		   {
-		    name => 'Locations',
-		    link => '/breeders/locations',
-		    desc => 'Set up and manage locations.',
-		   },
+  @media (min-width: 768px) and (max-width: 856px) {
+    body {
+      padding-top: 90px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sgn_brand_name {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .sgn_brand_name {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+      padding-bottom: 10px;
+    }
+    .dropdown-menu > li > a {
+        line-height: 14px;
+        font-size: 14px;
+        margin-top:0px;
+        padding-top:0px;
+    }
+  }
+  
+</style>
 
-		   { 
-		    name => 'Accessions',
-		    link => '/breeders/accessions',
-		    desc => 'Manage accessions.',
-		   },
-		   {
-		    name => 'Crosses',
-		    link => '/breeders/crosses',
-		    desc => 'Set up and manage crosses.',
-		   },
-		   { 
-		    name => 'Field Trials',
-		    link => '/breeders/trials',
-		    desc => 'Set up and manage trials.',
-		   },
-		   { name => 'Genotyping Trials',
-		     link => '/breeders/genotyping',
-		     desc => 'Manage genotyping workflows',
-		   },
-		   {
-		    name => 'Field Book App',
-		    link => '/fieldbook',
-		    desc => 'Manage files for Field Book App',
-		   },
-		   {
-		    name => 'Phenotyping',
-		    link => '/breeders/phenotyping',
-		    desc => 'Upload and manage phenotypes.',
-		   },
-		   {
-		    name => 'Barcodes',
-		    link => '/barcode',
-		    desc => 'Access barcode functions.',
-		   },
-		   {
-		    name => 'Download',
-		    link => '/breeders/download',
-		    desc => 'Download data using lists.',
-		   },
-		  ]
-	 },
-	 {
+<script>
 
-	  name => 'analyze',
-	  link => '/tools/',
-	  desc => 'Tools for biologists.',
-	  menu => [
-		   
-		   { name => 'Breeder Tools' },
-		   { name=> 'Breeder Home',
-		     link=> '/breeders/home',
-		     desc=> 'Access breeder functionalities from the breeders homepage. Requires login.'
-		   },
-		   { name => 'Barcode Tools',
-		     link => '/barcode/',
-		     desc => 'Tools to create and manage barcodes.',
-		   },
-		   { name => 'Genomic Selection',
-		     link => '/solgs/search/',
-                     desc => 'Estimate genomic estimated breeding values (GEBVs) of your selection populations using prediction models.',
-		   },
-		   { name=> 'Population Structure',
-		     link=> '/pca/analysis',
-		     desc=> 'Analyzes population structure using principal component. Requires login.'
-		   },
-		   #Sequence Analysis
-		   { name => 'Sequence Analysis' },
-		   {
-		    name => 'BLAST',
-		    link => 'http://www.phytozome.net/search.php?show=blast',
-		    desc =>
-		    'Compare a given sequence to known sequences using the Basic Local Alignment Search Tool, NCBI BLAST v. 2.2.9 [May-01-2004]'
-		   },
-		   # {
-		   #  name => 'Alignment Analyzer',
-		   #  link => '/tools/align_viewer/',
-		   #  desc =>
-		   #  'Calculate alignments using Muscle v3.6, or view existing alignments using our navigator.'
-		   # },
-		   # {
-		   #   name => 'Tree Browser',
-		   #  link => '/tools/tree_browser/',
-		   #  desc =>
-		   #  'Visualize and manipulate phylogenetic trees from a newick-formatted string.'
-		   # },
-		   # {
-		   #  name => 'Intron Finder',
-		   #  link => '/tools/intron_detection/find_introns.pl',
-		   #   desc =>
-		   #  'The SGN Intron Finder works by doing a BLAST search for <em>Arabidopsis thaliana</em> proteins that are similar to the translated protein sequence of the DNA input.'
-		   # },
-		   #Mapping
-		   # { name => 'Mapping' },
-		   # {
-		   #  name => 'Comparative Viewer',
-		   #  link =>
-		   #  '/cview/view_chromosome.pl?show_offsets=1&amp;show_ruler=1&amp;show_offsets=1',
-		   #  desc =>
-		   #  'Compare chromosomes from different maps, side by side.',
-		   # },
-		   # {
-		   #  name => 'CAPS Designer',
-		   #  link => '/tools/caps_designer/caps_input.pl',
-		   #  desc =>
-		   #  'Designs CAPS (Cleaved Amplified Polymorphic Sequence) assays for up to twelve sequences. Two types of nucleotide inputs are accepted: fasta sequences and clustal aligment. It generates a list of polymorphic enzymes that cut the sequences into different length products.'
-		   # },
-		   # {
-		   #  name => 'In Silico PCR',
-		   #  link => '/tools/insilicopcr',
-		   #   desc => 'In Silico PCR tool based on BLAST'
-		   # },
-
-		   { name => "Other" },
-		   {
-		    name => 'Ontology Browser',
-		    link => '/tools/onto/',
-		    desc => 'AJAX ontology browser.'
-		   },
-		  ],
-	  },
-
-	 {
-	  name => 'maps',
-	  link => '',
-	  desc => 'View and compare chromosomes from various organisms.',
-	  menu => [
-		   {
-		    name => 'Cassava 2011',
-		    link => '/cview/map.pl?map_id=1',
-		    desc => 'Cassava Genetic Map (Rabbi et al, 2011)',
-		   },
-		   {
-		    name => 'Cassava 2013 GBS map',
-		    link => '/cview/map.pl?map_id=2',
-		    desc => 'Cassava 2013 GBS consensus map',
-		   },
-		   {
-		    name => 'Cassava 2014 GBS map',
-		    link => '/cview/map.pl?map_id=3',
-		    desc => 'Cassava 2014 GBS consensus map',
-		   },
-		   { name => 'Genome' },
-		   {
-		   name => 'Cassava genome browser with VCF tracks',
-		   link => '/jbrowse_cassavabase/JBrowse-1.11.6/?data=data/json/cassavaV6_1',
-		   desc => 'Cassava genome browser using build V6, gene models and imputed vcf tracks',
-		   }, 
-                   {
-                     name => 'Cassava genome browser at JGI',
-                     link => 'http://phytozome.jgi.doe.gov/jbrowse/index.html?data=genomes%2FMesculenta_er&loc=Chromosome01%3A311731..318655&tracks=DNA%2CGaps%2CBlastx_protein%2Cinitial_gatk_filtered%2CRepeatMasker&highlight=',
-                     desc =>
-                         'The cassava genome, sequenced by the Joint Genome Initiative',
-                 },
-
-		  ]
-	 },
-	 ]
-				      );
-	 
-	 
-
-
-    print $c->view('Toolbar')->as_html;
-
-</%perl>
-
-<& /util/import_javascript.mas, classes => ['CXGN.Page.Toolbar','jquery', 'jquerymigrate'] &>
-<script language="JavaScript" type="text/javascript">
-jQuery( function() {
-  CXGN.Page.Toolbar.addmenu('search');
-  CXGN.Page.Toolbar.addmenu('manage');
-  CXGN.Page.Toolbar.addmenu('maps');
-  CXGN.Page.Toolbar.addmenu('analyze');
-  CXGN.Page.Toolbar.hideall();
+$( document ).ready(function() {
+  if ($( document ).width() > 768) {
+    $(".menu_click_dropdown").removeClass("dropdown-toggle");
+    $(".menu_click_dropdown").removeAttr("data-toggle");
+  }
 });
+
 </script>
