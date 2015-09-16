@@ -1,0 +1,15 @@
+<li class="dropdown"><a class="menu_click_dropdown dropdown-toggle" data-toggle="dropdown" href="/search/trials">Manage</a>
+<!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools<span class="caret"></span></a> -->
+  <ul class="dropdown-menu">
+    <li><a href="/breeders/manage_programs/">Breeding Programs</a></li>
+    <li><a href="/breeders/locations">Locations</a></li>
+    <li><a href="/breeders/accessions/">Accessions</a></li>
+    <li><a href="/breeders/crosses/">Crosses</a></li>
+    <li><a href="/breeders/trials/">Field Trials</a></li>
+    <li><a href="/breeders/genotyping/">Genotyping Trials</a></li>
+    <li><a href="/fieldbook">Field Book App</a></li>
+    <li><a href="/breeders/phenotyping/">Phenotyping</a></li>
+    <li><a href="/barcode">Barcodes</a></li>
+    <li><a href="/breeders/download">Download</a></li>
+  </ul>
+</li>

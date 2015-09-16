@@ -1,0 +1,15 @@
+<li class="dropdown"><a class="menu_click_dropdown dropdown-toggle" data-toggle="dropdown" href="/cview/">Maps</a>
+<!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools<span class="caret"></span></a> -->
+  <ul class="dropdown-menu">
+    
+    <li><a href="/cview/map.pl?map_id=1">Cassava 2011</a></li>
+    <li><a href="/cview/map.pl?map_id=2">Cassava 2013 GBS Map</a></li>
+    <li><a href="/cview/map.pl?map_id=3">Casssava 2014 GBS Map</a></li>
+    <li role="separator" class="divider"></li>
+    
+    <li class="dropdown-header">Genome</li>
+    <li><a href="http://phytozome.jgi.doe.gov/jbrowse/index.html?data=genomes%2FMesculenta&loc=scaffold00224%3A275018..325017&tracks=Transcripts%2CAlt_Transcripts%2CPASA_assembly%2CBlastx_protein%2CBlatx_Plant_protein&highlight=">Cassava Genome Browser at JGI</a></li>
+    
+    
+  </ul>
+</li>
