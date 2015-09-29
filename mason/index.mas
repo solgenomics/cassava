@@ -5,7 +5,7 @@ $show_accept_dialog => undef
 </%args>
 
 <center>
-  <br/>
+  <br/><br/>
   <& homepage/iconmenu.mas &>
   <br/><br/>
 </center>
