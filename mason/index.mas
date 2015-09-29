@@ -5,12 +5,12 @@ $show_accept_dialog => undef
 </%args>
 
 <center>
+  <br/>
   <& homepage/iconmenu.mas &>
+  <br/><br/>
 </center>
 
 <div class="container-fluid">
-  <hr>
-
   <div class="well well-sm">
     <& /util/include_file.mas, file=>  $static_content_path."/general_info.txt" &>
   </div>
