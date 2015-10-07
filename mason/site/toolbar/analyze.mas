@@ -9,7 +9,7 @@
     
     <li role="separator" class="divider"></li>
     <li class="dropdown-header">Sequence Analysis</li>
-    <li><a href="http://www.phytozome.net/search.php?show=blast">BLAST</a></li>
+    <li><a class="footer" href="http://www.phytozome.net/search.php?show=blast">BLAST</a></li>
     
     <li role="separator" class="divider"></li>
     <li class="dropdown-header">Other</li>

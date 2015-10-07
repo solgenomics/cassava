@@ -8,7 +8,7 @@
     <li role="separator" class="divider"></li>
     
     <li class="dropdown-header">Genome</li>
-    <li><a href="http://phytozome.jgi.doe.gov/jbrowse/index.html?data=genomes%2FMesculenta&loc=scaffold00224%3A275018..325017&tracks=Transcripts%2CAlt_Transcripts%2CPASA_assembly%2CBlastx_protein%2CBlatx_Plant_protein&highlight=">Cassava Genome Browser at JGI</a></li>
+    <li><a class="footer" href="http://phytozome.jgi.doe.gov/jbrowse/index.html?data=genomes%2FMesculenta&loc=scaffold00224%3A275018..325017&tracks=Transcripts%2CAlt_Transcripts%2CPASA_assembly%2CBlastx_protein%2CBlatx_Plant_protein&highlight=">Cassava Genome Browser at JGI</a></li>
     
     
   </ul>
