@@ -1,0 +1,305 @@
+<style>
+
+.slider-size {
+  height: 400px; /* This is your slider height */
+}
+.carousel {
+  max-width:98%;
+  /*width:100%;*/
+  margin:0 auto; /* center your carousel if other than 100% */
+  margin-bottom:0px;
+}
+
+.carousel-sgn-caption { 
+  position:relative;
+  float: left;
+  max-width:49%;
+  min-width:35%;
+  padding: 0px 10px 0px 10px;
+  margin-top:20px;
+
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #fff;
+  opacity: 0.80;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+  border-top-right-radius:12px;
+  border-bottom-right-radius:12px;
+}
+
+.carousel-sgn-caption a { 
+  color: #000;
+  text-decoration: none;
+  text-align: left;
+}
+
+.carousel-sgn-caption a:hover { 
+  color: #666;
+  text-decoration: none;
+}
+
+.carousel-sgn-links {
+  position:absolute;
+  min-width:35%;
+  max-width:49%;
+  margin-top:20px;
+  right:0px;
+  text-align: left;
+
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #fff;
+  opacity: 0.85;
+  filter: alpha(opacity=85); /* For IE8 and earlier */
+  border-top-left-radius:12px;
+  border-bottom-left-radius:12px;
+}
+
+.carousel-sgn-links ul { 
+  padding: 10px 30px 0px 15px;
+  list-style-type: none;
+}
+
+.carousel-sgn-links a { 
+  color: #000;
+  text-decoration: none;
+}
+
+.carousel-sgn-links a:hover { 
+  color: #666;
+  text-decoration: none;
+}
+
+@media (min-width: 0px) and (max-width: 650px) {
+
+    .carousel-sgn-caption {
+      margin-top:0px;
+      width: 100%;
+      max-width: 100%;
+      border-radius:0px;
+      float: none;
+      margin-bottom:0px;
+    }
+
+    .carousel-sgn-links {
+      max-width: 100%;
+      width: 100%;
+      border-radius:0px;
+      bottom:30px;
+    }
+    
+    .carousel-indicators {
+      bottom:0px;
+      margin-bottom:5px;
+    }
+
+}
+
+
+</style>
+
+<!--
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+-->
+
+<script>
+
+  jQuery(document).ready(function() {
+  //   $('.carousel').carousel({
+  //     interval: 20000,
+  //     // wrap:true
+  //   });
+    
+    
+    
+    
+    
+    
+    var $item = $('.carousel .item');
+    var $wHeight = $(window).height();
+
+    var $numberofSlides = $('.item').length;
+    var $currentSlide = Math.floor((Math.random() * $numberofSlides));
+
+    $('.carousel-indicators li').each(function(){
+      var $slideValue = $(this).attr('data-slide-to');
+      if($currentSlide == $slideValue) {
+        $(this).addClass('active');
+        $item.eq($slideValue).addClass('active');
+      } else {
+        $(this).removeClass('active');
+        $item.eq($slideValue).removeClass('active');
+      }
+    }); 
+
+    $('.carousel').carousel({
+      interval: 20000,
+      wrap: "true",
+      pause: "false"
+    });
+    
+    
+    //$("#myCarousel").swiperight(function() {  
+    //      $("#myCarousel").carousel('prev');  
+    //    });  
+    //   $("#myCarousel").swipeleft(function() {  
+    //      $("#myCarousel").carousel('next');  
+    //   });  
+       
+       $(".ui-loading").css("display","none");
+       $(".ui-loader").css("display","none");
+  });
+</script>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <br>
+      <a href="http://www.nextgencassava.org/resources.html" style="color:#fff; font-style:italic">Photo credit: NextGenCassava. </a>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+ 
+
+<div class="item">
+          <div style="background:url(/documents/img/cassava/carousel/swrt2016.jpg) center center; background-size:cover;" class="slider-size">
+            <div class="carousel-sgn-caption">
+               <a href="http://www.gcp21.org/wcrtc/" target="_blank">  
+                <h3>WCRTC 2016</h3>
+                <p>World Congress on Root & Tuber Crops. Jan 18-22, 2016</p>
+              </a>
+            </div>
+            
+            <div class="carousel-sgn-links">
+              <ul>
+                <li><a href="http://www.gcp21.org/wcrtc/program.html" target="_blank"><b>Cassava Workshop Jan. 21st</b> <img src="/documents/img/cassava/carousel/nextgen_cassava_logo.png" width="20"></a></li>
+                <li><a href="http://www.gcp21.org/wcrtc/program.html" target="_blank">Conference Program</a></li>
+                <li><a href="http://www.gcp21.org/wcrtc/reg.aspx" target="_blank">Registration</a></li>
+                <li><a href="http://www.gcp21.org/wcrtc/venue.html" target="_blank">Venue & Accomodation</a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </a>
+      </div>
+      
+      <div class="item">
+          <div style="background:url(/documents/img/cassava/carousel/pag_24.jpg) center center; background-size:cover;" class="slider-size">
+            <div class="carousel-sgn-caption">
+              <a href="http://www.intlpag.org" target="_blank">
+                <h3>PAG XXIV</h3>
+                <p>International Plant & Animal Genome. Jan 9-13, 2016</p>
+              </a>
+            </div>
+            
+            <div class="carousel-sgn-links">
+              <ul>
+                <li><a href="https://pag.confex.com/pag/xxiv/webprogram/Session3062.html" target="_blank"><b>Cassava Genomics Session</b> <img src="/documents/img/cassava/carousel/nextgen_cassava_logo.png" width="20"></a></li>
+                <li><a href="http://www.intlpag.org/2016/program/program-overview-xxiv" target="_blank">Conference Program</a></li>
+                <li><a href="https://pag.confex.com/pag/xxiv/registration/index.cgi" target="_blank">Registration</a></li>
+                <li><a href="http://www.intlpag.org/2016/venue/conference-location" target="_blank">Venue & Accomodation</a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </a>
+      </div>
+     
+      <div class="item">
+        <div style="background:url(/documents/img/cassava/carousel/cassava-roots-pile.jpg) center center; background-size:cover;" class="slider-size">
+          <div class="carousel-sgn-caption">
+             <p><a href="http://www.nature.com/ncomms/2014/141010/ncomms6110/full/ncomms6110.html?wptouch_preview_theme=enabled">The Cassava genome: from a wild ancestor to cultivated varieties</a></p>
+          </div>
+        
+          <div class="carousel-sgn-links">
+            <ul>
+              <li><a href="http://phytozome.jgi.doe.gov/jbrowse/index.html?data=genomes%2FMesculenta%2F&loc=scaffold00224%3A275001..325000&tracks=Transcripts%2CAlt_Transcripts%2CPASA_assembly%2CBlastx_protein%2CBlatx_Plant_protein&highlight=">Browse the cassava genome  @ JGI</a></li>
+              <li><a href="http://phytozome.jgi.doe.gov/pz/portal.html#!search?show=BLAST&method=Org_Mesculenta">Find sequences by similarity @ JGI</a></li>
+              <li><a href="http://phytozome.jgi.doe.gov/pz/portal.html#!bulk?org=Org_Mesculenta">Download the annotations @ JGI</a></li>
+              <li><a href="http://phytozome.jgi.doe.gov/pz/portal.html#!bulk?org=Org_Mesculenta">Download the Genome Sequence @ JGI</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+               
+
+      <div class="item">
+          <div style="background:url(/documents/img/cassava/carousel/nextgen_people.jpg) center center; background-size:cover;" class="slider-size">
+            <div class="carousel-sgn-caption">
+              <a href="http://www.nextgencassava.org/index.html" target="_blank">
+                <h3>NextGenCassava Community</h3>
+                <h3> & Partners</h3>
+              </a>
+            </div>
+            
+            <div class="carousel-sgn-links">
+              <ul>
+        	<li><a href="http://www.gcp21.org/" target="_blank">GCP21 </b> <img src="/documents/img/cassava/carousel/LogoGCP21.png" width="20"></a></li>
+                <li><a href="http://www.rtb.cgiar.org/cassava/" target="_blank">RTB program </b> <img src="/documents/img/cassava/carousel/CGIAR_logo.jpg" width="20"></a></li>
+                <li><a href="http://www.gatesnotes.com/Development/The-Worlds-Most-Interesting-Vegetable" target="_blank">GatesNotes on Cassava</a></li>
+                <li><a href="http://bti.cornell.edu/staff/dr-lukas-mueller/="_blank">Mueller lab @BTI</a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </a>
+      </div>
+      
+
+		<div class="item">
+			<div style="background:url(/documents/img/cassava/carousel/genomic_selection_trial.jpg) center center; background-size:cover;" class="slider-size">
+				<div class="carousel-sgn-caption">
+				<h3><a href="/solgs/search">SolGS</a></h3>
+				<p><a target="_blank">Genomic selection and molecular breeding</a></p>
+		   </div>
+		   
+		   <div class="carousel-sgn-links">
+			 <ul>
+				<li><a href="/breeders/">Genomic Selection</a></li>
+				<li><a href="/pca/analysis">Population Structure</a></li>
+				<li><a href="/search/markers/"> Maps &amp; Marker Search</a></li>
+			 </ul>
+		   </div>
+		
+         </div>
+        </a>
+      </div>
+		
+		<div class="item">
+			<div style="background:url(/documents/img/cassava/carousel/scientist-field-iita-hat.jpg) center center; background-size:cover;" class="slider-size">
+				<div class="carousel-sgn-caption">
+				<h3><a href="/breeders/manage_programs/"> Breeding programs</a></h3>
+				<p><a target="_blank">Search, retrieve, save breeding trials</a></p>
+		</div>
+		   <div class="carousel-sgn-links">
+			<ul>
+				<li><a href="/breeders/search">Search accessions and trials</a></li>
+				<li><a href="/fieldbook">Fieldbook App & uploading</a></li>
+				<li><a href="/tools/onto/">Cassava Trait Ontology</a></li>
+			</ul>
+		</div>
+
+
+    </div>
+
+    <!-- Left and right controls -->
+    <!-- <a id="prev_slide" class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a  id="next_slide" class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+  </div>
+
