@@ -223,7 +223,7 @@
         
           <div class="carousel-sgn-links">
             <ul>
-              <li><a href="http://phytozome.jgi.doe.gov/jbrowse/index.html?data=genomes%2FMesculenta_er%2F&loc=Chromosome01%3A99976..199975&tracks=Transcripts%2CAlt_Transcripts%2CPASA_assembly%2CBlastx_protein%2CBlatx_Plant_protein&highlight=">Browse the cassava genome  @ JGI</a></li>
+              <li><a href="http://phytozome.jgi.doe.gov/jbrowse/index.html?data=genomes%2FMesculenta_er%2F&loc=Chromosome01%3A99976..199975&tracks=Transcripts%2CAlt_Transcripts%2CPASA_assembly%2CBlastx_protein%2CBlatx_Plant_protein&highlight=">Browse the cassava genome v6.1 @ JGI</a></li>
               <li><a href="http://phytozome.jgi.doe.gov/pz/portal.html#!search?show=BLAST&method=Org_Mesculenta_er"> BLAST search @ JGI</a></li>
               <li><a href="http://phytozome.jgi.doe.gov/pz/portal.html#!bulk?org=Org_Mesculenta_er">Download the annotations @ JGI</a></li>
               <li><a href="http://phytozome.jgi.doe.gov/pz/portal.html#!info?alias=Org_Mesculenta_er">Download the Genome Sequence v6.1 @ JGI</a></li>
