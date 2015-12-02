@@ -223,10 +223,10 @@
         
           <div class="carousel-sgn-links">
             <ul>
-              <li><a href="http://phytozome.jgi.doe.gov/jbrowse/index.html?data=genomes%2FMesculenta%2F&loc=scaffold00224%3A275001..325000&tracks=Transcripts%2CAlt_Transcripts%2CPASA_assembly%2CBlastx_protein%2CBlatx_Plant_protein&highlight=">Browse the cassava genome  @ JGI</a></li>
-              <li><a href="http://phytozome.jgi.doe.gov/pz/portal.html#!search?show=BLAST&method=Org_Mesculenta">Find sequences by similarity @ JGI</a></li>
-              <li><a href="http://phytozome.jgi.doe.gov/pz/portal.html#!bulk?org=Org_Mesculenta">Download the annotations @ JGI</a></li>
-              <li><a href="http://phytozome.jgi.doe.gov/pz/portal.html#!bulk?org=Org_Mesculenta">Download the Genome Sequence @ JGI</a></li>
+              <li><a href="http://phytozome.jgi.doe.gov/jbrowse/index.html?data=genomes%2FMesculenta_er%2F&loc=Chromosome01%3A99976..199975&tracks=Transcripts%2CAlt_Transcripts%2CPASA_assembly%2CBlastx_protein%2CBlatx_Plant_protein&highlight=">Browse the cassava genome  @ JGI</a></li>
+              <li><a href="http://phytozome.jgi.doe.gov/pz/portal.html#!search?show=BLAST&method=Org_Mesculenta_er"> BLAST search @ JGI</a></li>
+              <li><a href="http://phytozome.jgi.doe.gov/pz/portal.html#!bulk?org=Org_Mesculenta_er">Download the annotations @ JGI</a></li>
+              <li><a href="http://phytozome.jgi.doe.gov/pz/portal.html#!info?alias=Org_Mesculenta_er">Download the Genome Sequence v6.1 @ JGI</a></li>
             </ul>
           </div>
         </div>
@@ -265,7 +265,7 @@
 		   
 		   <div class="carousel-sgn-links">
 			 <ul>
-				<li><a href="/breeders/">Genomic Selection</a></li>
+				<li><a href="/solgs/search">Genomic Selection</a></li>
 				<li><a href="/pca/analysis">Population Structure</a></li>
 				<li><a href="/search/markers/"> Maps &amp; Marker Search</a></li>
 			 </ul>
