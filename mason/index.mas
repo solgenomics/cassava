@@ -6,8 +6,8 @@ $show_accept_dialog => undef
 
 <center>
   <& homepage/carousel.mas &>
-  <br/><br/>
 </center>
+<br></br>
 
 <div class="container-fluid">
   <div class="well well-sm">
