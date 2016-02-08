@@ -168,32 +168,8 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
 
- 
-
-//<div class="item">
-//          <div style="background:url(/documents/img/cassava/carousel/swrt2016.jpg) center center; background-size:cover;" class="slider-size">
-//            <div class="carousel-sgn-caption">
-//               <a href="http://www.gcp21.org/wcrtc/" target="_blank">  
-//                <h3>WCRTC 2016</h3>
-//                <p>World Congress on Root & Tuber Crops. Jan 18-22, 2016</p>
-//              </a>
-//            </div>
-//            
-//            <div class="carousel-sgn-links">
-//              <ul>
-//                <li><a href="http://www.gcp21.org/wcrtc/program.html" target="_blank"><b>Cassava Workshop Jan. 21st</b> <img src="/documents/img/cassava/carousel/nextgen_cassava_logo.png" width="20"></a></li>
-//                <li><a href="http://www.gcp21.org/wcrtc/program.html" target="_blank">Conference Program</a></li>
-//                <li><a href="http://www.gcp21.org/wcrtc/reg.aspx" target="_blank">Registration</a></li>
-//                <li><a href="http://www.gcp21.org/wcrtc/venue.html" target="_blank">Venue & Accomodation</a></li>
-//              </ul>
-//            </div>
-//            
-//          </div>
-//        </a>
-//      </div>
-
 <div class="item">
-          <div style="background:url(/documents/img/cassava/carousel/cassavabase_slideshare2.png) center center; background-size:cover;" class="slider-size">
+          <div style="background:url(/documents/img/cassava/carousel/Cassavabase_Slideshare.png) center center; background-size:cover;" class="slider-size">
             <div class="carousel-sgn-caption">
               <a href="http://www.slideshare.net/solgenomics" target="_blank">
                 <h3>SGN SlideShare</h3>
@@ -267,7 +243,7 @@
 			 <ul>
 				<li><a href="/solgs/search">Genomic Selection</a></li>
 				<li><a href="/pca/analysis">Population Structure</a></li>
-				<li><a href="/search/markers/"> Maps &amp; Marker Search</a></li>
+				<li><a href="/search/markers/"> Maps & Marker Search</a></li>
 			 </ul>
 		   </div>
 		
