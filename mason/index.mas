@@ -27,15 +27,6 @@ $show_accept_dialog => undef
           <& homepage/news.mas &>
         </div>
       </div>
-      
-       <div class="panel panel-info">
-        <div class="panel-heading">SGN Featured</div>
-    	  <table class="table table-hover table-striped">
-    	    <tbody>
-    	      <tr><td><div class="container-fluid"><& homepage/publication_of_the_week.mas &></div></td></tr>
-    	    </tbody>
-    	  </table>
-      </div>
 
       <div class="panel panel-info">
         <div class="panel-heading">News Feed</div>
