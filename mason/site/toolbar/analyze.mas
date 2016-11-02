@@ -4,7 +4,7 @@
     <li class="dropdown-header">Breeder Tools</li>
     <li><a href="/selection/index">Selection Index</a></li>
     <!-- li><a href="/analyze/phenotypes">Analyze Phenotypes</a><li -->
-    <li><a href="/barcode">Barcode Tools</a></li>
+    <!-- li><a href="/barcode">Barcode Tools</a></li -->
     <li><a href="/solgs/search">Genomic Selection</a></li>
     <li><a href="/pca/analysis">Population Structure</a></li>
 
