@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 27:10:2016 15:49
+date: 22:12:2016 16:26
 saved-by: naama
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
@@ -95,11 +95,11 @@ relationship: variable_of CO_334:0100491 ! Root
 
 [Term]
 id: CO_334:0000012
-name: fresh root weight
+name: fresh root weight per plot
 def: "Total fresh weight of storage roots harvested per plot measured in kilogram (kg)." [CO:curators]
 synonym: "rtwt" EXACT []
 synonym: "RtWt_Wgh_kg" EXACT []
-relationship: variable_of CO_334:0000493 ! Storage root weight
+relationship: variable_of CO_334:0000302 ! Storage root weight by plot
 relationship: variable_of CO_334:0010286 ! Measurement :Fresh Weight of Storage Root_method
 relationship: variable_of CO_334:0100493 ! kg
 
@@ -136,11 +136,11 @@ relationship: variable_of CO_334:0000267 ! Harvest index
 
 [Term]
 id: CO_334:0000016
-name: fresh shoot weight measurement in kg
+name: fresh shoot weight measurement in kg per plot
 def: "Total fresh weight of harvested foliage and stems in kilograms per plot." [CO:curators]
 synonym: "shtwt" EXACT []
 synonym: "ShWt_Meas_kg" EXACT []
-relationship: variable_of CO_334:0000369 ! Fresh Shoot Weight
+relationship: variable_of CO_334:0000305 ! Fresh shoot weight by plot
 relationship: variable_of CO_334:0010287 ! Measurement :Fresh Shoot Weight_method
 relationship: variable_of CO_334:0100493 ! kg
 
@@ -2900,6 +2900,50 @@ created_by: naama
 creation_date: 2016-10-27T15:47:21Z
 
 [Term]
+id: CO_334:0000302
+name: Storage root weight by plot
+is_a: CO_334:0000493 ! Storage root weight
+created_by: naama
+creation_date: 2016-12-22T16:13:27Z
+
+[Term]
+id: CO_334:0000303
+name: Storage root weight by plant
+is_a: CO_334:0000493 ! Storage root weight
+created_by: naama
+creation_date: 2016-12-22T16:15:30Z
+
+[Term]
+id: CO_334:0000304
+name: fresh root weight per plant
+def: "Total fresh weight of storage roots harvested per plant measured in kilogram (kg)." [CO:Curators]
+relationship: variable_of CO_334:0000303 ! Storage root weight by plant
+created_by: naama
+creation_date: 2016-12-22T16:17:12Z
+
+[Term]
+id: CO_334:0000305
+name: Fresh shoot weight by plot
+is_a: CO_334:0000369 ! Fresh Shoot Weight
+created_by: naama
+creation_date: 2016-12-22T16:23:13Z
+
+[Term]
+id: CO_334:0000306
+name: Fresh shoot weight by plant
+is_a: CO_334:0000369 ! Fresh Shoot Weight
+created_by: naama
+creation_date: 2016-12-22T16:23:29Z
+
+[Term]
+id: CO_334:0000307
+name: fresh shoot weight measurement in kg per plant
+def: "Total fresh weight of harvested foliage and stems in kilograms per plant" [CO:Curators]
+relationship: variable_of CO_334:0000306 ! Fresh shoot weight by plant
+created_by: naama
+creation_date: 2016-12-22T16:24:39Z
+
+[Term]
 id: CO_334:0000339
 name: Cassava Mealy Bug Incidence
 def: "Proportion of plants within a plot showing symptoms of cassava mealy-bug damage (Phenacoccus Manihoti)" [CO:curators]
@@ -4497,14 +4541,14 @@ id: CO_334:0010286
 name: Measurement :Fresh Weight of Storage Root_method
 namespace: CassavaMethod
 def: "Weigh harvested storage roots per plot at harvest" [CO:curators]
-relationship: method_of CO_334:0000493 ! Storage root weight
+relationship: method_of CO_334:0000302 ! Storage root weight by plot
 
 [Term]
 id: CO_334:0010287
 name: Measurement :Fresh Shoot Weight_method
 namespace: CassavaMethod
 def: "Weigh foliage and stems per plot at harvest" [CO:curators]
-relationship: method_of CO_334:0000369 ! Fresh Shoot Weight
+relationship: method_of CO_334:0000305 ! Fresh shoot weight by plot
 
 [Term]
 id: CO_334:0010288
