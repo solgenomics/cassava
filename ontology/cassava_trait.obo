@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:12:2016 16:26
+date: 04:01:2017 14:35
 saved-by: naama
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
@@ -2942,6 +2942,29 @@ def: "Total fresh weight of harvested foliage and stems in kilograms per plant" 
 relationship: variable_of CO_334:0000306 ! Fresh shoot weight by plant
 created_by: naama
 creation_date: 2016-12-22T16:24:39Z
+
+[Term]
+id: CO_334:0000308
+name: Total fresh weight
+is_a: CO_334:0000001 ! Agronomic trait
+created_by: naama
+creation_date: 2017-01-04T14:33:38Z
+
+[Term]
+id: CO_334:0000309
+name: total fresh weight by plot
+def: "The sum of fresh root weight + fresh root weight by plot." [CO:curators]
+relationship: variable_of CO_334:0000308 ! Total fresh weight
+created_by: naama
+creation_date: 2017-01-04T14:34:03Z
+
+[Term]
+id: CO_334:0000310
+name: total fresh weight by plant
+def: "The sum of fresh root weight + fresh root weight by plant." [CO:curators]
+relationship: variable_of CO_334:0000308 ! Total fresh weight
+created_by: naama
+creation_date: 2017-01-04T14:35:02Z
 
 [Term]
 id: CO_334:0000339
