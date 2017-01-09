@@ -4,16 +4,6 @@
 	                                  : '<span style="font-weight: bold; color: red">[email not set]</b>';
 </%init>
 
-<!-- LOAD WORKING MODAL, LIST MODAL, AND CALENDAR MODAL AT END SO THAT THEY ALWAYS APPEAR ON TOP -->
-<& /site/list.mas &>
-<& /calendar/events_by_user_role.mas &>
-
-<!--
-<div id="working" style="text-align : center;">
-  <img src="/img/wheel.gif" />
-  <div id="working_msg"></div>
-</div>
--->
 
 <div class="modal fade" id="working_modal" name="working_modal" tabindex="-1" role="dialog" aria-labelledby="workingModalDialog" data-controls-modal="your_div_id" data-backdrop="static" data-keyboard="false" href="#">
   <div class="modal-dialog modal-sm" role="document">
@@ -48,152 +38,80 @@
 <!-- BEGIN FOOTER-->
 
 <br/>
-<div class="divider"><br /></div>
+<div class="navbar navbar-default" style="border-style:solid; border-width:1px; border-color:#e7e7e7; margin-bottom:0px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1 col-md-1 col-lg-2"></div>
+            <div class="col-sm-10 col-md-10 col-lg-8">
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-1 col-md-1 col-lg-2">
-    </div>
-    <div class="col-sm-10 col-md-10 col-lg-8">
-      
-      <div class="container-fluid">
+                <div class="container-fluid">
+                    <br/>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h3>NextGen Cassava</h3>
+                            <hr>
+                            <p>NextGen Cassava Breeding project promises to substantially increase the rate of genetic improvement in cassava breeding and unlock the full potential of cassava, a staple crop central to food security and livelihoods across Africa. </p>
+
+                            <a class="btn" href="http://www.nextgencassava.org">More</a>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <h3>Project Partners</h3>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li style="padding-bottom:2px;"><a class="footer" href="http://cals.cornell.edu"><small>College of Agriculture and Life Sciences, Cornell University, USA</small></a>
+                                </li>
+                                <li style="padding-bottom:2px;"><a class="footer" href="http://www.nacrri.go.ug/"><small>National Crops Resources Research Institute (NaCRRI), Uganda</small></a>
+                                </li>
+                                <li style="padding-bottom:2px;"><a class="footer" href="http://www.nrcri.gov.ng/"><small>National Root Crops Research Institute (NRCRI), Nigeria</small></a>
+                                </li>
+                                <li style="padding-bottom:2px;"><a class="footer" href="http://www.iita.org/"><small>International Institute of Tropical Agriculture (IITA), Nigeria</small></a>
+                                </li>
+                                <li style="padding-bottom:2px;"><a class="footer" href="http://bti.cornell.edu"><small>Boyce Thompson Institute (BTI) for Plant Research, USA</small></a>
+                                </li>
+                                <li style="padding-bottom:2px;"><a class="footer" href="http://www.jgi.doe.gov/"><small>US Department of Energy (DOE) Joint Genome Institute (JGI), USA</small></a>
+                                </li>
+                                <li style="padding-bottom:2px;"><a class="footer" href="http://mak.ac.ug"><small>Makerere University, Uganda</small></a>
+                                </li>
+                                <!--<li style="padding-bottom:2px;"><a class="footer" href=""><small>West African Centre for Crop Improvement (WACCI), Ghana</small></a></li>-->
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <h3>Funding Provided By</h3>
+                            <hr>
+
+                            <center>
+                                <a class="footer" href="http://www.cornell.edu"><img src="/static/img/cu_logo.png" alt="Cornell University" class="logo" width="200px">
+                                </a>
+                            </center>
+
+                            <h3>Hosted By</h3>
+                            <hr>
+
+                            <center>
+                                <a class="footer" href="http://bti.cornell.edu"><img src="/static/img/bti_logo_2016.png" alt="BTI" class="footer" width="200px" />
+                                </a>
+                            </center>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-1 col-lg-2"></div>
+
+        </div>
         <br/>
         <div class="row">
-    	  <div class="col-sm-3">
-	    <h3>NextGen Cassava</h3>
-            <hr>
-            <p>NextGen Cassava Breeding project promises to substantially increase the rate of genetic improvement in cassava breeding and unlock the full potential of cassava, a staple crop central to food security and livelihoods across Africa. </p>
-            
-            <a class="btn" href="http://www.nextgencassava.org">More</a>
-    	  </div>
-
-    	  <div class="col-sm-6">
-	    <h3>Project Partners</h3>	
-            <hr>			 
-            <ul class="list-unstyled">
-	      <li style="padding-bottom:2px;"><a class="footer" href="http://cals.cornell.edu"><small>College of Agriculture and Life Sciences, Cornell University, USA</small></a></li>
-	      <li style="padding-bottom:2px;"><a class="footer" href="http://www.nacrri.go.ug/"><small>National Crops Resources Research Institute (NaCRRI), Uganda</small></a></li>
-	      <li style="padding-bottom:2px;"><a class="footer" href="http://www.nrcri.gov.ng/"><small>National Root Crops Research Institute (NRCRI), Nigeria</small></a></li>
- 	      <li style="padding-bottom:2px;"><a class="footer" href="http://www.iita.org/"><small>International Institute of Tropical Agriculture (IITA), Nigeria</small></a></li>
-	      <li style="padding-bottom:2px;"><a class="footer" href="http://bti.cornell.edu"><small>Boyce Thompson Institute (BTI) for Plant Research, USA</small></a></li>
-	      <li style="padding-bottom:2px;"><a class="footer" href="http://www.jgi.doe.gov/"><small>US Department of Energy (DOE) Joint Genome Institute (JGI), USA</small></a></li>
-	      <li style="padding-bottom:2px;"><a class="footer" href="http://mak.ac.ug"><small>Makerere University, Uganda</small></a></li>
-	      <!--<li style="padding-bottom:2px;"><a class="footer" href=""><small>West African Centre for Crop Improvement (WACCI), Ghana</small></a></li>-->
-	    </ul>
-	  </div>
-
-	  <div class="col-sm-3">
-	    <h3>Funding Provided By</h3>
-            <hr>
-            
-            <a class="footer" href="http://www.cornell.edu"><img src="/static/img/cu_logo.png" alt="Cornell University" class="logo" width="200px"></a>
-        
-	    <h3>Hosted By</h3>
-	    <hr>
-
-	    <a class="footer" href="http://bti.cornell.edu"><img src="/static/img/bti_logo_2016.png" alt="BTI" class="footer" width="200px"/></a>       
-
-	  </div>
-	</div>
-      </div>
+            <div class="col-lg-12" style="background-color: #472A2B;">
+                <br/>
+                <center>
+                    <p style="color: #fff;"><a style="color: #fff;" href="/contact/form">Contact</a> | <a style="color: #fff;" href="mailto:sgn-feedback@solgenomics.net">Feedback</a>
+                    </p>
+                </center>
+            </div>
+        </div>
 
     </div>
-    <div class="col-sm-1 col-md-1 col-lg-2">
-    </div>
-  </div>
 </div>
-<br/>
-
-    <!--
-    <div id="footer" class="white">
-     
-     	<div class="container">
-             
-     	<div class="block first small">
-        	<div class="is-padded">
-            <h3>NextGen Cassava</h3>
-            <hr>
-            <p>NextGen Cassava Breeding project promises to substantially increase the rate of genetic improvement in cassava breeding and unlock the full potential of cassava, a staple crop central to food security and livelihoods across Africa. </p>
-            
-            <a class="btn" href="http://www.nextgencassava.org">More</a>
-            </div>
-        
-        </div>
-        
-        <div class="block wide">
-            <div class="is-padded">
-            <h3>Project Partners</h3>	
-            
-             <hr>			 
-             <ul>
-
-<li><a class="footer" href="http://cals.cornell.edu">College of Agriculture and Life Sciences, Cornell University, USA</a></li>
-<li><a class="footer" href="http://www.nacrri.go.ug/">National Crops Resources Research Institute (NaCRRI), Uganda</a></li>
-<li><a class="footer" href="http://www.nrcri.gov.ng/">National Root Crops Research Institute (NRCRI), Nigeria</a></li>
- <li><a class="footer" href="http://www.iita.org/">International Institute of Tropical Agriculture (IITA), Nigeria</a></li>
-<li><a href="http://bti.cornell.edu">Boyce Thompson Institute (BTI) for Plant Research, USA</a></li>
-<li><a class="footer" href="http://www.jgi.doe.gov/">US Department of Energy (DOE) Joint Genome Institute (JGI), USA</a></li>
-<li><a class="footer" href="http://mak.ac.ug">Makerere University, Uganda</a></li>
-<li><a class="footer" href=""West African Centre for Crop Improvement (WACCI), Ghana</a></li>
-</ul>
-
-
-
-
- < ul>
-              <li><a class="footer" href="http://ip.cals.cornell.edu">International Programs, College of Agriculture and Life Sciences (IP/CALS), Cornell University</a></li>
-              <li><a class="footer" href="http://www.nacrri.go.ug/">National Crops Resources Research Institute (NaCRRI)</a></li>
-              <li><a class="footer" href="http://www.nrcri.gov.ng/">National Root Crops Research Institute (NRCRI)</a></li>
-              <li><a class="footer" href="http://www.iita.org/">International Institute of Tropical Agriculture (IITA)</a></li>
-              <li><a class="footer" href="http://www.jgi.doe.gov/">US Department of Energy (DOE) Joint Genome Institute (JGI)</a></li>              
-             </ul                  
-             </div>
-                     
-        </div>
-     
-	    <div class="block small">
-			<div class="is-padded">						
-            <h3>Funding Provided By:</h3>
-            <hr>
-            
-            <div class="center">
-            <a class="footer" href="http://www.cornell.edu"><img src="/static/img/cu_logo.png" alt="Cornell University" class="logo"></a>
-            </div>
-        
-
-	    <h3>Hosted By:</h3>
-	    <hr>
-	    <div class="center">
-	      <a class="footer" href="http://bti.cornell.edu"><img src="/static/img/bti_logo_2016.png" alt="BTI" class="footer" /></a>
-		</div>
-    
-            </div>            
-					
-		</div>
-        
-        <br style="clear:left;">
-        
-        </div>
-        
-   </div>
-   -->
-
-<br/>
-<div id="footer" class="earth">     
-  <div class="container">   
-        
-    <div class="is-padded">
-     	
-        	<p class="pull-left"><a href="/contact/form">Contact</a>
-            | <a href="mailto:sgn-feedback@solgenomics.net">Feedback</a></p>        	 
-   			
-            <!-- p class="pull-right">&copy; 2012 The Boyce Thompson Institute for Plant Research</p -->
-            
-            <br style="clear:both;">
-            
-    </div>
-  </div>
-</div><!-- footer -->
-
-
-
