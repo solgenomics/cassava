@@ -4,6 +4,9 @@
 	                                  : '<span style="font-weight: bold; color: red">[email not set]</b>';
 </%init>
 
+<!-- LOAD WORKING MODAL, LIST MODAL, AND CALENDAR MODAL AT END SO THAT THEY ALWAYS APPEAR ON TOP -->		
+ <& /site/list.mas &>		
+ <& /calendar/events_by_user_role.mas &>
 
 <div class="modal fade" id="working_modal" name="working_modal" tabindex="-1" role="dialog" aria-labelledby="workingModalDialog" data-controls-modal="your_div_id" data-backdrop="static" data-keyboard="false" href="#">
   <div class="modal-dialog modal-sm" role="document">
