@@ -44,6 +44,7 @@
 <div class="navbar navbar-default" style="border-style:solid; border-width:1px; border-color:#e7e7e7; margin-bottom:0px;">
     <div class="container-fluid">
         <div class="row">
+
             <div class="col-sm-1 col-md-1 col-lg-2"></div>
             <div class="col-sm-10 col-md-10 col-lg-8">
 
@@ -110,7 +111,7 @@
             <div class="col-lg-12" style="background-color: #472A2B;">
                 <br/>
                 <center>
-                    <p style="color: #fff;"><a style="color: #fff;" href="/contact/form">Contact</a> | <a style="color: #fff;" href="mailto:sgn-feedback@solgenomics.net">Feedback</a>
+                    <p style="color: #fff;"><a style="color: #fff;" href="/contact/form">Contact</a>
                     </p>
                 </center>
             </div>
