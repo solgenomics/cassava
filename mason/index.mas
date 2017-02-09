@@ -35,12 +35,6 @@ $show_accept_dialog => undef
         </div>
       </div -->
 
-            <div class="panel panel-info">
-        <div class="panel-heading">Featured Publication</div>
-        <div class="panel-body" style="overflow:hidden">
-          <& homepage/publication_of_the_week.mas &><br />
-        </div>
-      </div>
 
 
     </div>
@@ -73,7 +67,15 @@ $show_accept_dialog => undef
 
 
     </div>
+
+
   </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">Featured Publication</div>
+        <div class="panel-body" style="overflow:hidden">
+          <& homepage/publication_of_the_week.mas &><br />
+        </div>
+      </div>
 
 </div>
 
