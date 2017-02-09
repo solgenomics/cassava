@@ -28,12 +28,20 @@ $show_accept_dialog => undef
         </div>
       </div>
 
-      <div class="panel panel-info">
-        <div class="panel-heading">News Feed</div>
+      <!-- div class="panel panel-info">
+        < div class="panel-heading">News Feed</div>
         <div class="panel-body" style="overflow:hidden">
           <& /feed/xmlfeed.mas, uri=>"http://meltwaternews.com/magenta/xml/html/42/93/rss/v2_412463.rss2.XML" &>
         </div>
+      </div -->
+
+            <div class="panel panel-info">
+        <div class="panel-heading">Featured Publication</div>
+        <div class="panel-body" style="overflow:hidden">
+          <& homepage/publication_of_the_week.mas &><br />
+        </div>
       </div>
+
 
     </div>
     <div class="col-sm-6 col-md-6 col-lg-6">
@@ -63,12 +71,6 @@ $show_accept_dialog => undef
         </div>
       </div>
 
-      <div class="panel panel-info">
-        <div class="panel-heading">Featured Publication</div>
-        <div class="panel-body" style="overflow:hidden">
-          <& homepage/publication_of_the_week.mas &><br />
-        </div>
-      </div>
 
     </div>
   </div>
