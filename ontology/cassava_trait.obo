@@ -1,8 +1,9 @@
 format-version: 1.2
-date: 04:01:2017 14:35
-saved-by: naama
+date: 10:02:2017 11:59
+saved-by: AAfolabi
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
+namespace-id-rule: * CO_334:$sequence(7,0000000,0009999)$
 ontology: co_334
 
 [Term]
@@ -65,7 +66,7 @@ relationship: variable_of CO_334:0100582 ! ratio
 [Term]
 id: CO_334:0000009
 name: initial vigor assessment 1-7
-def: "Visual assessment of plant vigor during establishment scored one month after planting." [CO:curators]
+def: "Visual assessment of plant vigor during establishment scored one month after planting. 3 = Not vigorous, 5 = Medium vigor, 7 = highly vigorous." [CO:curators]
 synonym: "IVig_IITAVisScg_1to7" EXACT []
 synonym: "vigor" EXACT []
 xref: TO:0000250
@@ -177,8 +178,8 @@ relationship: variable_of CO_334:0100494 ! 7pt scale
 
 [Term]
 id: CO_334:0000020
-name: storage root shape visual rating 1-4
-def: "Visual rating of storage root shape with 1 = conical, 2 = conical-cylindrical, 3 = cylindrical, and 4 = fusiform." [CO:curators]
+name: storage root shape visual rating 1-6
+def: "Visual rating of storage root shape with 1 = conical, 2 = conical-cylindrical, 3 = cylindrical, 4 = fusiform, 5 = Irrregular, and 6 = Combination of shapes." [CO:curators]
 synonym: "rtshp" EXACT []
 synonym: "RtShp_VisClsn_1to6" EXACT []
 relationship: variable_of CO_334:0000491 ! Storage Root Shape
@@ -719,7 +720,7 @@ name: hydrogen cyanide potential enzymatic method
 def: "Cyanogenic potential is an indicator of the potential production of hydrogen cyanide in cassava storage roots with less than 5mg/100g fresh weight of root = low, 5-10mg/100g fresh weight of root = medium, and 10mg/100g fresh weight of root = high." [CO:curators]
 synonym: "hcn_enz" EXACT []
 synonym: "RtCyanCt_Enz_1to3" EXACT []
-relationship: variable_of CO_334:0000502 ! Tuberous root cyanide content
+relationship: variable_of CO_334:0000502 ! Storage root cyanide content
 relationship: variable_of CO_334:0010334 ! Estimation :hydrogen cyanide potential enzymatic method_method
 relationship: variable_of CO_334:0100540 ! 3pt scale
 
@@ -803,9 +804,9 @@ relationship: variable_of CO_334:0100491 ! Root
 [Term]
 id: CO_334:0000085
 name: taste of boiled root rating 1-3
-def: "Taste of boiled root rating as 1 = bland, 2 = sweet, and 3 = bitter." [CO:curators]
+def: "Taste of boiled root rating as 1 = sweet, 2 = bland, and 3 = bitter." [CO:curators]
 synonym: "pdtas" EXACT []
-synonym: "RtTast_SensClsn_0to3" EXACT []
+synonym: "RtTast_SensClsn_1to3" EXACT []
 relationship: variable_of CO_334:0000498 ! Taste Of Boiled Roots
 relationship: variable_of CO_334:0010297 ! Gustation :Taste Of Boiled Roots_method
 relationship: variable_of CO_334:0100503 ! 3pt scale
@@ -864,7 +865,7 @@ def: "Estimate of storage root cyanide content by picrate test with 1 = not dete
 synonym: "hcnpic" EXACT []
 synonym: "RtCyanCt_Picrate_1to9" EXACT []
 xref: TO:0000955
-relationship: variable_of CO_334:0000502 ! Tuberous root cyanide content
+relationship: variable_of CO_334:0000502 ! Storage root cyanide content
 relationship: variable_of CO_334:0010299 ! Estimation :Hydrogen cyanide potential picrate method_method
 relationship: variable_of CO_334:0100505 ! 9pt scale
 
@@ -1090,12 +1091,12 @@ relationship: variable_of CO_334:0100567 ! 4pt scale
 
 [Term]
 id: CO_334:0000114
-name: boiled tuberous root color visual 1-3
-def: "Colour of boiled tuberous roots with  1 = white , 2 = cream , 3 = yellow." [CO:curators]
+name: boiled storage root color visual 1-3
+def: "Colour of boiled storage roots with  1 = white , 2 = cream , 3 = yellow." [CO:curators]
 synonym: "BoilRtCol_VisClsn_1to3" EXACT []
 synonym: "pdcol" EXACT []
-relationship: variable_of CO_334:0000355 ! Color Of Boiled Tuberous Roots
-relationship: variable_of CO_334:0010298 ! Visual Rating :Color Of Boiled Tuberous Roots_method
+relationship: variable_of CO_334:0000355 ! Color Of Boiled Storage Roots
+relationship: variable_of CO_334:0010298 ! Visual Rating :Color Of Boiled Storage Roots_method
 relationship: variable_of CO_334:0100504 ! 3pt scale
 
 [Term]
@@ -1697,7 +1698,7 @@ relationship: variable_of CO_334:0100583 ! Pct (%)
 [Term]
 id: CO_334:0000175
 name: cassava bacterial blight severity 3-month evaluation
-def: "Visual rating of symptoms in response to the bacterial blight disease caused by Xanthonomas axonopodis pv. Manihotis symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased) evaluated between two and three months after planting." [CO:curators]
+def: "Visual rating of symptoms in response to the bacterial blight disease caused by Xanthonomas axonopodis pv. Manihotis, evaluated between two and three months after planting. Symptoms rated from 1 = (clean, no infection), 2 = Small lesions around points of infections on the leaves, 3 = Extension and appearance of new lesions on leaves and stems. Some leaves wilt, 4 = Extensive leaf wilting and defoliation,  5 = extremely severe with leaf wilting, defoliation and dieback." [CO:curators]
 synonym: "cbb3s" EXACT []
 synonym: "CBBSev_VisScg_1to5_T3m" EXACT []
 relationship: variable_of CO_334:0000031 ! Cassava bacterial blight severity
@@ -1707,7 +1708,7 @@ relationship: variable_of CO_334:0100448 ! 5 pt scale
 [Term]
 id: CO_334:0000176
 name: cassava bacterial blight severity 6-month evaluation
-def: "Visual rating of symptoms in response to the bacterial blight disease caused by Xanthonomas axonopodis pv. Manihotis symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased) evaluated four and six months after planting." [CO:curators]
+def: "Visual rating of symptoms in response to the bacterial blight disease caused by Xanthonomas axonopodis pv. Manihotis,evaluated four and six months after planting. Symptoms rated from 1 = (clean, no infection), 2 = Small lesions around points of infections on the leaves, 3 = Extension and appearance of new lesions on leaves and stems. Some leaves wilt, 4 = Extensive leaf wilting and defoliation,  5 = extremely severe with leaf wilting, defoliation and dieback." [CO:curators]
 synonym: "cbb6s" EXACT []
 synonym: "CBBSev_VisScg_1to5_T6m" EXACT []
 relationship: variable_of CO_334:0000031 ! Cassava bacterial blight severity
@@ -1717,7 +1718,7 @@ relationship: variable_of CO_334:0100449 ! 5 pt scale
 [Term]
 id: CO_334:0000177
 name: cassava bacterial blight severity 9-month evaluation
-def: "Visual rating of symptoms in response to the bacterial blight disease caused by Xanthonomas axonopodis pv. Manihotis symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased) evaluated between seven and nine months after planting." [CO:curators]
+def: "Visual rating of symptoms in response to the bacterial blight disease caused by Xanthonomas axonopodis pv. Manihotis,evaluated between seven and nine months after planting. Symptoms rated from 1 = (clean, no infection), 2 = Small lesions around points of infections on the leaves, 3 = Extension and appearance of new lesions on leaves and stems. Some leaves wilt, 4 = Extensive leaf wilting and defoliation,  5 = extremely severe with leaf wilting, defoliation and dieback." [CO:curators]
 synonym: "cbb9s" EXACT []
 synonym: "CBBSev_VisScg_1to5_T9m" EXACT []
 relationship: variable_of CO_334:0000031 ! Cassava bacterial blight severity
@@ -1787,7 +1788,7 @@ relationship: variable_of CO_334:0100582 ! ratio
 [Term]
 id: CO_334:0000184
 name: cassava anthractnose disease severity in 6-month
-def: "Visual rating of symptoms in response to the anthracnose disease caused by Colletotrichum gloeosporioides f. sp. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased), evaluated between four and six months after planting (6MAP)." [CO:curators]
+def: "Visual rating of symptoms in response to the anthracnose disease caused by Colletotrichum gloeosporioides f. sp., evaluated between four and six months after planting (6MAP). Symptoms rated from 1 = (clean, no infection) 2 = Few shallow cankers on stem late in the growing season, 3 = Many deep cankers on stems followed by distortion, 4 = Many oval lesions on hard and woody stems, 5 = Highly severe with many lesions on hard and woody stems and severe necrosis at leaf axils followed by wilting and severe defoliation." [CO:curators]
 synonym: "cad6s" EXACT []
 synonym: "CADisSev_VisScg_1to5_T6m" EXACT []
 relationship: variable_of CO_334:0000032 ! Cassava anthracnose disease severity
@@ -1797,7 +1798,7 @@ relationship: variable_of CO_334:0100459 ! 5 pt scale
 [Term]
 id: CO_334:0000185
 name: cassava anthractnose disease severity in 9-month
-def: "Visual rating of symptoms in response to the anthracnose disease caused by Colletotrichum gloeosporioides f. sp. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased), evaluated between seven and nine months after planting (9MAP)." [CO:curators]
+def: "Visual rating of symptoms in response to the anthracnose disease caused by Colletotrichum gloeosporioides f. sp., evaluated between seven and nine months after planting (9MAP). Symptoms rated from 1 = (clean, no infection) 2 = Few shallow cankers on stem late in the growing season, 3 = Many deep cankers on stems followed by distortion, 4 = Many oval lesions on hard and woody stems, 5 = Highly severe with many lesions on hard and woody stems and severe necrosis at leaf axils followed by wilting and severe defoliation." [CO:curators]
 synonym: "cad9s" EXACT []
 synonym: "CADisSev_VisScg_1to5_T9m" EXACT []
 relationship: variable_of CO_334:0000032 ! Cassava anthracnose disease severity
@@ -1807,7 +1808,7 @@ relationship: variable_of CO_334:0100460 ! 5 pt scale
 [Term]
 id: CO_334:0000186
 name: cassava anthractnose disease severity in12-month
-def: "Visual rating of symptoms in response to the anthracnose disease caused by Colletotrichum gloeosporioides f. sp. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased), evaluated between ten and twelve months after planting (12MAP)." [CO:curators]
+def: "Visual rating of symptoms in response to the anthracnose disease caused by Colletotrichum gloeosporioides f. sp., evaluated between ten and twelve months after planting (12MAP). Symptoms rated from 1 = (clean, no infection) 2 = Few shallow cankers on stem late in the growing season, 3 = Many deep cankers on stems followed by distortion, 4 = Many oval lesions on hard and woody stems, 5 = Highly severe with many lesions on hard and woody stems and severe necrosis at leaf axils followed by wilting and severe defoliation." [CO:curators]
 synonym: "cad12s" EXACT []
 synonym: "CADisSev_VisScg_1to5_T12m" EXACT []
 relationship: variable_of CO_334:0000032 ! Cassava anthracnose disease severity
@@ -1837,7 +1838,7 @@ relationship: variable_of CO_334:0100582 ! ratio
 [Term]
 id: CO_334:0000189
 name: cassava green mite severity first evaluation
-def: "Visual rating of damage caused by cassava green mite, Mononychellus tanajoa. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased), evaluated at the early period of the peak of dry season." [CO:curators]
+def: "Visual rating of damage caused by cassava green mite (Mononychellus tanajoa), evaluated at the early period of the peak of dry season. Symptoms rated from 1 = (clean, no infection) 2 = Slight spackling and reduction in leaf size, 3 = Serious spackling and reduction in leaf size, 4 = Bunchy top symptoms , obvious reduction of internode length, severe reduction in lead size and leaf area,  to 5 = Candlestick appearance, internode length reduction, young portion of shoot curved and completely defoliated." [CO:curators]
 synonym: "cgm1" EXACT []
 synonym: "CGMsev_VisScg_1to5" EXACT []
 relationship: variable_of CO_334:0000033 ! Cassava green mite severity
@@ -1847,7 +1848,7 @@ relationship: variable_of CO_334:0100471 ! 5 pt scale
 [Term]
 id: CO_334:0000190
 name: cassava green mite severity second evaluation
-def: "Visual rating of damage caused by cassava green mite, Mononychellus tanajoa. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased), evaluated late into the peak of dry season." [CO:curators]
+def: "Visual rating of damage caused by cassava green mite (Mononychellus tanajoa), evaluated late into the peak of dry season. Symptoms rated from 1 = (clean, no infection) 2 = Slight spackling and reduction in leaf size, 3 = Serious spackling and reduction in leaf size, 4 = Bunchy top symptoms , obvious reduction of internode length, severe reduction in lead size and leaf area,  to 5 = Candlestick appearance, internode length reduction, young portion of shoot curved and completely defoliated." [CO:curators]
 synonym: "cgm2" EXACT []
 synonym: "CGMsev_VisScg_1to5" EXACT []
 relationship: variable_of CO_334:0000033 ! Cassava green mite severity
@@ -1857,7 +1858,7 @@ relationship: variable_of CO_334:0100472 ! 5 pt scale
 [Term]
 id: CO_334:0000191
 name: cassava mosaic disease severity 1-month evaluation
-def: "Visual rating of symptoms caused by cassava mosaic virus,in the family Geminiviridae and genus Begomovirus , evalutaed between one to six weeks after planting. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased." [CO:curators]
+def: "Visual rating of symptoms caused by cassava mosaic virus,in the family Geminiviridae and genus Begomovirus , evalutaed between one to six weeks after planting. Symptoms rated from 1 = (clean, no infection), 2= Up to 25% leaf area chlorotic, mild leaf distortion, no stunting, 3 = 25-50% leaf area chlorotic, moderate leaf distortion, no stunting, 4 = 50-75% leaf area chlorotic, severe leaf distortion, moderate stunting, 5 = 75 - 100% leaf area chlorotic, severe leaf distortion, small leaflets (almost no lamina), severe stunting." [CO:curators]
 synonym: "cmd1s" EXACT []
 synonym: "CMDisSev_VisScg_1to5_T1m" EXACT []
 relationship: variable_of CO_334:0000035 ! Cassava mosaic disease severity
@@ -1867,7 +1868,7 @@ relationship: variable_of CO_334:0100436 ! 5 pt scale
 [Term]
 id: CO_334:0000192
 name: cassava mosaic disease severity 3-month evaluation
-def: "Visual rating of symptoms caused by cassava mosaic virus,in the family Geminiviridae and genus Begomovirus , evalutaed between two and three months after planting. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased." [CO:curators]
+def: "Visual rating of symptoms caused by cassava mosaic virus,in the family Geminiviridae and genus Begomovirus , evalutaed between two and three months after planting.  Symptoms rated from 1 = (clean, no infection), 2= Up to 25% leaf area chlorotic, mild leaf distortion, no stunting, 3 = 25-50% leaf area chlorotic, moderate leaf distortion, no stunting, 4 = 50-75% leaf area chlorotic, severe leaf distortion, moderate stunting, 5 = 75 - 100% leaf area chlorotic, severe leaf distortion, small leaflets (almost no lamina), severe stunting." [CO:curators]
 synonym: "cmd3s" EXACT []
 synonym: "CMDisSev_VisScg_1to5_T3m" EXACT []
 relationship: variable_of CO_334:0000035 ! Cassava mosaic disease severity
@@ -1887,7 +1888,7 @@ relationship: variable_of CO_334:0100439 ! 5 pt scale
 [Term]
 id: CO_334:0000194
 name: cassava mosaic disease severity 6-month evaluation
-def: "Visual rating of symptoms caused by cassava mosaic virus,in the family Geminiviridae and genus Begomovirus , evalutaed between four and six months after planting. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased." [CO:curators]
+def: "Visual rating of symptoms caused by cassava mosaic virus,in the family Geminiviridae and genus Begomovirus , evalutaed between four and six months after planting.  Symptoms rated from 1 = (clean, no infection), 2= Up to 25% leaf area chlorotic, mild leaf distortion, no stunting, 3 = 25-50% leaf area chlorotic, moderate leaf distortion, no stunting, 4 = 50-75% leaf area chlorotic, severe leaf distortion, moderate stunting, 5 = 75 - 100% leaf area chlorotic, severe leaf distortion, small leaflets (almost no lamina), severe stunting." [CO:curators]
 synonym: "cmd6s" EXACT []
 synonym: "CMDisSev_VisScg_1to5_T6m" EXACT []
 relationship: variable_of CO_334:0000035 ! Cassava mosaic disease severity
@@ -1937,7 +1938,7 @@ relationship: variable_of CO_334:0100582 ! ratio
 [Term]
 id: CO_334:0000199
 name: cassava mosaic disease severity 12-month evaluation
-def: "Visual rating of symptoms caused by cassava mosaic virus,in the family Geminiviridae and genus Begomovirus , evalutaed between ten and  twelve months after planting. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased." [CO:curators]
+def: "Visual rating of symptoms caused by cassava mosaic virus,in the family Geminiviridae and genus Begomovirus , evalutaed between ten and  twelve months after planting. Symptoms rated from 1 = (clean, no infection), 2= Up to 25% leaf area chlorotic, mild leaf distortion, no stunting, 3 = 25-50% leaf area chlorotic, moderate leaf distortion, no stunting, 4 = 50-75% leaf area chlorotic, severe leaf distortion, moderate stunting, 5 = 75 - 100% leaf area chlorotic, severe leaf distortion, small leaflets (almost no lamina), severe stunting." [CO:curators]
 synonym: "cmd12s" EXACT []
 synonym: "CMDisSev_VisScg_1to5_T12m" EXACT []
 relationship: variable_of CO_334:0000035 ! Cassava mosaic disease severity
@@ -1957,7 +1958,7 @@ relationship: variable_of CO_334:0100582 ! ratio
 [Term]
 id: CO_334:0000201
 name: cassava brown streak disease root severity 12-month evaluation
-def: "Visual rating of root symptoms caused by cassava brown streak virus at twelve months after planting, in the family Potyviridae and genus Ipomovirus. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased)." [CO:curators]
+def: "Visual rating of root symptoms caused by cassava brown streak virus at twelve months after planting, in the family Potyviridae and genus Ipomovirus. Symptoms rated from 1 = (clean, no infection), 2 = less than 5% of storage root tissue is necrotic, 3 = 5-10% of storage root tissue is necrotic 4 = 10-50% of storage root tissue is necrotic,   5 = More than 50% of storage root tissue is necrotic." [CO:curators]
 synonym: "CBSDisRtSev_Scg_1to5" EXACT []
 synonym: "cbsdr12s" EXACT []
 relationship: variable_of CO_334:0000090 ! Cassava brown streak disease root severity
@@ -1977,7 +1978,7 @@ relationship: variable_of CO_334:0100582 ! ratio
 [Term]
 id: CO_334:0000203
 name: cassava brown streak disease leaf severity 1-month evaluation
-def: "Visual rating of leaf symptoms caused by cassava brown streak virus evaluated between one and six weeks after planting, in the family Potyviridae and genus Ipomovirus. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased)." [CO:curators]
+def: "Visual rating of leaf symptoms caused by cassava brown streak virus evaluated between one and six weeks after planting, in the family Potyviridae and genus Ipomovirus. Symptoms rated from 1 = (clean, no infection), 2 = mild/slight vein yellowing or chlorotic blotches on leaves, no brown streaks/lesions on green stem portions\n, 3 = mild/slight vein yellowing or chlorotic blotches on leaves mild brown streaks/lesions on green stem portions, 4 = severe/extensive vein yellowing or chlorotic blotches on leaves severe brown streaks/lesions on green stem portions no defoliation, stem dieback or stunting, 4 =  to 5 = severe/extensive vein yellowing or chlorotic blotches on leaves severe brown streaks/lesions on green stem portions defoliation, stem dieback or stunting." [CO:curators]
 synonym: "CBSDisLfSev_Scg_1to5_T1m" EXACT []
 synonym: "cbsdl1s" EXACT []
 relationship: variable_of CO_334:0000036 ! Cassava brown streak disease leaf severity
@@ -1987,7 +1988,7 @@ relationship: variable_of CO_334:0100476 ! 5 pt scale
 [Term]
 id: CO_334:0000204
 name: cassava brown streak disease leaf severity 3-month evaluation
-def: "Visual rating of leaf symptoms caused by cassava brown streak virus evaluated between two and three months after planting, in the family Potyviridae and genus Ipomovirus. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased)." [CO:curators]
+def: "Visual rating of leaf symptoms caused by cassava brown streak virus evaluated between two and three months after planting, in the family Potyviridae and genus Ipomovirus. Symptoms rated from 1 = (clean, no infection), 2 = mild/slight vein yellowing or chlorotic blotches on leaves, no brown streaks/lesions on green stem portions\n, 3 = mild/slight vein yellowing or chlorotic blotches on leaves mild brown streaks/lesions on green stem portions, 4 = severe/extensive vein yellowing or chlorotic blotches on leaves severe brown streaks/lesions on green stem portions no defoliation, stem dieback or stunting, 4 =  to 5 = severe/extensive vein yellowing or chlorotic blotches on leaves severe brown streaks/lesions on green stem portions defoliation, stem dieback or stunting." [CO:curators]
 synonym: "CBSDisLfSev_Scg_1to5_T3m" EXACT []
 synonym: "cbsdl3s" EXACT []
 relationship: variable_of CO_334:0000036 ! Cassava brown streak disease leaf severity
@@ -1997,7 +1998,7 @@ relationship: variable_of CO_334:0100477 ! 5 pt scale
 [Term]
 id: CO_334:0000205
 name: cassava brown streak disease leaf severity 6-month evaluation
-def: "Visual rating of leaf symptoms caused by cassava brown streak virus between four and months after planting, in the family Potyviridae and genus Ipomovirus. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased)." [CO:curators]
+def: "Visual rating of leaf symptoms caused by cassava brown streak virus between four and months after planting, in the family Potyviridae and genus Ipomovirus.Symptoms rated from 1 = (clean, no infection), 2 = mild/slight vein yellowing or chlorotic blotches on leaves, no brown streaks/lesions on green stem portions\n, 3 = mild/slight vein yellowing or chlorotic blotches on leaves mild brown streaks/lesions on green stem portions, 4 = severe/extensive vein yellowing or chlorotic blotches on leaves severe brown streaks/lesions on green stem portions no defoliation, stem dieback or stunting, 4 =  to 5 = severe/extensive vein yellowing or chlorotic blotches on leaves severe brown streaks/lesions on green stem portions defoliation, stem dieback or stunting." [CO:curators]
 synonym: "CBSDisLfSev_Scg_1to5_6m" EXACT []
 synonym: "cbsdl6s" EXACT []
 relationship: variable_of CO_334:0000036 ! Cassava brown streak disease leaf severity
@@ -2007,7 +2008,7 @@ relationship: variable_of CO_334:0100478 ! 5 pt scale
 [Term]
 id: CO_334:0000206
 name: cassava brown streak disease leaf severity 9-month evaluation
-def: "Visual rating of leaf symptoms caused by cassava brown streak virus between seven and nine months after planting, in the family Potyviridae and genus Ipomovirus. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased)." [CO:curators]
+def: "Visual rating of leaf symptoms caused by cassava brown streak virus between seven and nine months after planting, in the family Potyviridae and genus Ipomovirus.Symptoms rated from 1 = (clean, no infection), 2 = mild/slight vein yellowing or chlorotic blotches on leaves, no brown streaks/lesions on green stem portions\n, 3 = mild/slight vein yellowing or chlorotic blotches on leaves mild brown streaks/lesions on green stem portions, 4 = severe/extensive vein yellowing or chlorotic blotches on leaves severe brown streaks/lesions on green stem portions no defoliation, stem dieback or stunting, 4 =  to 5 = severe/extensive vein yellowing or chlorotic blotches on leaves severe brown streaks/lesions on green stem portions defoliation, stem dieback or stunting." [CO:curators]
 synonym: "CBSDisLfSev_Scg_1to5_9m" EXACT []
 synonym: "cbsdl9s" EXACT []
 relationship: variable_of CO_334:0000036 ! Cassava brown streak disease leaf severity
@@ -2067,7 +2068,7 @@ relationship: variable_of CO_334:0100582 ! ratio
 [Term]
 id: CO_334:0000212
 name: cassava bacterial blight severity 12-month evaluation
-def: "Visual rating of symptoms in response to the bacterial blight disease caused by Xanthonomas axonopodis pv. Manihotis symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased) evaluated bewteen ten and twelve months after planting." [CO:curators]
+def: "Visual rating of symptoms in response to the bacterial blight disease caused by Xanthonomas axonopodis pv. Manihotis ,evaluated bewteen ten and twelve months after planting. Symptoms rated from 1 = (clean, no infection), 2 = Small lesions around points of infections on the leaves, 3 = Extension and appearance of new lesions on leaves and stems. Some leaves wilt, 4 = Extensive leaf wilting and defoliation,  5 = extremely severe with leaf wilting, defoliation and dieback." [CO:curators]
 synonym: "cbb12s" EXACT []
 synonym: "CBBSev_VisScg_1to5_T12m" EXACT []
 relationship: variable_of CO_334:0000031 ! Cassava bacterial blight severity
@@ -2127,7 +2128,7 @@ relationship: variable_of CO_334:0100546 ! Number
 [Term]
 id: CO_334:0000218
 name: cassava anthractnose disease severity in 3-month
-def: "Visual rating of symptoms in response to the anthracnose disease caused by Colletotrichum gloeosporioides f. sp. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased), evaluated between two and three months after planting." [CO:curators]
+def: "Visual rating of symptoms in response to the anthracnose disease caused by Colletotrichum gloeosporioides f. sp., evaluated between two and three months after planting. Symptoms rated from 1 = (clean, no infection) 2 = Few shallow cankers on stem late in the growing season, 3 = Many deep cankers on stems followed by distortion, 4 = Many oval lesions on hard and woody stems, 5 = Highly severe with many lesions on hard and woody stems and severe necrosis at leaf axils followed by wilting and severe defoliation." [CO:curators]
 synonym: "cad3s" EXACT []
 synonym: "CADisSev_VisScg_1to5_T3m" EXACT []
 relationship: variable_of CO_334:0000032 ! Cassava anthracnose disease severity
@@ -2762,7 +2763,7 @@ id: CO_334:0000285
 name: Ash Content
 def: "Ash content" [CO:curators]
 synonym: "ash" EXACT []
-synonym: "Tuberous root mineral salt content" EXACT []
+synonym: "Storage root mineral salt content" EXACT []
 xref: TO:0000607
 is_a: CO_334:0000004 ! Quality trait
 
@@ -2945,26 +2946,21 @@ creation_date: 2016-12-22T16:24:39Z
 
 [Term]
 id: CO_334:0000308
-name: Total fresh weight
-is_a: CO_334:0000001 ! Agronomic trait
-created_by: naama
-creation_date: 2017-01-04T14:33:38Z
+name: ease of peeling root cortex visual rating 1-3
+def: "Visual rating of ease of peeling root cortex with 1 = easy, 2 = intermediate and 3 = difficult." []
+synonym: "easepl" RELATED []
+relationship: variable_of CO_334:0000362 ! Ease Of Peeling Root Cortex
+created_by: AAfolabi
+creation_date: 2017-02-10T10:54:15Z
 
 [Term]
 id: CO_334:0000309
-name: total fresh weight by plot
-def: "The sum of fresh root weight + fresh root weight by plot." [CO:curators]
-relationship: variable_of CO_334:0000308 ! Total fresh weight
-created_by: naama
-creation_date: 2017-01-04T14:34:03Z
-
-[Term]
-id: CO_334:0000310
-name: total fresh weight by plant
-def: "The sum of fresh root weight + fresh root weight by plant." [CO:curators]
-relationship: variable_of CO_334:0000308 ! Total fresh weight
-created_by: naama
-creation_date: 2017-01-04T14:35:02Z
+name: apical pubescence visual rating 0-2
+def: "Visual rating of young leaf pubescence with 0 = absent, 1 = Moderate pubescence, 2 = high pubescence." []
+synonym: "apubes" RELATED []
+relationship: variable_of CO_334:0000283 ! Apical Pubescence
+created_by: AAfolabi
+creation_date: 2017-02-10T11:02:13Z
 
 [Term]
 id: CO_334:0000339
@@ -3001,8 +2997,8 @@ is_a: CO_334:0000004 ! Quality trait
 
 [Term]
 id: CO_334:0000355
-name: Color Of Boiled Tuberous Roots
-def: "Color of boiled tuberous roots" [CO:curators]
+name: Color Of Boiled Storage Roots
+def: "Color of boiled storage roots" [CO:curators]
 synonym: "pdcol" EXACT []
 xref: TO:1000007
 is_a: CO_334:0000004 ! Quality trait
@@ -3653,7 +3649,7 @@ id: CO_334:0000446
 name: Root constrictions number
 def: "Number of constrictions on the storage root" [CO:curators]
 synonym: "RtConsNo" EXACT []
-synonym: "Tuberous root constriction presence" EXACT []
+synonym: "Storage root constriction presence" EXACT []
 xref: TO:1000007
 is_a: CO_334:0000002 ! Morphological trait
 
@@ -3725,7 +3721,7 @@ is_a: CO_334:0000002 ! Morphological trait
 [Term]
 id: CO_334:0000456
 name: Root Yield
-def: "Tuberous root yield" [CO:curators]
+def: "Storage root yield" [CO:curators]
 synonym: "RtYld" EXACT []
 xref: TO:0001041
 is_a: CO_334:0000001 ! Agronomic trait
@@ -3922,7 +3918,7 @@ id: CO_334:0000485
 name: Storage Root Constrictions
 def: "Presence of constrictions on the storage root" [CO:curators]
 synonym: "rtcons" EXACT []
-synonym: "Tuberous root constriction presence" EXACT []
+synonym: "Storage root constriction presence" EXACT []
 xref: TO:1000007
 is_a: CO_334:0000002 ! Morphological trait
 
@@ -4059,7 +4055,7 @@ is_a: CO_334:0000004 ! Quality trait
 
 [Term]
 id: CO_334:0000502
-name: Tuberous root cyanide content
+name: Storage root cyanide content
 def: "Cyanide content in storage roots" [CO:curators]
 synonym: "RtCyanC" EXACT []
 xref: TO:0000465
@@ -4645,17 +4641,17 @@ relationship: method_of CO_334:0000498 ! Taste Of Boiled Roots
 
 [Term]
 id: CO_334:0010298
-name: Visual Rating :Color Of Boiled Tuberous Roots_method
+name: Visual Rating :Color Of Boiled Storage Roots_method
 namespace: CassavaMethod
 def: "Visual  rating of boiled roots" [CO:curators]
-relationship: method_of CO_334:0000355 ! Color Of Boiled Tuberous Roots
+relationship: method_of CO_334:0000355 ! Color Of Boiled Storage Roots
 
 [Term]
 id: CO_334:0010299
 name: Estimation :Hydrogen cyanide potential picrate method_method
 namespace: CassavaMethod
-def: "Visual scoring of the root cyanide content estimated using the sodium picrate test. This test consist is applying sodium picrate on the tuberous root and observing the reacting colour " [CO:curators]
-relationship: method_of CO_334:0000502 ! Tuberous root cyanide content
+def: "Visual scoring of the root cyanide content estimated using the sodium picrate test. This test consist is applying sodium picrate on the storage root and observing the reacting colour " [CO:curators]
+relationship: method_of CO_334:0000502 ! Storage root cyanide content
 
 [Term]
 id: CO_334:0010300
@@ -4886,7 +4882,7 @@ id: CO_334:0010334
 name: Estimation :hydrogen cyanide potential enzymatic method_method
 namespace: CassavaMethod
 def: "Visual scoring of the root cyanide content evaluated using the enzymatic method" [CO:curators]
-relationship: method_of CO_334:0000502 ! Tuberous root cyanide content
+relationship: method_of CO_334:0000502 ! Storage root cyanide content
 
 [Term]
 id: CO_334:0010335
@@ -7236,7 +7232,7 @@ is_a: CO_334:0100503 ! 3pt scale
 id: CO_334:0100504
 name: 3pt scale
 namespace: CassavaScale
-relationship: scale_of CO_334:0010298 ! Visual Rating :Color Of Boiled Tuberous Roots_method
+relationship: scale_of CO_334:0010298 ! Visual Rating :Color Of Boiled Storage Roots_method
 
 [Term]
 id: CO_334:0100504:1
