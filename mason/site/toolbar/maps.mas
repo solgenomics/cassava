@@ -4,7 +4,7 @@
     
     <li><a href="/cview/map.pl?map_id=1">Cassava 2011</a></li>
     <li><a href="/cview/map.pl?map_id=2">Cassava 2013 GBS Map</a></li>
-    <li><a href="/cview/map.pl?map_id=3">Casssava 2014 GBS Map</a></li>
+    <li><a href="/cview/map.pl?map_id=3">Cassava 2014 GBS Map</a></li>
     <li role="separator" class="divider"></li>
     
     <li class="dropdown-header">Genome</li>
