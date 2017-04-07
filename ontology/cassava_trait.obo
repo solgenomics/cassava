@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 07:04:2017 13:45
+date: 07:04:2017 14:10
 saved-by: naama
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
@@ -3020,6 +3020,59 @@ created_by: naama
 creation_date: 2017-04-07T13:40:56Z
 
 [Term]
+id: CO_334:0000317
+name: Starch properties
+def: "Measurements related to starch traits." []
+is_a: CO_334:0000004 ! Quality trait
+created_by: naama
+creation_date: 2017-04-07T14:03:18Z
+
+[Term]
+id: CO_334:0000318
+name: Starch granule morphology
+is_a: CO_334:0000317 ! Starch properties
+created_by: naama
+creation_date: 2017-04-07T14:04:47Z
+
+[Term]
+id: CO_334:0000319
+name: Starch granule morphology (pictures)
+relationship: variable_of CO_334:0000318 ! Starch granule morphology
+created_by: naama
+creation_date: 2017-04-07T14:05:27Z
+
+[Term]
+id: CO_334:0000320
+name: Starch granule size
+is_a: CO_334:0000317 ! Starch properties
+created_by: naama
+creation_date: 2017-04-07T14:06:43Z
+
+[Term]
+id: CO_334:0000321
+name: starch granule average diameter
+def: "Starch granule average diameter (µm)" []
+relationship: variable_of CO_334:0000320 ! Starch granule size
+created_by: naama
+creation_date: 2017-04-07T14:06:56Z
+
+[Term]
+id: CO_334:0000322
+name: starch granule size distribution
+def: "Starch granule size distribution with three categories. 1: between 0-7µm ; 2: 8-14 µm ; 3: 15 - 22 µm." []
+relationship: variable_of CO_334:0000320 ! Starch granule size
+created_by: naama
+creation_date: 2017-04-07T14:07:28Z
+
+[Term]
+id: CO_334:0000323
+name: starch chain length distribution
+def: "Starch chain length distribution, values range from dp3 to dp82." []
+relationship: variable_of CO_334:0000320 ! Starch granule size
+created_by: naama
+creation_date: 2017-04-07T14:08:52Z
+
+[Term]
 id: CO_334:0000339
 name: Cassava Mealy Bug Incidence
 def: "Proportion of plants within a plot showing symptoms of cassava mealy-bug damage (Phenacoccus Manihoti)" [CO:curators]
@@ -3886,7 +3939,7 @@ name: Starch Content
 def: "Starch content" [CO:curators]
 synonym: "starch" EXACT []
 xref: TO:0000696
-is_a: CO_334:0000004 ! Quality trait
+is_a: CO_334:0000317 ! Starch properties
 
 [Term]
 id: CO_334:0000475
