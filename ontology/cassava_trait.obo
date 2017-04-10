@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 07:04:2017 14:10
+date: 10:04:2017 12:42
 saved-by: naama
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
@@ -2963,7 +2963,7 @@ creation_date: 2017-02-10T11:02:13Z
 
 [Term]
 id: CO_334:0000310
-name: Plantable stem 
+name: Plantable stem
 def: "A plantable stem (stick), has an estimated length of about 20cm." [CO:AA]
 synonym: "plantable stem" EXACT []
 is_a: CO_334:0000001 ! Agronomic trait
@@ -2975,7 +2975,7 @@ id: CO_334:0000311
 name: stick length
 def: "Length of the planting stick at the sampling time point in centimeters." []
 synonym: "stem length" EXACT []
-is_a: CO_334:0000310 ! Plantable stem 
+is_a: CO_334:0000310 ! Plantable stem
 created_by: naama
 creation_date: 2017-04-07T13:24:49Z
 
@@ -2983,7 +2983,7 @@ creation_date: 2017-04-07T13:24:49Z
 id: CO_334:0000312
 name: planting stick internode number
 def: "Number of the internodes of the planting stick." []
-is_a: CO_334:0000310 ! Plantable stem 
+is_a: CO_334:0000310 ! Plantable stem
 created_by: naama
 creation_date: 2017-04-07T13:26:23Z
 
@@ -2991,7 +2991,7 @@ creation_date: 2017-04-07T13:26:23Z
 id: CO_334:0000313
 name: Number of planing stick internodes with roots
 def: "Number of the internodes which developed fibrous or storage roots." []
-is_a: CO_334:0000310 ! Plantable stem 
+is_a: CO_334:0000310 ! Plantable stem
 created_by: naama
 creation_date: 2017-04-07T13:27:09Z
 
@@ -2999,7 +2999,7 @@ creation_date: 2017-04-07T13:27:09Z
 id: CO_334:0000314
 name: Number of fibrous roots on planting stick
 def: "Total number of fibrous roots emerging from the planting stick." []
-is_a: CO_334:0000310 ! Plantable stem 
+is_a: CO_334:0000310 ! Plantable stem
 created_by: naama
 creation_date: 2017-04-07T13:39:34Z
 
@@ -3007,7 +3007,7 @@ creation_date: 2017-04-07T13:39:34Z
 id: CO_334:0000315
 name: Number storage roots on planting stick
 def: "Total number of storage roots emerging from the planting stick." []
-is_a: CO_334:0000310 ! Plantable stem 
+is_a: CO_334:0000310 ! Plantable stem
 created_by: naama
 creation_date: 2017-04-07T13:40:26Z
 
@@ -3015,7 +3015,7 @@ creation_date: 2017-04-07T13:40:26Z
 id: CO_334:0000316
 name: Number roots at end of the planting stick
 def: "Total number of roots (fibrous and storage) which emerged from the cutting side at the end of the planting stick." []
-is_a: CO_334:0000310 ! Plantable stem 
+is_a: CO_334:0000310 ! Plantable stem
 created_by: naama
 creation_date: 2017-04-07T13:40:56Z
 
@@ -3071,6 +3071,29 @@ def: "Starch chain length distribution, values range from dp3 to dp82." []
 relationship: variable_of CO_334:0000320 ! Starch granule size
 created_by: naama
 creation_date: 2017-04-07T14:08:52Z
+
+[Term]
+id: CO_334:0000324
+name: Total fresh weight
+is_a: CO_334:0000001 ! Agronomic trait
+created_by: naama
+creation_date: 2017-04-10T12:26:09Z
+
+[Term]
+id: CO_334:0000325
+name: total fresh weight by plot
+def: "The sum of fresh root weight + fresh root weight by plot." [CO:curators]
+relationship: variable_of CO_334:0000324 ! Total fresh weight
+created_by: naama
+creation_date: 2017-04-10T12:26:56Z
+
+[Term]
+id: CO_334:0000326
+name: total fresh weight by plant
+def: "The sum of fresh root weight + fresh root weight by plant." [CO:curators]
+relationship: variable_of CO_334:0000324 ! Total fresh weight
+created_by: naama
+creation_date: 2017-04-10T12:41:21Z
 
 [Term]
 id: CO_334:0000339
