@@ -2989,7 +2989,7 @@ creation_date: 2017-04-07T13:26:23Z
 
 [Term]
 id: CO_334:0000313
-name: Number of planing stick internodes with roots
+name: Number of planting stick internodes with roots
 def: "Number of the internodes which developed fibrous or storage roots." []
 is_a: CO_334:0000310 ! Plantable stem
 created_by: naama
