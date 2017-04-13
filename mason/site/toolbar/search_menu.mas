@@ -1,4 +1,4 @@
-<li class="dropdown"><a class="menu_click_dropdown dropdown-toggle" data-toggle="dropdown" href="/search/">Search</a>
+<li class="dropdown"><a class="menu_click_dropdown dropdown-toggle" data-toggle="dropdown">Search</a>
   <ul class="dropdown-menu">
     <li><a href="/breeders/search">Wizard</a></li>
     <li><a href="/search/phenotypes/stock">Accessions and Plots</a></li>
