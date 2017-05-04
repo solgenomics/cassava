@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 04:05:2017 15:42
+date: 04:05:2017 15:48
 saved-by: naama
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
@@ -3094,6 +3094,26 @@ def: "The sum of fresh root weight + fresh root weight by plant." [CO:curators]
 relationship: variable_of CO_334:0000324 ! Total fresh weight
 created_by: naama
 creation_date: 2017-04-10T12:41:21Z
+
+[Term]
+id: CO_334:0000327
+name: fresh fibrous root weight per plant
+def: "Total fresh weight of fibrous roots harvested per plant measured in kilogram (kg)." [CO:Curators]
+relationship: variable_of CO_334:0000303 ! Storage root weight by plant
+created_by: naama
+creation_date: 2017-05-04T15:44:25Z
+
+[Term]
+id: CO_334:0000328
+name: fresh fibrous root weight per plot
+def: "Total fresh weight of fibrous roots harvested per plot measured in kilogram (kg)." [CO:curators]
+synonym: "rtwt" EXACT []
+synonym: "RtWt_Wgh_kg" EXACT []
+relationship: variable_of CO_334:0000302 ! Storage root weight by plot
+relationship: variable_of CO_334:0010286 ! Measurement :Fresh Weight of Storage Root_method
+relationship: variable_of CO_334:0100493 ! kg
+created_by: naama
+creation_date: 2017-05-04T15:47:58Z
 
 [Term]
 id: CO_334:0000339
