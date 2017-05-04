@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:04:2017 12:42
+date: 04:05:2017 15:42
 saved-by: naama
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
@@ -95,7 +95,7 @@ relationship: variable_of CO_334:0100491 ! Root
 
 [Term]
 id: CO_334:0000012
-name: fresh root weight per plot
+name: fresh storage root weight per plot
 def: "Total fresh weight of storage roots harvested per plot measured in kilogram (kg)." [CO:curators]
 synonym: "rtwt" EXACT []
 synonym: "RtWt_Wgh_kg" EXACT []
@@ -577,7 +577,7 @@ relationship: variable_of CO_334:0100563 ! 3pt scale
 [Term]
 id: CO_334:0000062
 name: stem color visual scoring 1-4
-def: "Visual scoring of stem color with 1 = silver green, 2 = light brown or orange, 3 = dark brown, and 4 = dark green." [CO:curators]
+def: "Visual scoring of stem color with 1 = silver green, 2 = light brown or orange, 3 = dark brown, 4 = dark green, and 5 = golden." [CO:curators]
 synonym: "stmcol" EXACT []
 synonym: "StmCol_VisClsn_1to4" EXACT []
 relationship: variable_of CO_334:0000475 ! Stem Color
@@ -2915,7 +2915,7 @@ creation_date: 2016-12-22T16:15:30Z
 
 [Term]
 id: CO_334:0000304
-name: fresh root weight per plant
+name: fresh storage root weight per plant
 def: "Total fresh weight of storage roots harvested per plant measured in kilogram (kg)." [CO:Curators]
 relationship: variable_of CO_334:0000303 ! Storage root weight by plant
 created_by: naama
