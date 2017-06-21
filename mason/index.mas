@@ -79,6 +79,7 @@ $show_accept_dialog => undef
 
 </div>
 
+<& homepage/github_pullrequests.mas &>
 
 
 
