@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:06:2017 11:31
+date: 22:06:2017 11:34
 saved-by: naama
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
@@ -3182,6 +3182,13 @@ created_by: naama
 creation_date: 2017-06-22T11:27:39Z
 
 [Term]
+id: CO_334:0000338
+name: Stem morphological trait
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:31:39Z
+
+[Term]
 id: CO_334:0000339
 name: Cassava Mealy Bug Incidence
 def: "Proportion of plants within a plot showing symptoms of cassava mealy-bug damage (Phenacoccus Manihoti)" [CO:curators]
@@ -3197,6 +3204,14 @@ synonym: "Cassava Mealy Bug Severity - Cassavabase" EXACT []
 synonym: "CMBSev" EXACT []
 xref: TO:0000261
 is_a: CO_334:0000030 ! insect damage
+
+[Term]
+id: CO_334:0000341
+name: Leaf petiole
+def: "Traits associated with the leaf petiole morphology." []
+is_a: CO_334:0000330 ! Leaf morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:33:00Z
 
 [Term]
 id: CO_334:0000353
@@ -3726,7 +3741,7 @@ name: Petiole Color
 def: "Petiole color" [CO:curators]
 synonym: "petcol" EXACT []
 xref: TO:0002707
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000341 ! Leaf petiole
 
 [Term]
 id: CO_334:0000428
@@ -3734,7 +3749,7 @@ name: Petiole Insertion Angle
 def: "Angle between branch and petiole" [CO:curators]
 synonym: "petang" EXACT []
 xref: TO:0000765
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000341 ! Leaf petiole
 
 [Term]
 id: CO_334:0000429
@@ -3742,7 +3757,7 @@ name: Petiole length
 def: "petiole length" [CO:curators]
 synonym: "PetLng" EXACT []
 xref: TO:0000766
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000341 ! Leaf petiole
 
 [Term]
 id: CO_334:0000430
@@ -3750,7 +3765,7 @@ name: Petiole orientation
 def: "petiole orientation" [CO:curators]
 synonym: "PetOrt" EXACT []
 xref: TO:0000765
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000341 ! Leaf petiole
 
 [Term]
 id: CO_334:0000431
@@ -4056,7 +4071,7 @@ name: Stem Color
 def: "Stem color" [CO:curators]
 synonym: "stmcol" EXACT []
 xref: TO:0000056
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000338 ! Stem morphological trait
 
 [Term]
 id: CO_334:0000476
@@ -4064,7 +4079,7 @@ name: Stem cortex color
 def: "Color of stem cortex" [CO:curators]
 synonym: "stmctcol" EXACT []
 xref: TO:1000017
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000338 ! Stem morphological trait
 
 [Term]
 id: CO_334:0000477
@@ -4072,7 +4087,7 @@ name: Stem epidermis color
 def: "Color of stem epidermis" [CO:curators]
 synonym: "stmepcol" EXACT []
 xref: TO:1000018
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000338 ! Stem morphological trait
 
 [Term]
 id: CO_334:0000478
@@ -4302,7 +4317,7 @@ name: Young Stem Growth Habit
 def: "Growth habit of young stem" [CO:curators]
 synonym: "stemgh" EXACT []
 xref: TO:0000361
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000338 ! Stem morphological trait
 
 [Term]
 id: CO_334:0000506
@@ -4310,7 +4325,7 @@ name: Young Stem Pubescence
 def: "Pubescence of young stem" [CO:curators]
 synonym: "stmpub" EXACT []
 xref: TO:0000361
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000338 ! Stem morphological trait
 
 [Term]
 id: CO_334:0000507
