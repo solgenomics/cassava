@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 04:05:2017 15:48
+date: 22:06:2017 10:56
 saved-by: naama
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
@@ -2830,7 +2830,7 @@ def: "Branch height" [CO:curators]
 synonym: "branching" EXACT []
 synonym: "BrnchHt" EXACT []
 xref: TO:1000008
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch
 
 [Term]
 id: CO_334:0000294
@@ -2838,7 +2838,7 @@ name: Branching Angle
 def: "Angle of branching (Angle between vertical plane and first branches)" [CO:curators]
 synonym: "brnang" EXACT []
 xref: TO:1000009
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch
 
 [Term]
 id: CO_334:0000295
@@ -2846,7 +2846,7 @@ name: Branching habit
 def: "Branching habit" [CO:curators]
 synonym: "brnhbt" EXACT []
 xref: TO:0000740
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch
 
 [Term]
 id: CO_334:0000296
@@ -2854,7 +2854,7 @@ name: Branching Levels
 def: "Number of levels of branching (Actual number of levels (at or before harvest))." [CO:curators]
 synonym: "brnlev" EXACT []
 xref: TO:0000740
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch
 
 [Term]
 id: CO_334:0000297
@@ -3116,6 +3116,14 @@ created_by: naama
 creation_date: 2017-05-04T15:47:58Z
 
 [Term]
+id: CO_334:0000329
+name: Plant branch
+def: "Traits associated with branch and branching morphology." [CO:curators]
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T10:52:49Z
+
+[Term]
 id: CO_334:0000339
 name: Cassava Mealy Bug Incidence
 def: "Proportion of plants within a plot showing symptoms of cassava mealy-bug damage (Phenacoccus Manihoti)" [CO:curators]
@@ -3172,6 +3180,7 @@ def: "Time to reach 50% of the plants at the branching stage" [CO:curators]
 synonym: "flw50b" EXACT []
 xref: TO:0000933
 is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch
 
 [Term]
 id: CO_334:0000358
