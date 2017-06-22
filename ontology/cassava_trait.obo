@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:06:2017 11:34
+date: 22:06:2017 12:04
 saved-by: naama
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
@@ -3212,6 +3212,22 @@ def: "Traits associated with the leaf petiole morphology." []
 is_a: CO_334:0000330 ! Leaf morphological trait
 created_by: naama
 creation_date: 2017-06-22T11:33:00Z
+
+[Term]
+id: CO_334:0000342
+name: Node number
+def: "Number of nodes on a stem." [CO:curators]
+is_a: CO_334:0000338 ! Stem morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:44:36Z
+
+[Term]
+id: CO_334:0000343
+name: Average number of nodes per plot counting
+def: "Average number of nodes per branch level.\nCounting all nodes per branch at each level. If more than one branch, select one branch and count nodes up to the apical shoot. Value averaged per plot." [CO:curators]
+relationship: variable_of CO_334:0000342 ! Node number
+created_by: naama
+creation_date: 2017-06-22T11:46:27Z
 
 [Term]
 id: CO_334:0000353
