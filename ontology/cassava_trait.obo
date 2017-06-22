@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:06:2017 11:15
+date: 22:06:2017 11:26
 saved-by: naama
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
@@ -1114,7 +1114,7 @@ name: ease of peeling root cortex visual rating 1-7
 def: "Visual rating of ease of peeling root cortex with 3 = easy and 7 = difficult." [CO:curators]
 synonym: "easepl" EXACT []
 synonym: "PeelEase_Clsn_1to7" EXACT []
-relationship: variable_of CO_334:0000362 ! Ease Of Peeling Root Cortex
+relationship: variable_of CO_334:0000362 ! Ease of peeling storage root cortex
 relationship: variable_of CO_334:0010294 ! Visual Scoring :Ease Of Peeling Root Cortex_method
 relationship: variable_of CO_334:0100500 ! 7pt scale
 
@@ -2723,7 +2723,7 @@ name: Anther Color
 def: "Color of anthers" [CO:curators]
 synonym: "anther" EXACT []
 xref: TO:0000187
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000281
@@ -2771,7 +2771,7 @@ id: CO_334:0000286
 name: Days to first male flower opens
 def: "First male flower (pistillate) mature and opens." []
 synonym: "flwdmo" EXACT []
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 created_by: aafolabi
 creation_date: 2016-05-12T17:24:01Z
 
@@ -2870,7 +2870,7 @@ name: Caruncle Color
 def: "Color of caruncle" [CO:curators]
 synonym: "carcol" EXACT []
 xref: TO:1000010
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000299
@@ -2948,7 +2948,7 @@ id: CO_334:0000308
 name: ease of peeling root cortex visual rating 1-3
 def: "Visual rating of ease of peeling root cortex with 1 = easy, 2 = intermediate and 3 = difficult." []
 synonym: "easepl" RELATED []
-relationship: variable_of CO_334:0000362 ! Ease Of Peeling Root Cortex
+relationship: variable_of CO_334:0000362 ! Ease of peeling storage root cortex
 created_by: AAfolabi
 creation_date: 2017-02-10T10:54:15Z
 
@@ -3168,6 +3168,13 @@ created_by: naama
 creation_date: 2017-06-22T11:08:25Z
 
 [Term]
+id: CO_334:0000336
+name: Flower and flowering morphological trait
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:16:26Z
+
+[Term]
 id: CO_334:0000339
 name: Cassava Mealy Bug Incidence
 def: "Proportion of plants within a plot showing symptoms of cassava mealy-bug damage (Phenacoccus Manihoti)" [CO:curators]
@@ -3190,7 +3197,7 @@ name: Central Leaf Shape
 def: "Shape of central leaf taken from a mid-height position." [CO:curators]
 synonym: "lfshp" EXACT []
 xref: TO:0000492
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000330 ! Leaf morphological trait
 
 [Term]
 id: CO_334:0000354
@@ -3215,7 +3222,7 @@ def: "50% of the female flower opened to expose the pistils per plot" [CO:curato
 synonym: "dyfl" EXACT []
 synonym: "flw50a" EXACT []
 xref: TO:0002616
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000357
@@ -3223,7 +3230,6 @@ name: Days to 50% branching
 def: "Time to reach 50% of the plants at the branching stage" [CO:curators]
 synonym: "flw50b" EXACT []
 xref: TO:0000933
-is_a: CO_334:0000002 ! Morphological trait
 is_a: CO_334:0000329 ! Plant branch morphological trait
 
 [Term]
@@ -3232,7 +3238,7 @@ name: Days to first anthesis
 def: "Exposing of the pistil per plot of any female flower" [CO:curators]
 synonym: "flwdfa" EXACT []
 xref: TO:0002616
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000359
@@ -3240,7 +3246,7 @@ name: Days to first inflorescence
 def: "Time to reach the first inflorescence" [CO:curators]
 synonym: "flwdfi" EXACT []
 xref: TO:0002616
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000360
@@ -3260,11 +3266,11 @@ is_a: CO_334:0000001 ! Agronomic trait
 
 [Term]
 id: CO_334:0000362
-name: Ease Of Peeling Root Cortex
-def: "Ease of root cortex removal" [CO:curators]
+name: Ease of peeling storage root cortex
+def: "Ease of storage root cortex removal." [CO:curators]
 synonym: "easepl" EXACT []
 xref: TO:0001042
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000333 ! Root morphological trait
 
 [Term]
 id: CO_334:0000364
@@ -3272,7 +3278,7 @@ name: Female flower number
 def: "Number of female flowers after the buds appear" [CO:curators]
 synonym: "FFlwNo" EXACT []
 xref: TO:0002736
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000365
@@ -3296,7 +3302,7 @@ name: Flowering
 def: "Abundance of flower" [CO:curators]
 synonym: "flowerab" EXACT []
 xref: TO:0002736
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000369
@@ -3554,7 +3560,7 @@ name: Male flower number
 def: "Number of male flowers after the buds appear" [CO:curators]
 synonym: "flwmno" EXACT []
 xref: TO:0002736
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000404
@@ -3634,7 +3640,7 @@ name: Number of forks
 def: "Number of branches" [CO:curators]
 synonym: "flwfrk" EXACT []
 xref: TO:0000740
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch morphological trait
 
 [Term]
 id: CO_334:0000414
@@ -3697,7 +3703,7 @@ name: Ovary Color
 def: "Color of ovary" [CO:curators]
 synonym: "ovryco" EXACT []
 xref: TO:1000016
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000422
@@ -3801,7 +3807,7 @@ name: Presence of pollen
 def: "Presence of pollen" [CO:curators]
 synonym: "pollen" EXACT []
 xref: TO:0000420
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000439
@@ -3809,7 +3815,7 @@ name: Proportion of female flower
 def: "Proportion of female flower" [CO:curators]
 synonym: "FFlwProp" EXACT []
 xref: TO:0000987
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000440
@@ -3824,7 +3830,7 @@ name: Proportion of plant with inflorescence
 def: "Proportion of plants per plot that have an inflorescence at varying growth stages. Plant with pollinated and unpollinated flowers are all counted together" [CO:curators]
 synonym: "pnoinf" EXACT []
 xref: TO:0000582
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000442
@@ -4093,7 +4099,7 @@ name: Stigma Color
 def: "Color of stigma" [CO:curators]
 synonym: "stgmco" EXACT []
 xref: TO:0000185
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000482
@@ -4822,7 +4828,7 @@ id: CO_334:0010294
 name: Visual Scoring :Ease Of Peeling Root Cortex_method
 namespace: CassavaMethod
 def: "Qualitative rating of the ease of  peeling root cortex" [CO:curators]
-relationship: method_of CO_334:0000362 ! Ease Of Peeling Root Cortex
+relationship: method_of CO_334:0000362 ! Ease of peeling storage root cortex
 
 [Term]
 id: CO_334:0010295
