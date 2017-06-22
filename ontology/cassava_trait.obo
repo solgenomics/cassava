@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:06:2017 11:26
+date: 22:06:2017 11:31
 saved-by: naama
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
@@ -3175,6 +3175,13 @@ created_by: naama
 creation_date: 2017-06-22T11:16:26Z
 
 [Term]
+id: CO_334:0000337
+name: Fruit morphological trait
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:27:39Z
+
+[Term]
 id: CO_334:0000339
 name: Cassava Mealy Bug Incidence
 def: "Proportion of plants within a plot showing symptoms of cassava mealy-bug damage (Phenacoccus Manihoti)" [CO:curators]
@@ -3632,7 +3639,7 @@ name: Number of flowering stalks
 def: "Number of stalks carrying buds" [CO:curators]
 synonym: "FlwStlkNo" EXACT []
 xref: TO:0000894
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000413
@@ -3648,7 +3655,7 @@ name: Number of fruits
 def: "Number of fruits" [CO:curators]
 synonym: "fruitno" EXACT []
 xref: TO:0000894
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000337 ! Fruit morphological trait
 
 [Term]
 id: CO_334:0000415
@@ -3656,7 +3663,7 @@ name: Number of fruitset
 def: "Number of fruits formed after pollination" [CO:curators]
 synonym: "flwfrt" EXACT []
 xref: TO:0002640
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000337 ! Fruit morphological trait
 
 [Term]
 id: CO_334:0000416
@@ -3695,7 +3702,7 @@ name: Number of terminal branches with inflorescence
 def: "Number of terminal branches with inflorescence" [CO:curators]
 synonym: "TermBrnchNo" EXACT []
 xref: TO:0000582
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000421
@@ -3984,7 +3991,7 @@ name: Sepal Color
 def: "Color of sepals" [CO:curators]
 synonym: "splcol" EXACT []
 xref: TO:0000573
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000463
