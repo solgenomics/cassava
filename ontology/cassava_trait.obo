@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:06:2017 10:56
+date: 22:06:2017 11:01
 saved-by: naama
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
@@ -3124,6 +3124,28 @@ created_by: naama
 creation_date: 2017-06-22T10:52:49Z
 
 [Term]
+id: CO_334:0000330
+name: Leaf traits
+def: "Traits associated with leaf morphology." [CO:curators]
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T10:58:52Z
+
+[Term]
+id: CO_334:0000331
+name: Leaf lobe
+is_a: CO_334:0000330 ! Leaf traits
+created_by: naama
+creation_date: 2017-06-22T10:59:47Z
+
+[Term]
+id: CO_334:0000332
+name: Leaf scar
+is_a: CO_334:0000330 ! Leaf traits
+created_by: naama
+creation_date: 2017-06-22T11:00:17Z
+
+[Term]
 id: CO_334:0000339
 name: Cassava Mealy Bug Incidence
 def: "Proportion of plants within a plot showing symptoms of cassava mealy-bug damage (Phenacoccus Manihoti)" [CO:curators]
@@ -3397,7 +3419,7 @@ name: Leaf color
 def: "Leaf color" [CO:curators]
 synonym: "LfCol" EXACT []
 xref: TO:0000326
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000330 ! Leaf traits
 
 [Term]
 id: CO_334:0000390
@@ -3413,7 +3435,7 @@ name: Leaf lobe length
 def: "Length of middle finger or lobe of matured leaf" [CO:curators]
 synonym: "LfLbLng" EXACT []
 xref: TO:1000014
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000331 ! Leaf lobe
 
 [Term]
 id: CO_334:0000392
@@ -3421,7 +3443,7 @@ name: Leaf lobe margin
 def: "leaf lobe margin." [CO:curators]
 synonym: "LobMgnShp" EXACT []
 xref: TO:1000013
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000331 ! Leaf lobe
 
 [Term]
 id: CO_334:0000393
@@ -3429,7 +3451,7 @@ name: Leaf Lobe Position
 def: "Position in which leaf lobes are held" [CO:curators]
 synonym: "lflobp" EXACT []
 xref: TO:1000013
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000331 ! Leaf lobe
 
 [Term]
 id: CO_334:0000394
@@ -3437,7 +3459,7 @@ name: Leaf lobe width
 def: "Width of middle finger or lobe of matured leaf" [CO:curators]
 synonym: "LfLbWdth" EXACT []
 xref: TO:1000015
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000331 ! Leaf lobe
 
 [Term]
 id: CO_334:0000395
@@ -3445,7 +3467,7 @@ name: Leaf Lobes Number
 def: "Number of leaf lobes" [CO:curators]
 synonym: "lflbno" EXACT []
 xref: TO:1000013
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000331 ! Leaf lobe
 
 [Term]
 id: CO_334:0000396
@@ -3462,7 +3484,7 @@ name: Leaf scar distance
 def: "Distance between leaf scar" [CO:curators]
 synonym: "lfscdist" EXACT []
 xref: TO:0000361
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000332 ! Leaf scar
 
 [Term]
 id: CO_334:0000398
@@ -3470,7 +3492,7 @@ name: Leaf scar height
 def: "Height from ground to leaf scar." [CO:curators]
 synonym: "ScarHt" EXACT []
 xref: TO:0000362
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000332 ! Leaf scar
 
 [Term]
 id: CO_334:0000399
@@ -3478,7 +3500,7 @@ name: Leaf scar number
 def: "Number of leaf scars" [CO:curators]
 synonym: "lfscno" EXACT []
 xref: TO:0000363
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000332 ! Leaf scar
 
 [Term]
 id: CO_334:0000400
@@ -3486,7 +3508,7 @@ name: Leaf Scar Prominence
 def: "Prominence of fresh leaf scars" [CO:curators]
 synonym: "lfscar" EXACT []
 xref: TO:0000364
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000332 ! Leaf scar
 
 [Term]
 id: CO_334:0000401
@@ -3494,7 +3516,7 @@ name: Leaf Vein Color
 def: "Color of leaf vein" [CO:curators]
 synonym: "lfvnco" EXACT []
 xref: TO:0000719
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000330 ! Leaf traits
 
 [Term]
 id: CO_334:0000402
