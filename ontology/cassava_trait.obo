@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:06:2017 12:04
+date: 26:06:2017 12:12
 saved-by: naama
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
@@ -1377,8 +1377,8 @@ relationship: variable_of CO_334:0100611 ! days
 
 [Term]
 id: CO_334:0000143
-name: female flower number counting
-def: "A count of the number female flowers after the buds appears, matures, and grows in size to become distinctive at the first, second, and third branch levels." [CO:curators]
+name: female flower number at the first 3 branching levels counting
+def: "A count of the Number female flowers after the buds appear, mature, and grow in size to become distinctive at the first, second, and third branch levels." [CO:curators]
 synonym: "FFlwNo_Count_Flw" EXACT []
 synonym: "flwfno" EXACT []
 relationship: variable_of CO_334:0000364 ! Female flower number
@@ -2657,6 +2657,7 @@ creation_date: 2015-09-29T12:26:06Z
 [Term]
 id: CO_334:0000272
 name: female flower number counting on all levels
+def: "Count the number of female flowers after the buds appear, mature, and grow in size to become distinctive at all branch levels." []
 relationship: variable_of CO_334:0000364 ! Female flower number
 relationship: variable_of CO_334:0010006 ! Counting:female flower number all levels_method
 relationship: variable_of CO_334:0100606 ! Flowers
@@ -3228,6 +3229,62 @@ def: "Average number of nodes per branch level.\nCounting all nodes per branch a
 relationship: variable_of CO_334:0000342 ! Node number
 created_by: naama
 creation_date: 2017-06-22T11:46:27Z
+
+[Term]
+id: CO_334:0000344
+name: female flower number at specific branching level
+def: "Count of number of female flowers at a predefined branching level." []
+is_a: CO_334:0000364 ! Female flower number
+created_by: naama
+creation_date: 2017-06-26T12:02:41Z
+
+[Term]
+id: CO_334:0000345
+name: Female flower number at branching level 1 counting
+def: "Count of number of female flowers at the first branching level." []
+relationship: variable_of CO_334:0000344 ! female flower number at specific branching level
+created_by: naama
+creation_date: 2017-06-26T12:05:00Z
+
+[Term]
+id: CO_334:0000346
+name: Female flower number at branching level 2 counting
+def: "Count of number of female flowers at the second branching level." []
+relationship: variable_of CO_334:0000344 ! female flower number at specific branching level
+created_by: naama
+creation_date: 2017-06-26T12:05:00Z
+
+[Term]
+id: CO_334:0000347
+name: Female flower number at branching level 3 counting
+def: "Count of number of female flowers at the third branching level." []
+relationship: variable_of CO_334:0000344 ! female flower number at specific branching level
+created_by: naama
+creation_date: 2017-06-26T12:05:00Z
+
+[Term]
+id: CO_334:0000348
+name: Female flower number at branching level 4 counting
+def: "Count of number of female flowers at the forth branching level." []
+relationship: variable_of CO_334:0000344 ! female flower number at specific branching level
+created_by: naama
+creation_date: 2017-06-26T12:05:00Z
+
+[Term]
+id: CO_334:0000349
+name: Female flower number at branching level 5 counting
+def: "Count of number of female flowers at the fifth branching level." []
+relationship: variable_of CO_334:0000344 ! female flower number at specific branching level
+created_by: naama
+creation_date: 2017-06-26T12:05:00Z
+
+[Term]
+id: CO_334:0000350
+name: Female flower number at branching level 6 counting
+def: "Count of number of female flowers at the sixth branching level." []
+relationship: variable_of CO_334:0000344 ! female flower number at specific branching level
+created_by: naama
+creation_date: 2017-06-26T12:05:00Z
 
 [Term]
 id: CO_334:0000353
