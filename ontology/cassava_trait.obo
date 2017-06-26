@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 04:05:2017 15:48
+date: 22:06:2017 12:04
 saved-by: naama
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
@@ -201,7 +201,7 @@ name: root neck length visual rating 0-7
 def: "Visual rating of root neck length with 0 = absent or sessile, 3 = short, 5 = intermediate, and 7 = long." [CO:curators]
 synonym: "nklgt" EXACT []
 synonym: "NkLng_VisClsn_0to7" EXACT []
-relationship: variable_of CO_334:0000451 ! Root Neck Length
+relationship: variable_of CO_334:0000451 ! Storage root neck length
 relationship: variable_of CO_334:0010293 ! Visual Rating:Root Neck Length_method
 relationship: variable_of CO_334:0100499 ! 8pt scale
 
@@ -490,7 +490,7 @@ name: root surface color visual rating 1-3
 def: "Visual rating of storage root surface color with 1 = white or cream, 2 =light brown, and 3 = dark brown." [CO:curators]
 synonym: "rtscol" EXACT []
 synonym: "RtSurfCol_VisClsn_1to3" EXACT []
-relationship: variable_of CO_334:0000454 ! Root Surface Color
+relationship: variable_of CO_334:0000454 ! Storage root surface color
 relationship: variable_of CO_334:0010311 ! Visual Rating:Root Surface Color_method
 relationship: variable_of CO_334:0100517 ! 3pt scale
 
@@ -500,7 +500,7 @@ name: root surface texture visual rating 1-7
 def: "Visual rating of storage root texture with 3 = smooth, 5 = intermediate, and 7 = rough." [CO:curators]
 synonym: "RtSurfTex_VisClsn_1to7" EXACT []
 synonym: "rttext" EXACT []
-relationship: variable_of CO_334:0000455 ! Root Surface Texture
+relationship: variable_of CO_334:0000455 ! Storage root surface texture
 relationship: variable_of CO_334:0010312 ! Visual Rating:Root Surface Texture_method
 relationship: variable_of CO_334:0100518 ! 3pt scale
 
@@ -796,7 +796,7 @@ name: rotted storage root counting
 def: "A count of the number of rotted storage roots per plot at the time of harvest." [CO:curators]
 synonym: "NoRotRt_Count_Rt" EXACT []
 synonym: "rtrot" EXACT []
-relationship: variable_of CO_334:0000457 ! Rotted Storage Roots
+relationship: variable_of CO_334:0000457 ! Rotted storage roots
 relationship: variable_of CO_334:0010295 ! Counting:Rotted Storage Roots _method
 relationship: variable_of CO_334:0100491 ! Root
 
@@ -1114,7 +1114,7 @@ name: ease of peeling root cortex visual rating 1-7
 def: "Visual rating of ease of peeling root cortex with 3 = easy and 7 = difficult." [CO:curators]
 synonym: "easepl" EXACT []
 synonym: "PeelEase_Clsn_1to7" EXACT []
-relationship: variable_of CO_334:0000362 ! Ease Of Peeling Root Cortex
+relationship: variable_of CO_334:0000362 ! Ease of peeling storage root cortex
 relationship: variable_of CO_334:0010294 ! Visual Scoring :Ease Of Peeling Root Cortex_method
 relationship: variable_of CO_334:0100500 ! 7pt scale
 
@@ -2160,7 +2160,7 @@ name: root color visual rating 1-3
 def: "Visual rating of storage root surface color with 1 = white , 2 = intermediate, and 3 = dark brown, as being evaluated by CIAT." [CO:curators]
 synonym: "rtcol" EXACT []
 synonym: "RtSurfCol_ClsnCIAT_1to3" EXACT []
-relationship: variable_of CO_334:0000454 ! Root Surface Color
+relationship: variable_of CO_334:0000454 ! Storage root surface color
 relationship: variable_of CO_334:0010436 ! Visual Rating:root color_method
 relationship: variable_of CO_334:0100642 ! 3pt scale
 
@@ -2181,7 +2181,7 @@ name: storage root neck length visual rating 1-3
 def: "Visual rating of root neck length with 1 = short, 2 = intermediate, 3 = long, as being evaluated by CIAT." [CO:curators]
 synonym: "RtNeckLng_ClsnCIAT_1to3" EXACT []
 synonym: "rtnklgt" EXACT []
-relationship: variable_of CO_334:0000451 ! Root Neck Length
+relationship: variable_of CO_334:0000451 ! Storage root neck length
 relationship: variable_of CO_334:0010438 ! Visual Rating:root neck length_method
 relationship: variable_of CO_334:0100644 ! 3pt scale
 
@@ -2723,7 +2723,7 @@ name: Anther Color
 def: "Color of anthers" [CO:curators]
 synonym: "anther" EXACT []
 xref: TO:0000187
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000281
@@ -2771,7 +2771,7 @@ id: CO_334:0000286
 name: Days to first male flower opens
 def: "First male flower (pistillate) mature and opens." []
 synonym: "flwdmo" EXACT []
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 created_by: aafolabi
 creation_date: 2016-05-12T17:24:01Z
 
@@ -2830,7 +2830,7 @@ def: "Branch height" [CO:curators]
 synonym: "branching" EXACT []
 synonym: "BrnchHt" EXACT []
 xref: TO:1000008
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch morphological trait
 
 [Term]
 id: CO_334:0000294
@@ -2838,7 +2838,7 @@ name: Branching Angle
 def: "Angle of branching (Angle between vertical plane and first branches)" [CO:curators]
 synonym: "brnang" EXACT []
 xref: TO:1000009
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch morphological trait
 
 [Term]
 id: CO_334:0000295
@@ -2846,7 +2846,7 @@ name: Branching habit
 def: "Branching habit" [CO:curators]
 synonym: "brnhbt" EXACT []
 xref: TO:0000740
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch morphological trait
 
 [Term]
 id: CO_334:0000296
@@ -2854,7 +2854,7 @@ name: Branching Levels
 def: "Number of levels of branching (Actual number of levels (at or before harvest))." [CO:curators]
 synonym: "brnlev" EXACT []
 xref: TO:0000740
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch morphological trait
 
 [Term]
 id: CO_334:0000297
@@ -2870,7 +2870,7 @@ name: Caruncle Color
 def: "Color of caruncle" [CO:curators]
 synonym: "carcol" EXACT []
 xref: TO:1000010
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000299
@@ -2948,7 +2948,7 @@ id: CO_334:0000308
 name: ease of peeling root cortex visual rating 1-3
 def: "Visual rating of ease of peeling root cortex with 1 = easy, 2 = intermediate and 3 = difficult." []
 synonym: "easepl" RELATED []
-relationship: variable_of CO_334:0000362 ! Ease Of Peeling Root Cortex
+relationship: variable_of CO_334:0000362 ! Ease of peeling storage root cortex
 created_by: AAfolabi
 creation_date: 2017-02-10T10:54:15Z
 
@@ -3116,6 +3116,79 @@ created_by: naama
 creation_date: 2017-05-04T15:47:58Z
 
 [Term]
+id: CO_334:0000329
+name: Plant branch morphological trait
+def: "Traits associated with branch and branching morphology." [CO:curators]
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T10:52:49Z
+
+[Term]
+id: CO_334:0000330
+name: Leaf morphological trait
+def: "Traits associated with leaf morphology." [CO:curators]
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T10:58:52Z
+
+[Term]
+id: CO_334:0000331
+name: Leaf lobe
+is_a: CO_334:0000330 ! Leaf morphological trait
+created_by: naama
+creation_date: 2017-06-22T10:59:47Z
+
+[Term]
+id: CO_334:0000332
+name: Leaf scar
+is_a: CO_334:0000330 ! Leaf morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:00:17Z
+
+[Term]
+id: CO_334:0000333
+name: Root morphological trait
+def: "Traits associated with root morphology" []
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:06:53Z
+
+[Term]
+id: CO_334:0000334
+name: Storage root morphological trait
+is_a: CO_334:0000333 ! Root morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:07:39Z
+
+[Term]
+id: CO_334:0000335
+name: Fibrous root morphological trait
+is_a: CO_334:0000333 ! Root morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:08:25Z
+
+[Term]
+id: CO_334:0000336
+name: Flower and flowering morphological trait
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:16:26Z
+
+[Term]
+id: CO_334:0000337
+name: Fruit morphological trait
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:27:39Z
+
+[Term]
+id: CO_334:0000338
+name: Stem morphological trait
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:31:39Z
+
+[Term]
 id: CO_334:0000339
 name: Cassava Mealy Bug Incidence
 def: "Proportion of plants within a plot showing symptoms of cassava mealy-bug damage (Phenacoccus Manihoti)" [CO:curators]
@@ -3133,12 +3206,36 @@ xref: TO:0000261
 is_a: CO_334:0000030 ! insect damage
 
 [Term]
+id: CO_334:0000341
+name: Leaf petiole
+def: "Traits associated with the leaf petiole morphology." []
+is_a: CO_334:0000330 ! Leaf morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:33:00Z
+
+[Term]
+id: CO_334:0000342
+name: Node number
+def: "Number of nodes on a stem." [CO:curators]
+is_a: CO_334:0000338 ! Stem morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:44:36Z
+
+[Term]
+id: CO_334:0000343
+name: Average number of nodes per plot counting
+def: "Average number of nodes per branch level.\nCounting all nodes per branch at each level. If more than one branch, select one branch and count nodes up to the apical shoot. Value averaged per plot." [CO:curators]
+relationship: variable_of CO_334:0000342 ! Node number
+created_by: naama
+creation_date: 2017-06-22T11:46:27Z
+
+[Term]
 id: CO_334:0000353
 name: Central Leaf Shape
 def: "Shape of central leaf taken from a mid-height position." [CO:curators]
 synonym: "lfshp" EXACT []
 xref: TO:0000492
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000330 ! Leaf morphological trait
 
 [Term]
 id: CO_334:0000354
@@ -3163,7 +3260,7 @@ def: "50% of the female flower opened to expose the pistils per plot" [CO:curato
 synonym: "dyfl" EXACT []
 synonym: "flw50a" EXACT []
 xref: TO:0002616
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000357
@@ -3171,7 +3268,7 @@ name: Days to 50% branching
 def: "Time to reach 50% of the plants at the branching stage" [CO:curators]
 synonym: "flw50b" EXACT []
 xref: TO:0000933
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch morphological trait
 
 [Term]
 id: CO_334:0000358
@@ -3179,7 +3276,7 @@ name: Days to first anthesis
 def: "Exposing of the pistil per plot of any female flower" [CO:curators]
 synonym: "flwdfa" EXACT []
 xref: TO:0002616
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000359
@@ -3187,7 +3284,7 @@ name: Days to first inflorescence
 def: "Time to reach the first inflorescence" [CO:curators]
 synonym: "flwdfi" EXACT []
 xref: TO:0002616
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000360
@@ -3207,11 +3304,11 @@ is_a: CO_334:0000001 ! Agronomic trait
 
 [Term]
 id: CO_334:0000362
-name: Ease Of Peeling Root Cortex
-def: "Ease of root cortex removal" [CO:curators]
+name: Ease of peeling storage root cortex
+def: "Ease of storage root cortex removal." [CO:curators]
 synonym: "easepl" EXACT []
 xref: TO:0001042
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000333 ! Root morphological trait
 
 [Term]
 id: CO_334:0000364
@@ -3219,7 +3316,7 @@ name: Female flower number
 def: "Number of female flowers after the buds appear" [CO:curators]
 synonym: "FFlwNo" EXACT []
 xref: TO:0002736
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000365
@@ -3243,7 +3340,7 @@ name: Flowering
 def: "Abundance of flower" [CO:curators]
 synonym: "flowerab" EXACT []
 xref: TO:0002736
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000369
@@ -3388,7 +3485,7 @@ name: Leaf color
 def: "Leaf color" [CO:curators]
 synonym: "LfCol" EXACT []
 xref: TO:0000326
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000330 ! Leaf morphological trait
 
 [Term]
 id: CO_334:0000390
@@ -3404,7 +3501,7 @@ name: Leaf lobe length
 def: "Length of middle finger or lobe of matured leaf" [CO:curators]
 synonym: "LfLbLng" EXACT []
 xref: TO:1000014
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000331 ! Leaf lobe
 
 [Term]
 id: CO_334:0000392
@@ -3412,7 +3509,7 @@ name: Leaf lobe margin
 def: "leaf lobe margin." [CO:curators]
 synonym: "LobMgnShp" EXACT []
 xref: TO:1000013
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000331 ! Leaf lobe
 
 [Term]
 id: CO_334:0000393
@@ -3420,7 +3517,7 @@ name: Leaf Lobe Position
 def: "Position in which leaf lobes are held" [CO:curators]
 synonym: "lflobp" EXACT []
 xref: TO:1000013
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000331 ! Leaf lobe
 
 [Term]
 id: CO_334:0000394
@@ -3428,7 +3525,7 @@ name: Leaf lobe width
 def: "Width of middle finger or lobe of matured leaf" [CO:curators]
 synonym: "LfLbWdth" EXACT []
 xref: TO:1000015
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000331 ! Leaf lobe
 
 [Term]
 id: CO_334:0000395
@@ -3436,7 +3533,7 @@ name: Leaf Lobes Number
 def: "Number of leaf lobes" [CO:curators]
 synonym: "lflbno" EXACT []
 xref: TO:1000013
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000331 ! Leaf lobe
 
 [Term]
 id: CO_334:0000396
@@ -3453,7 +3550,7 @@ name: Leaf scar distance
 def: "Distance between leaf scar" [CO:curators]
 synonym: "lfscdist" EXACT []
 xref: TO:0000361
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000332 ! Leaf scar
 
 [Term]
 id: CO_334:0000398
@@ -3461,7 +3558,7 @@ name: Leaf scar height
 def: "Height from ground to leaf scar." [CO:curators]
 synonym: "ScarHt" EXACT []
 xref: TO:0000362
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000332 ! Leaf scar
 
 [Term]
 id: CO_334:0000399
@@ -3469,7 +3566,7 @@ name: Leaf scar number
 def: "Number of leaf scars" [CO:curators]
 synonym: "lfscno" EXACT []
 xref: TO:0000363
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000332 ! Leaf scar
 
 [Term]
 id: CO_334:0000400
@@ -3477,7 +3574,7 @@ name: Leaf Scar Prominence
 def: "Prominence of fresh leaf scars" [CO:curators]
 synonym: "lfscar" EXACT []
 xref: TO:0000364
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000332 ! Leaf scar
 
 [Term]
 id: CO_334:0000401
@@ -3485,7 +3582,7 @@ name: Leaf Vein Color
 def: "Color of leaf vein" [CO:curators]
 synonym: "lfvnco" EXACT []
 xref: TO:0000719
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000330 ! Leaf morphological trait
 
 [Term]
 id: CO_334:0000402
@@ -3501,7 +3598,7 @@ name: Male flower number
 def: "Number of male flowers after the buds appear" [CO:curators]
 synonym: "flwmno" EXACT []
 xref: TO:0002736
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000404
@@ -3573,7 +3670,7 @@ name: Number of flowering stalks
 def: "Number of stalks carrying buds" [CO:curators]
 synonym: "FlwStlkNo" EXACT []
 xref: TO:0000894
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000413
@@ -3581,7 +3678,7 @@ name: Number of forks
 def: "Number of branches" [CO:curators]
 synonym: "flwfrk" EXACT []
 xref: TO:0000740
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch morphological trait
 
 [Term]
 id: CO_334:0000414
@@ -3589,7 +3686,7 @@ name: Number of fruits
 def: "Number of fruits" [CO:curators]
 synonym: "fruitno" EXACT []
 xref: TO:0000894
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000337 ! Fruit morphological trait
 
 [Term]
 id: CO_334:0000415
@@ -3597,7 +3694,7 @@ name: Number of fruitset
 def: "Number of fruits formed after pollination" [CO:curators]
 synonym: "flwfrt" EXACT []
 xref: TO:0002640
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000337 ! Fruit morphological trait
 
 [Term]
 id: CO_334:0000416
@@ -3636,7 +3733,7 @@ name: Number of terminal branches with inflorescence
 def: "Number of terminal branches with inflorescence" [CO:curators]
 synonym: "TermBrnchNo" EXACT []
 xref: TO:0000582
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000421
@@ -3644,7 +3741,7 @@ name: Ovary Color
 def: "Color of ovary" [CO:curators]
 synonym: "ovryco" EXACT []
 xref: TO:1000016
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000422
@@ -3660,7 +3757,7 @@ name: Petiole Color
 def: "Petiole color" [CO:curators]
 synonym: "petcol" EXACT []
 xref: TO:0002707
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000341 ! Leaf petiole
 
 [Term]
 id: CO_334:0000428
@@ -3668,7 +3765,7 @@ name: Petiole Insertion Angle
 def: "Angle between branch and petiole" [CO:curators]
 synonym: "petang" EXACT []
 xref: TO:0000765
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000341 ! Leaf petiole
 
 [Term]
 id: CO_334:0000429
@@ -3676,7 +3773,7 @@ name: Petiole length
 def: "petiole length" [CO:curators]
 synonym: "PetLng" EXACT []
 xref: TO:0000766
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000341 ! Leaf petiole
 
 [Term]
 id: CO_334:0000430
@@ -3684,7 +3781,7 @@ name: Petiole orientation
 def: "petiole orientation" [CO:curators]
 synonym: "PetOrt" EXACT []
 xref: TO:0000765
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000341 ! Leaf petiole
 
 [Term]
 id: CO_334:0000431
@@ -3748,7 +3845,7 @@ name: Presence of pollen
 def: "Presence of pollen" [CO:curators]
 synonym: "pollen" EXACT []
 xref: TO:0000420
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000439
@@ -3756,7 +3853,7 @@ name: Proportion of female flower
 def: "Proportion of female flower" [CO:curators]
 synonym: "FFlwProp" EXACT []
 xref: TO:0000987
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000440
@@ -3771,7 +3868,7 @@ name: Proportion of plant with inflorescence
 def: "Proportion of plants per plot that have an inflorescence at varying growth stages. Plant with pollinated and unpollinated flowers are all counted together" [CO:curators]
 synonym: "pnoinf" EXACT []
 xref: TO:0000582
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000442
@@ -3804,7 +3901,7 @@ def: "Number of constrictions on the storage root" [CO:curators]
 synonym: "RtConsNo" EXACT []
 synonym: "Storage root constriction presence" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000333 ! Root morphological trait
 
 [Term]
 id: CO_334:0000447
@@ -3832,11 +3929,11 @@ is_a: CO_334:0000001 ! Agronomic trait
 
 [Term]
 id: CO_334:0000451
-name: Root Neck Length
+name: Storage root neck length
 def: "Root neck length" [CO:curators]
 synonym: "nklgt" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000452
@@ -3853,23 +3950,23 @@ name: Root Position
 def: "Position of roots" [CO:curators]
 synonym: "rtpost" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000333 ! Root morphological trait
 
 [Term]
 id: CO_334:0000454
-name: Root Surface Color
+name: Storage root surface color
 def: "Storage root surface color" [CO:curators]
 synonym: "rtscol" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000455
-name: Root Surface Texture
-def: "Storage root surface texture" [CO:curators]
+name: Storage root surface texture
+def: "Storage root surface texture." [CO:curators]
 synonym: "rttext" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000456
@@ -3881,12 +3978,12 @@ is_a: CO_334:0000001 ! Agronomic trait
 
 [Term]
 id: CO_334:0000457
-name: Rotted Storage Roots
-def: "Number of rotted storage roots" [CO:curators]
+name: Rotted storage roots
+def: "Number of rotted storage roots." [CO:curators]
 synonym: "RotRtNo" EXACT []
 synonym: "Unmarketable roots, Rotted Storage Roots - Cassavabase" EXACT []
 xref: TO:0001042
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000458
@@ -3925,7 +4022,7 @@ name: Sepal Color
 def: "Color of sepals" [CO:curators]
 synonym: "splcol" EXACT []
 xref: TO:0000573
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000463
@@ -3990,7 +4087,7 @@ name: Stem Color
 def: "Stem color" [CO:curators]
 synonym: "stmcol" EXACT []
 xref: TO:0000056
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000338 ! Stem morphological trait
 
 [Term]
 id: CO_334:0000476
@@ -3998,7 +4095,7 @@ name: Stem cortex color
 def: "Color of stem cortex" [CO:curators]
 synonym: "stmctcol" EXACT []
 xref: TO:1000017
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000338 ! Stem morphological trait
 
 [Term]
 id: CO_334:0000477
@@ -4006,7 +4103,7 @@ name: Stem epidermis color
 def: "Color of stem epidermis" [CO:curators]
 synonym: "stmepcol" EXACT []
 xref: TO:1000018
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000338 ! Stem morphological trait
 
 [Term]
 id: CO_334:0000478
@@ -4040,7 +4137,7 @@ name: Stigma Color
 def: "Color of stigma" [CO:curators]
 synonym: "stgmco" EXACT []
 xref: TO:0000185
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000482
@@ -4073,7 +4170,7 @@ def: "Presence of constrictions on the storage root" [CO:curators]
 synonym: "rtcons" EXACT []
 synonym: "Storage root constriction presence" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000486
@@ -4082,7 +4179,7 @@ def: "Color of outer surface of storage root cortex (inner skin)" [CO:curators]
 synonym: "inncol" EXACT []
 synonym: "Inner skin color" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000487
@@ -4090,7 +4187,7 @@ name: Storage Root Diameter
 def: "Storage root diameter" [CO:curators]
 synonym: "rtdiam" EXACT []
 xref: TO:1000006
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000488
@@ -4098,7 +4195,7 @@ name: Storage Root Peduncle
 def: "Storage Root Peduncle" [CO:curators]
 synonym: "rtpedu" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000489
@@ -4107,7 +4204,7 @@ def: "Color of outer surface of storage root periderm (outer skin)" [CO:curators
 synonym: "outcol" EXACT []
 synonym: "Outer skin color" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000490
@@ -4115,7 +4212,7 @@ name: Storage Root Pulp Color
 def: "Storage root pulp color" [CO:curators]
 synonym: "plpcol" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000491
@@ -4123,7 +4220,7 @@ name: Storage Root Shape
 def: "Storage root shape" [CO:curators]
 synonym: "rtshp" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000492
@@ -4132,7 +4229,7 @@ def: "Storage root length" [CO:curators]
 synonym: "rtsz" EXACT []
 synonym: "Storage root length" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000493
@@ -4236,7 +4333,7 @@ name: Young Stem Growth Habit
 def: "Growth habit of young stem" [CO:curators]
 synonym: "stemgh" EXACT []
 xref: TO:0000361
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000338 ! Stem morphological trait
 
 [Term]
 id: CO_334:0000506
@@ -4244,7 +4341,7 @@ name: Young Stem Pubescence
 def: "Pubescence of young stem" [CO:curators]
 synonym: "stmpub" EXACT []
 xref: TO:0000361
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000338 ! Stem morphological trait
 
 [Term]
 id: CO_334:0000507
@@ -4762,21 +4859,21 @@ id: CO_334:0010293
 name: Visual Rating:Root Neck Length_method
 namespace: CassavaMethod
 def: "Visual  rating of the root neck length" [CO:curators]
-relationship: method_of CO_334:0000451 ! Root Neck Length
+relationship: method_of CO_334:0000451 ! Storage root neck length
 
 [Term]
 id: CO_334:0010294
 name: Visual Scoring :Ease Of Peeling Root Cortex_method
 namespace: CassavaMethod
 def: "Qualitative rating of the ease of  peeling root cortex" [CO:curators]
-relationship: method_of CO_334:0000362 ! Ease Of Peeling Root Cortex
+relationship: method_of CO_334:0000362 ! Ease of peeling storage root cortex
 
 [Term]
 id: CO_334:0010295
 name: Counting:Rotted Storage Roots _method
 namespace: CassavaMethod
 def: "Count the number of rotted storage roots per plot at the time of harvest." [CO:curators]
-relationship: method_of CO_334:0000457 ! Rotted Storage Roots
+relationship: method_of CO_334:0000457 ! Rotted storage roots
 
 [Term]
 id: CO_334:0010296
@@ -4881,14 +4978,14 @@ id: CO_334:0010311
 name: Visual Rating:Root Surface Color_method
 namespace: CassavaMethod
 def: "Visual rating of root surface color" [CO:curators]
-relationship: method_of CO_334:0000454 ! Root Surface Color
+relationship: method_of CO_334:0000454 ! Storage root surface color
 
 [Term]
 id: CO_334:0010312
 name: Visual Rating:Root Surface Texture_method
 namespace: CassavaMethod
 def: "Visual rating of root surface texture" [CO:curators]
-relationship: method_of CO_334:0000455 ! Root Surface Texture
+relationship: method_of CO_334:0000455 ! Storage root surface texture
 
 [Term]
 id: CO_334:0010313
@@ -5749,7 +5846,7 @@ id: CO_334:0010436
 name: Visual Rating:root color_method
 namespace: CassavaMethod
 def: "Visual rating of storage root surface color as evaluated by CIAT" [CO:curators]
-relationship: method_of CO_334:0000454 ! Root Surface Color
+relationship: method_of CO_334:0000454 ! Storage root surface color
 
 [Term]
 id: CO_334:0010437
@@ -5763,7 +5860,7 @@ id: CO_334:0010438
 name: Visual Rating:root neck length_method
 namespace: CassavaMethod
 def: "Visual rating of root neck length as evaluated by CIAT" [CO:curators]
-relationship: method_of CO_334:0000451 ! Root Neck Length
+relationship: method_of CO_334:0000451 ! Storage root neck length
 
 [Term]
 id: CO_334:0010439
