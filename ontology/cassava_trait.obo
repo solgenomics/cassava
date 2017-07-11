@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 26:06:2017 12:12
+date: 11:07:2017 11:00
 saved-by: naama
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
@@ -3287,6 +3287,22 @@ created_by: naama
 creation_date: 2017-06-26T12:05:00Z
 
 [Term]
+id: CO_334:0000351
+name: Node number per branch
+def: "Number of nodes at each branching level." []
+is_a: CO_334:0000342 ! Node number
+created_by: naama
+creation_date: 2017-07-11T10:55:33Z
+
+[Term]
+id: CO_334:0000352
+name: Number of nodes at branching level 1 counting
+def: "Number of nodes at the first branching level." []
+relationship: variable_of CO_334:0000351 ! Node number per branch
+created_by: naama
+creation_date: 2017-07-11T10:57:20Z
+
+[Term]
 id: CO_334:0000353
 name: Central Leaf Shape
 def: "Shape of central leaf taken from a mid-height position." [CO:curators]
@@ -3368,6 +3384,14 @@ xref: TO:0001042
 is_a: CO_334:0000333 ! Root morphological trait
 
 [Term]
+id: CO_334:0000363
+name: Number of nodes at branching level 2 counting
+def: "Number of nodes at the second branching level." []
+relationship: variable_of CO_334:0000351 ! Node number per branch
+created_by: naama
+creation_date: 2017-07-11T10:57:20Z
+
+[Term]
 id: CO_334:0000364
 name: Female flower number
 def: "Number of female flowers after the buds appear" [CO:curators]
@@ -3398,6 +3422,14 @@ def: "Abundance of flower" [CO:curators]
 synonym: "flowerab" EXACT []
 xref: TO:0002736
 is_a: CO_334:0000336 ! Flower and flowering morphological trait
+
+[Term]
+id: CO_334:0000368
+name: Number of nodes at branching level 3 counting
+def: "Number of nodes at the third branching level." []
+relationship: variable_of CO_334:0000351 ! Node number per branch
+created_by: naama
+creation_date: 2017-07-11T10:57:20Z
 
 [Term]
 id: CO_334:0000369
@@ -3511,6 +3543,14 @@ def: "Hairiness" [CO:curators]
 synonym: "hairiness" EXACT []
 xref: TO:0000398
 is_a: CO_334:0000002 ! Morphological trait
+
+[Term]
+id: CO_334:0000383
+name: Number of nodes at branching level 4 counting
+def: "Number of nodes at the fourth branching level." []
+relationship: variable_of CO_334:0000351 ! Node number per branch
+created_by: naama
+creation_date: 2017-07-11T10:57:20Z
 
 [Term]
 id: CO_334:0000386
