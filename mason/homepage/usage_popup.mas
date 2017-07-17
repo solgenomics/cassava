@@ -7,7 +7,7 @@
       </div>
       <div class="modal-body">
         <div class="container-fluid">
-	  <h4>Cassavabase adheres to the Toronto agreement on prepublication data release</h4>
+	  <h4>Cassavabase adheres to the <a href="https://www.nature.com/nature/journal/v461/n7261/full/461168a.html"> Toronto Agreement</a> on prepublication data release. 
 All data deposited on cassavabase adheres to the Toronto Agreement on prepublication data release. To foster transparent and accessible data sharing culture, in accordance with the Toronto Agreement, all data deposited on cassavabase will be made public immediately. Data producers can provide information on the data they deposit, including planned analyses and publication timeline information, to indicate their publication intentions. Data users are expected to respect scientific etiquette and allow data producers the first global analyses of their data set, and should be aware that pre-publication data may not have been subject to full quality control and peer review, so caution must be applied when utilizing these data. More information is available on the <a href="/usage_policy">data usage policy</a> page.
         </div>
       </div>
@@ -48,7 +48,7 @@ All data deposited on cassavabase adheres to the Toronto Agreement on prepublica
 
 
   if (jQuery.cookie("website_usage_policy_approved") == 1) { 
-    document.write('<div class="well well-sm">You have already accepted the <a href="/usage_policy">website usage policy</a>. Thank you.</div>');
+    document.write('<div class="well well-sm">You have already accepted the <a href="/usage_policy">website usage policy</a>. Thank you. For more information, you can access the <a href="https://www.nature.com/nature/journal/v461/n7261/full/461168a.html"> Toronto Agreement publication </div>');
   }
 
   window.onload=function() { 
