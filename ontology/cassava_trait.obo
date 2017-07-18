@@ -1,8 +1,9 @@
 format-version: 1.2
-date: 11:07:2017 11:00
-saved-by: naama
+date: 18:07:2017 15:44
+saved-by: AAfolabi
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
+namespace-id-rule: * CO_334:$sequence(7,0100000,0999999)$
 ontology: co_334
 
 [Term]
@@ -874,7 +875,7 @@ name: dry matter content percentage
 def: "Percentage dry matter storage root." [CO:curators]
 synonym: "dm" EXACT []
 synonym: "DMCt_Comp_r" EXACT []
-relationship: variable_of CO_334:0000447 ! Root Dry Matter Content
+relationship: variable_of CO_334:0000424 ! Root dry matter content
 relationship: variable_of CO_334:0010300 ! Estimation :Root Dry Matter Content_method
 relationship: variable_of CO_334:0100582 ! ratio
 
@@ -1551,7 +1552,7 @@ name: dry matter content by specific gravity method
 def: "Percentage dry matter content estimated from the specific gravity value of weighted cassava (4-5kg)." [CO:curators]
 synonym: "DMCt_Est_kg" EXACT []
 synonym: "dmspg" EXACT []
-relationship: variable_of CO_334:0000447 ! Root Dry Matter Content
+relationship: variable_of CO_334:0000424 ! Root dry matter content
 relationship: variable_of CO_334:0010318 ! Estimation :dry matter content by specific gravity method_method
 relationship: variable_of CO_334:0100493 ! kg
 
@@ -1580,7 +1581,6 @@ id: CO_334:0000163
 name: specific gravity
 def: "Estimated value obtained by weighing 4-5 kilogram of cassava root in air, and in water." [CO:curators]
 synonym: "spgrv" EXACT []
-relationship: variable_of CO_334:0000447 ! Root Dry Matter Content
 relationship: variable_of CO_334:0010417 ! Measurement :specific gravity_method
 relationship: variable_of CO_334:0100623 ! g
 
@@ -3553,6 +3553,24 @@ created_by: naama
 creation_date: 2017-07-11T10:57:20Z
 
 [Term]
+id: CO_334:0000384
+name: dry matter content of fibrous root percentage
+def: "Ratio of measured fibrous root dry weight and fibrous root fresh weight multiplied by 100." [CO:curator]
+relationship: variable_of CO_334:0000424 ! Root dry matter content
+relationship: variable_of CO_334:0010011 ! Estimation :dry matter content of fibrous root percentage
+created_by: AAfolabi
+creation_date: 2017-07-18T14:45:13Z
+
+[Term]
+id: CO_334:0000385
+name: dry matter content of lower stem percentage
+def: "Ratio of measured lower stem dry weight and lower stem fresh weight multiplied by 100." [CO:curator]
+relationship: variable_of CO_334:0000447 ! Dry Matter Content
+relationship: variable_of CO_334:0010010 ! Estimation :dry matter content of lower stem percentage
+created_by: AAfolabi
+creation_date: 2017-07-18T14:49:00Z
+
+[Term]
 id: CO_334:0000386
 name: Initial Vigor
 def: "Initial plant vigor at one month after planting" [CO:curators]
@@ -3849,6 +3867,40 @@ xref: TO:0001042
 is_a: CO_334:0000001 ! Agronomic trait
 
 [Term]
+id: CO_334:0000423
+name: dry matter content of leaf percentage
+def: "Ratio of measured leaf dry weight and leaf fresh weight multiplied by 100." [CO:curator]
+relationship: variable_of CO_334:0000447 ! Dry Matter Content
+relationship: variable_of CO_334:0010009 ! Estimation :dry matter content of leaf percentage
+created_by: AAfolabi
+creation_date: 2017-07-18T14:52:38Z
+
+[Term]
+id: CO_334:0000424
+name: Root dry matter content
+def: "Dry matter content of root related terms." [CO:curator]
+is_a: CO_334:0000447 ! Dry Matter Content
+created_by: AAfolabi
+creation_date: 2017-07-18T14:58:31Z
+
+[Term]
+id: CO_334:0000425
+name: Total leaf area
+def: "Measurement of leaf area." [CO:curator]
+is_a: CO_334:0000330 ! Leaf morphological trait
+created_by: AAfolabi
+creation_date: 2017-07-18T15:29:42Z
+
+[Term]
+id: CO_334:0000426
+name: total leaf area estimation
+def: "Estimation of leaf area by scanning all leaves of a plant on centimeter square using a handheld device." [CO:curator]
+relationship: variable_of CO_334:0000425 ! Total leaf area
+relationship: variable_of CO_334:0010012 ! Estimation :Total leaf area_method
+created_by: AAfolabi
+creation_date: 2017-07-18T15:30:58Z
+
+[Term]
 id: CO_334:0000427
 name: Petiole Color
 def: "Petiole color" [CO:curators]
@@ -4002,8 +4054,8 @@ is_a: CO_334:0000333 ! Root morphological trait
 
 [Term]
 id: CO_334:0000447
-name: Root Dry Matter Content
-def: "Dry matter content of storage roots" [CO:curators]
+name: Dry Matter Content
+def: "Dry matter content of storage roots." [CO:curators]
 synonym: "dm" EXACT []
 xref: TO:1000007
 is_a: CO_334:0000004 ! Quality trait
@@ -4525,6 +4577,42 @@ created_by: aafolabi
 creation_date: 2016-05-12T17:29:12Z
 
 [Term]
+id: CO_334:0010009
+name: Estimation :dry matter content of leaf percentage
+namespace: CassavaMethod
+def: "Leaf dry matter content estimated as the ratio of measured leaf dry weight and leaf fresh weight multiplied by 100." [CO:curator]
+relationship: method_of CO_334:0000447 ! Dry Matter Content
+created_by: AAfolabi
+creation_date: 2017-07-18T15:13:10Z
+
+[Term]
+id: CO_334:0010010
+name: Estimation :dry matter content of lower stem percentage
+namespace: CassavaMethod
+def: "Dry matter content of lower stem estimated as the ratio of measured lower stem dry weight and lower stem fresh weight multiplied by 100." [CO:curator, XX:<new dbxref>]
+relationship: method_of CO_334:0000447 ! Dry Matter Content
+created_by: AAfolabi
+creation_date: 2017-07-18T15:19:20Z
+
+[Term]
+id: CO_334:0010011
+name: Estimation :dry matter content of fibrous root percentage
+namespace: CassavaMethod
+def: "Estimation of fibrous root dry matter content as the ratio of measured fibrous root dry weight and fibrous root fresh weight multiplied by 100." [CO:curator]
+relationship: method_of CO_334:0000447 ! Dry Matter Content
+created_by: AAfolabi
+creation_date: 2017-07-18T15:24:49Z
+
+[Term]
+id: CO_334:0010012
+name: Estimation :Total leaf area_method
+namespace: CassavaMethod
+def: "Estimation of leaf area using handheld device." [CO:curator]
+relationship: method_of CO_334:0000425 ! Total leaf area
+created_by: AAfolabi
+creation_date: 2017-07-18T15:34:16Z
+
+[Term]
 id: CO_334:0010220
 name: Counting:Sprouting_method
 namespace: CassavaMethod
@@ -5005,7 +5093,7 @@ id: CO_334:0010300
 name: Estimation :Root Dry Matter Content_method
 namespace: CassavaMethod
 def: "Estimated root dry matter estimated by multiplying 100 times the ratio of dry root weight after oven drying to constant weight divided by the weight of an approximately 100 gram sample of fresh roots" [CO:curators]
-relationship: method_of CO_334:0000447 ! Root Dry Matter Content
+relationship: method_of CO_334:0000447 ! Dry Matter Content
 
 [Term]
 id: CO_334:0010301
@@ -5124,7 +5212,7 @@ id: CO_334:0010318
 name: Estimation :dry matter content by specific gravity method_method
 namespace: CassavaMethod
 def: "Estimated dry  matter content from the specific gravity value weighted cassava (4-5kg)" [CO:curators]
-relationship: method_of CO_334:0000447 ! Root Dry Matter Content
+relationship: method_of CO_334:0000447 ! Dry Matter Content
 
 [Term]
 id: CO_334:0010319
@@ -5810,7 +5898,7 @@ id: CO_334:0010417
 name: Measurement :specific gravity_method
 namespace: CassavaMethod
 def: "Estimated value obtained by weighing 4-5kg of cassava in air and in water" [CO:curators]
-relationship: method_of CO_334:0000447 ! Root Dry Matter Content
+relationship: method_of CO_334:0000447 ! Dry Matter Content
 
 [Term]
 id: CO_334:0010418
@@ -6221,6 +6309,38 @@ namespace: CassavaScale
 relationship: scale_of CO_334:0010005 ! Measurement:Stem diameter_method
 created_by: AAfolabi
 creation_date: 2015-09-29T14:08:56Z
+
+[Term]
+id: CO_334:0100004
+name: ratio
+namespace: CassavaScale
+relationship: scale_of CO_334:0010009 ! Estimation :dry matter content of leaf percentage
+created_by: AAfolabi
+creation_date: 2017-07-18T15:15:13Z
+
+[Term]
+id: CO_334:0100005
+name: ratio
+namespace: CassavaScale
+relationship: scale_of CO_334:0010010 ! Estimation :dry matter content of lower stem percentage
+created_by: AAfolabi
+creation_date: 2017-07-18T15:22:30Z
+
+[Term]
+id: CO_334:0100006
+name: ratio
+namespace: CassavaScale
+relationship: scale_of CO_334:0010011 ! Estimation :dry matter content of fibrous root percentage
+created_by: AAfolabi
+creation_date: 2017-07-18T15:27:22Z
+
+[Term]
+id: CO_334:0100007
+name: cm square
+namespace: CassavaScale
+relationship: scale_of CO_334:0010012 ! Estimation :Total leaf area_method
+created_by: AAfolabi
+creation_date: 2017-07-18T15:37:40Z
 
 [Term]
 id: CO_334:0100434
