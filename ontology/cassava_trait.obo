@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:07:2017 15:44
+date: 25:07:2017 17:10
 saved-by: AAfolabi
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
@@ -1412,7 +1412,7 @@ name: number of forks counting
 def: "Number of branches (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) at every branching level." [CO:curators]
 synonym: "BrnchNo_Count_Brnch" EXACT []
 synonym: "flwfrk" EXACT []
-relationship: variable_of CO_334:0000413 ! Number of forks
+relationship: variable_of CO_334:0000413 ! Number of  forks
 relationship: variable_of CO_334:0010403 ! Counting:number of forks_method
 relationship: variable_of CO_334:0100609 ! Branches
 
@@ -3354,7 +3354,7 @@ is_a: CO_334:0000336 ! Flower and flowering morphological trait
 [Term]
 id: CO_334:0000359
 name: Days to first inflorescence
-def: "Time to reach the first inflorescence" [CO:curators]
+def: "Time to reach the first inflorescence." [CO:curators]
 synonym: "flwdfi" EXACT []
 xref: TO:0002616
 is_a: CO_334:0000336 ! Flower and flowering morphological trait
@@ -3789,7 +3789,7 @@ is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000413
-name: Number of forks
+name: Number of  forks
 def: "Number of branches" [CO:curators]
 synonym: "flwfrk" EXACT []
 xref: TO:0000740
@@ -4044,6 +4044,14 @@ xref: TO:0000261
 is_a: CO_334:0000030 ! insect damage
 
 [Term]
+id: CO_334:0000445
+name: Days to branching
+def: "Days to forking event." [CO:curator]
+is_a: CO_334:0000329 ! Plant branch morphological trait
+created_by: AAfolabi
+creation_date: 2017-07-25T09:29:55Z
+
+[Term]
 id: CO_334:0000446
 name: Root constrictions number
 def: "Number of constrictions on the storage root" [CO:curators]
@@ -4067,6 +4075,14 @@ def: "Evaluation of various root properties" [CO:curators]
 synonym: "rteval" EXACT []
 xref: TO:0001042
 is_a: CO_334:0000001 ! Agronomic trait
+
+[Term]
+id: CO_334:0000449
+name: Days to branching event
+def: "Days when forking event occured." [CO:curator]
+is_a: CO_334:0000445 ! Days to branching
+created_by: AAfolabi
+creation_date: 2017-07-25T09:39:03Z
 
 [Term]
 id: CO_334:0000450
@@ -4204,6 +4220,51 @@ def: "Number of germinated stakes" [CO:curators]
 synonym: "sprtct" EXACT []
 xref: TO:1000007
 is_a: CO_334:0000001 ! Agronomic trait
+
+[Term]
+id: CO_334:0000467
+name: Days to first forking event visual observation
+def: "Visual observation of when (actual date in the format of dd/mm/yyyy from the date of planting) first forking event occured." [CO:curator]
+relationship: variable_of CO_334:0000449 ! Days to branching event
+relationship: variable_of CO_334:0010013 ! Visual Observation :days to branching event
+relationship: variable_of CO_334:0100008 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T10:00:07Z
+
+[Term]
+id: CO_334:0000468
+name: Days to second forking event visual observation
+def: "Visual observation of when (actual date in the format of dd/mm/yyyy from the date of planting) second forking event occured." [CO:curator]
+relationship: variable_of CO_334:0000449 ! Days to branching event
+relationship: variable_of CO_334:0010013 ! Visual Observation :days to branching event
+relationship: variable_of CO_334:0100008 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T10:05:36Z
+
+[Term]
+id: CO_334:0000469
+name: Days to third forking event visual observation
+def: "Visual observation of when (actual date in the format of dd/mm/yyyy from the date of planting) third forking event occured." [CO:<new dbxref>curator]
+relationship: variable_of CO_334:0000449 ! Days to branching event
+relationship: variable_of CO_334:0010013 ! Visual Observation :days to branching event
+relationship: variable_of CO_334:0100008 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T10:06:51Z
+
+[Term]
+id: CO_334:0000470
+name: Days to abortion
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
+created_by: AAfolabi
+creation_date: 2017-07-25T11:13:40Z
+
+[Term]
+id: CO_334:0000471
+name: Days to abortion by branching levels
+def: "Days to the death of immatured flower." [CO:curator]
+is_a: CO_334:0000470 ! Days to abortion
+created_by: AAfolabi
+creation_date: 2017-07-25T11:14:47Z
 
 [Term]
 id: CO_334:0000472
@@ -4500,6 +4561,363 @@ synonym: "zn" EXACT []
 is_a: CO_334:0000004 ! Quality trait
 
 [Term]
+id: CO_334:0000508
+name: Days to abortion on the first branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the death of immatured on the first branching level. Color of buds changes from green to brown." [CO:curator]
+relationship: variable_of CO_334:0000471 ! Days to abortion by branching levels
+relationship: variable_of CO_334:0010014 ! Visual Observation: days to abortion by branching level
+relationship: variable_of CO_334:0100009 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T11:17:03Z
+
+[Term]
+id: CO_334:0000509
+name: Days to abortion on the second branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the death of immatured on the second branching level. Color of buds changes from green to brown." [CO:curator]
+relationship: variable_of CO_334:0000471 ! Days to abortion by branching levels
+relationship: variable_of CO_334:0010014 ! Visual Observation: days to abortion by branching level
+relationship: variable_of CO_334:0100009 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T11:22:50Z
+
+[Term]
+id: CO_334:0000510
+name: Days to abortion on the third branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the death of immatured on the third branching level. Color of buds changes from green to brown." [CO:curator]
+relationship: variable_of CO_334:0000471 ! Days to abortion by branching levels
+relationship: variable_of CO_334:0010014 ! Visual Observation: days to abortion by branching level
+relationship: variable_of CO_334:0100009 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T11:26:48Z
+
+[Term]
+id: CO_334:0000511
+name: Days to first female flower opens
+def: "First female flower (pistillate) mature and opens." [CO:curator]
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
+created_by: AAfolabi
+creation_date: 2017-07-25T11:46:46Z
+
+[Term]
+id: CO_334:0000512
+name: Days to first female flower opens by branch levels
+def: "First female flower (pistillate) mature and opens by branching levels." [CO:curator]
+is_a: CO_334:0000511 ! Days to first female flower opens
+created_by: AAfolabi
+creation_date: 2017-07-25T11:49:20Z
+
+[Term]
+id: CO_334:0000513
+name: Days to first female flower open on the first branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the opening of the first female flower on the first branching level." [CO:curator]
+relationship: variable_of CO_334:0000512 ! Days to first female flower opens by branch levels
+relationship: variable_of CO_334:0010015 ! Visual Observation :Days to first female flower opens by branch levels
+relationship: variable_of CO_334:0100010 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T11:52:02Z
+
+[Term]
+id: CO_334:0000514
+name: Days to first female flower open on the second branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the opening of the first female flower on the second branching level." [CO:curator]
+relationship: variable_of CO_334:0000512 ! Days to first female flower opens by branch levels
+relationship: variable_of CO_334:0010015 ! Visual Observation :Days to first female flower opens by branch levels
+relationship: variable_of CO_334:0100010 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T11:53:47Z
+
+[Term]
+id: CO_334:0000515
+name: Days to first female flower open on the third branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the opening of the first female flower on the third branching level." [CO:curator]
+relationship: variable_of CO_334:0000512 ! Days to first female flower opens by branch levels
+relationship: variable_of CO_334:0010015 ! Visual Observation :Days to first female flower opens by branch levels
+relationship: variable_of CO_334:0100010 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T11:55:08Z
+
+[Term]
+id: CO_334:0000516
+name: Days to senescence
+def: "Days to senescence." [CO:curator]
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
+created_by: AAfolabi
+creation_date: 2017-07-25T12:16:27Z
+
+[Term]
+id: CO_334:0000517
+name: Days to senescence by branch level
+is_a: CO_334:0000516 ! Days to senescence
+created_by: AAfolabi
+creation_date: 2017-07-25T12:17:45Z
+
+[Term]
+id: CO_334:0000518
+name: Days to senescence on the first branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the death of matured flowers on the first branching level. Usually done by observing the change in color of petal from yellow to brown." [CO:curator]
+relationship: variable_of CO_334:0000517 ! Days to senescence by branch level
+relationship: variable_of CO_334:0010016 ! Visual Observation :Days to senescence by branch level
+relationship: variable_of CO_334:0100011 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T12:18:35Z
+
+[Term]
+id: CO_334:0000519
+name: Days to senescence on the second branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the death of matured flowers on the second branching level. Usually done by observing the change in color of petal from yellow to brown." [CO:curator]
+relationship: variable_of CO_334:0000517 ! Days to senescence by branch level
+relationship: variable_of CO_334:0010016 ! Visual Observation :Days to senescence by branch level
+relationship: variable_of CO_334:0100011 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T12:24:11Z
+
+[Term]
+id: CO_334:0000520
+name: Days to senescence on the third branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the death of matured flowers on the third branching level. Usually done by observing the change in color of petal from yellow to brown." [CO:curator]
+relationship: variable_of CO_334:0000517 ! Days to senescence by branch level
+relationship: variable_of CO_334:0010016 ! Visual Observation :Days to senescence by branch level
+relationship: variable_of CO_334:0100011 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T12:26:27Z
+
+[Term]
+id: CO_334:0000521
+name: Number of forks by branch level
+def: "Number of forks or branches at specific branching levels." [CO:curator]
+is_a: CO_334:0000413 ! Number of  forks
+created_by: AAfolabi
+creation_date: 2017-07-25T14:53:49Z
+
+[Term]
+id: CO_334:0000522
+name: number of forks on branching level 1 counting
+def: "Number of forks (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) on the first branching level." [CO:curator]
+relationship: variable_of CO_334:0000521 ! Number of forks by branch level
+relationship: variable_of CO_334:0010017 ! Counting :number of forks by branch level
+relationship: variable_of CO_334:0100012 ! Branches
+created_by: AAfolabi
+creation_date: 2017-07-25T14:56:41Z
+
+[Term]
+id: CO_334:0000523
+name: number of forks on branching level 2 counting
+def: "Number of forks (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) on the second branching level." [CO:curator]
+relationship: variable_of CO_334:0000521 ! Number of forks by branch level
+relationship: variable_of CO_334:0010017 ! Counting :number of forks by branch level
+relationship: variable_of CO_334:0100012 ! Branches
+created_by: AAfolabi
+creation_date: 2017-07-25T15:01:01Z
+
+[Term]
+id: CO_334:0000524
+name: number of forks on branching level 3 counting
+def: "Number of forks (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) on the third branching level." [CO:curator]
+relationship: variable_of CO_334:0000521 ! Number of forks by branch level
+relationship: variable_of CO_334:0010017 ! Counting :number of forks by branch level
+relationship: variable_of CO_334:0100012 ! Branches
+created_by: AAfolabi
+creation_date: 2017-07-25T15:02:13Z
+
+[Term]
+id: CO_334:0000525
+name: Number of inflorescence by branch level
+def: "Number of inflorescence at specific branching level." [CO:curator]
+is_a: CO_334:0000359 ! Days to first inflorescence
+created_by: AAfolabi
+creation_date: 2017-07-25T15:54:07Z
+
+[Term]
+id: CO_334:0000526
+name: number of inflorescence on the first branch counting
+def: "Number of inflorescence on the first branching level." [CO:curator]
+relationship: variable_of CO_334:0000525 ! Number of inflorescence by branch level
+relationship: variable_of CO_334:0010018 ! Counting :Number of inflorescence by branch level
+relationship: variable_of CO_334:0100014 ! inflorescence
+created_by: AAfolabi
+creation_date: 2017-07-25T15:58:19Z
+
+[Term]
+id: CO_334:0000527
+name: number of inflorescence on the second branch counting
+def: "Number of inflorescence on the second branching level." [CO:curator]
+relationship: variable_of CO_334:0000525 ! Number of inflorescence by branch level
+relationship: variable_of CO_334:0010018 ! Counting :Number of inflorescence by branch level
+relationship: variable_of CO_334:0100014 ! inflorescence
+created_by: AAfolabi
+creation_date: 2017-07-25T16:00:49Z
+
+[Term]
+id: CO_334:0000528
+name: number of inflorescence on the third branch counting
+def: "Number of inflorescence on the third branching level." [CO:curator]
+relationship: variable_of CO_334:0000525 ! Number of inflorescence by branch level
+relationship: variable_of CO_334:0010018 ! Counting :Number of inflorescence by branch level
+relationship: variable_of CO_334:0100014 ! inflorescence
+created_by: AAfolabi
+creation_date: 2017-07-25T16:02:21Z
+
+[Term]
+id: CO_334:0000529
+name: Number of buds
+def: "Number of buds." [CO:curator]
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
+created_by: AAfolabi
+creation_date: 2017-07-25T16:16:00Z
+
+[Term]
+id: CO_334:0000530
+name: Number of buds by branch level
+def: "Count of the number of buds at different branching level." [CO:curator]
+is_a: CO_334:0000529 ! Number of buds
+created_by: AAfolabi
+creation_date: 2017-07-25T16:16:30Z
+
+[Term]
+id: CO_334:0000531
+name: number of buds on branch 1 counting
+def: "Count of the number of flower buds (inability to distinguish a flower bud as a male Or female) on the first branching level." [CO:curator]
+relationship: variable_of CO_334:0000530 ! Number of buds by branch level
+relationship: variable_of CO_334:0010019 ! Counting :Number of buds by branch level
+relationship: variable_of CO_334:0100013 ! buds
+created_by: AAfolabi
+creation_date: 2017-07-25T16:19:03Z
+
+[Term]
+id: CO_334:0000532
+name: number of buds on branch 2 counting
+def: "Counnt of the number of flower buds (inability to distinguish a flower bud as a male Or female) on the second branching level." [CO:curator]
+relationship: variable_of CO_334:0000530 ! Number of buds by branch level
+relationship: variable_of CO_334:0010019 ! Counting :Number of buds by branch level
+relationship: variable_of CO_334:0100013 ! buds
+created_by: AAfolabi
+creation_date: 2017-07-25T16:21:57Z
+
+[Term]
+id: CO_334:0000533
+name: number of buds on branch 3 counting
+def: "Counnt of the number of flower buds (inability to distinguish a flower bud as a male Or female) on the third branching level." [CO:curator]
+relationship: variable_of CO_334:0000530 ! Number of buds by branch level
+relationship: variable_of CO_334:0010019 ! Counting :Number of buds by branch level
+relationship: variable_of CO_334:0100013 ! buds
+created_by: AAfolabi
+creation_date: 2017-07-25T16:22:40Z
+
+[Term]
+id: CO_334:0000534
+name: male flower number counting by branch level
+def: "Number male flowers after the buds appears, matures, and grows in size to become distinctive at specific branch levels." [CO:curator]
+is_a: CO_334:0000403 ! Male flower number
+created_by: AAfolabi
+creation_date: 2017-07-25T16:30:45Z
+
+[Term]
+id: CO_334:0000535
+name: male flower number counting on branch 1
+def: "A count of the number male flowers after the buds appears, matures, and grows in size to become distinctive on the first branch levels." [CO:curator]
+relationship: variable_of CO_334:0000534 ! male flower number counting by branch level
+relationship: variable_of CO_334:0010020 ! Counting :male flower number by branch level
+relationship: variable_of CO_334:0100015 ! Flowers
+created_by: AAfolabi
+creation_date: 2017-07-25T16:33:09Z
+
+[Term]
+id: CO_334:0000536
+name: male flower number counting on branch 2
+def: "A count of the number male flowers after the buds appears, matures, and grows in size to become distinctive on the second branch levels." [CO:curator]
+relationship: variable_of CO_334:0000534 ! male flower number counting by branch level
+relationship: variable_of CO_334:0010020 ! Counting :male flower number by branch level
+relationship: variable_of CO_334:0100015 ! Flowers
+created_by: AAfolabi
+creation_date: 2017-07-25T16:34:25Z
+
+[Term]
+id: CO_334:0000537
+name: male flower number counting on branch 3
+def: "A count of the number male flowers after the buds appears, matures, and grows in size to become distinctive on the third branch levels." [CO:curator]
+relationship: variable_of CO_334:0000534 ! male flower number counting by branch level
+relationship: variable_of CO_334:0010020 ! Counting :male flower number by branch level
+relationship: variable_of CO_334:0100015 ! Flowers
+created_by: AAfolabi
+creation_date: 2017-07-25T16:35:19Z
+
+[Term]
+id: CO_334:0000538
+name: Days to fruitset by branch level
+def: "Days to fruitset in a plant." [CO:curator]
+is_a: CO_334:0000337 ! Fruit morphological trait
+created_by: AAfolabi
+creation_date: 2017-07-25T16:49:04Z
+
+[Term]
+id: CO_334:0000539
+name: days to fruitset on branch 1 visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the date when fruit is first seen on the first branching level." [CO:curator]
+relationship: variable_of CO_334:0000538 ! Days to fruitset by branch level
+relationship: variable_of CO_334:0010021 ! Visual Observation : Days to fruitset by branch level
+relationship: variable_of CO_334:0100016 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T16:50:17Z
+
+[Term]
+id: CO_334:0000540
+name: days to fruitset on branch 2 visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the date when fruit is first seen on the second branching level." [CO:curator]
+relationship: variable_of CO_334:0000538 ! Days to fruitset by branch level
+relationship: variable_of CO_334:0010021 ! Visual Observation : Days to fruitset by branch level
+relationship: variable_of CO_334:0100016 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T16:52:43Z
+
+[Term]
+id: CO_334:0000541
+name: days to fruitset on branch 3 visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the date when fruit is first seen on the third branching level." [CO:curator]
+relationship: variable_of CO_334:0000538 ! Days to fruitset by branch level
+relationship: variable_of CO_334:0010021 ! Visual Observation : Days to fruitset by branch level
+relationship: variable_of CO_334:0100016 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T16:53:21Z
+
+[Term]
+id: CO_334:0000542
+name: number of fruitset by branch level
+def: "Number of fruits formed from the seeds after pollination at different branching level." [CO:curator]
+is_a: CO_334:0000415 ! Number of fruitset
+created_by: AAfolabi
+creation_date: 2017-07-25T16:58:36Z
+
+[Term]
+id: CO_334:0000543
+name: number of fruitset on branch 1 counting
+def: "A count of the number of fruits formed from the seeds after pollination on the first branching level." [CO:curator]
+relationship: variable_of CO_334:0000542 ! number of fruitset by branch level
+relationship: variable_of CO_334:0010022 ! Counting :number of fruitset by branch level
+relationship: variable_of CO_334:0100017 ! Fruitset
+created_by: AAfolabi
+creation_date: 2017-07-25T17:00:04Z
+
+[Term]
+id: CO_334:0000544
+name: number of fruitset on branch 2 counting
+def: "A count of the number of fruits formed from the seeds after pollination on the second branching level." [CO:curator]
+relationship: variable_of CO_334:0000542 ! number of fruitset by branch level
+relationship: variable_of CO_334:0010022 ! Counting :number of fruitset by branch level
+relationship: variable_of CO_334:0100017 ! Fruitset
+created_by: AAfolabi
+creation_date: 2017-07-25T17:03:07Z
+
+[Term]
+id: CO_334:0000545
+name: number of fruitset on branch 3 counting
+def: "A count of the number of fruits formed from the seeds after pollination on the third branching level." [CO:curator]
+relationship: variable_of CO_334:0000542 ! number of fruitset by branch level
+relationship: variable_of CO_334:0010022 ! Counting :number of fruitset by branch level
+relationship: variable_of CO_334:0100017 ! Fruitset
+created_by: AAfolabi
+creation_date: 2017-07-25T17:04:28Z
+
+[Term]
 id: CO_334:0010000
 name: measurement: plant height with leaf_method
 namespace: CassavaMethod
@@ -4611,6 +5029,92 @@ def: "Estimation of leaf area using handheld device." [CO:curator]
 relationship: method_of CO_334:0000425 ! Total leaf area
 created_by: AAfolabi
 creation_date: 2017-07-18T15:34:16Z
+
+[Term]
+id: CO_334:0010013
+name: Visual Observation :days to branching event
+namespace: CassavaMethod
+relationship: method_of CO_334:0000449 ! Days to branching event
+created_by: AAfolabi
+creation_date: 2017-07-25T10:18:21Z
+
+[Term]
+id: CO_334:0010014
+name: Visual Observation: days to abortion by branching level
+namespace: CassavaMethod
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the death of immatured flower." [CO:curator]
+relationship: method_of CO_334:0000471 ! Days to abortion by branching levels
+created_by: AAfolabi
+creation_date: 2017-07-25T11:28:02Z
+
+[Term]
+id: CO_334:0010015
+name: Visual Observation :Days to first female flower opens by branch levels
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the opening of the first female flower" [CO:curator]
+relationship: method_of CO_334:0000512 ! Days to first female flower opens by branch levels
+created_by: AAfolabi
+creation_date: 2017-07-25T12:00:48Z
+
+[Term]
+id: CO_334:0010016
+name: Visual Observation :Days to senescence by branch level
+namespace: CassavaMethod
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the death of matured flowers." [CO:curator]
+relationship: method_of CO_334:0000517 ! Days to senescence by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T12:27:33Z
+
+[Term]
+id: CO_334:0010017
+name: Counting :number of forks by branch level
+namespace: CassavaMethod
+def: "A count of the number of branches (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) at specific branching level." [CO:curator]
+relationship: method_of CO_334:0000521 ! Number of forks by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T15:06:07Z
+
+[Term]
+id: CO_334:0010018
+name: Counting :Number of inflorescence by branch level
+namespace: CassavaMethod
+def: "Count of the number of inflorescence by branch levels." [CO:curator]
+relationship: method_of CO_334:0000525 ! Number of inflorescence by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T16:04:51Z
+
+[Term]
+id: CO_334:0010019
+name: Counting :Number of buds by branch level
+namespace: CassavaMethod
+relationship: method_of CO_334:0000530 ! Number of buds by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T16:23:40Z
+
+[Term]
+id: CO_334:0010020
+name: Counting :male flower number by branch level
+namespace: CassavaMethod
+def: "Count of the number male flowers after the buds appears, matures, and grows in size to become distinctive." [CO:curator]
+relationship: method_of CO_334:0000534 ! male flower number counting by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T16:36:30Z
+
+[Term]
+id: CO_334:0010021
+name: Visual Observation : Days to fruitset by branch level
+namespace: CassavaMethod
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the date when fruit is first seen." [CO:curator]
+relationship: method_of CO_334:0000538 ! Days to fruitset by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T16:54:49Z
+
+[Term]
+id: CO_334:0010022
+name: Counting :number of fruitset by branch level
+def: "A count of the number of fruits formed from the seeds after pollination." [CO:curator]
+relationship: method_of CO_334:0000542 ! number of fruitset by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T17:05:17Z
 
 [Term]
 id: CO_334:0010220
@@ -5800,7 +6304,7 @@ id: CO_334:0010403
 name: Counting:number of forks_method
 namespace: CassavaMethod
 def: "A count of the number of branches (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) at every branching level." [CO:curators]
-relationship: method_of CO_334:0000413 ! Number of forks
+relationship: method_of CO_334:0000413 ! Number of  forks
 
 [Term]
 id: CO_334:0010404
@@ -6341,6 +6845,92 @@ namespace: CassavaScale
 relationship: scale_of CO_334:0010012 ! Estimation :Total leaf area_method
 created_by: AAfolabi
 creation_date: 2017-07-18T15:37:40Z
+
+[Term]
+id: CO_334:0100008
+name: days
+namespace: CassavaScale
+relationship: scale_of CO_334:0010013 ! Visual Observation :days to branching event
+created_by: AAfolabi
+creation_date: 2017-07-25T11:01:57Z
+
+[Term]
+id: CO_334:0100009
+name: days
+namespace: CassavaScale
+def: "Number of days." [CO:curator]
+relationship: scale_of CO_334:0010014 ! Visual Observation: days to abortion by branching level
+created_by: AAfolabi
+creation_date: 2017-07-25T11:36:23Z
+
+[Term]
+id: CO_334:0100010
+name: days
+namespace: CassavaScale
+def: "Number of days." [CO:curator]
+relationship: scale_of CO_334:0010015 ! Visual Observation :Days to first female flower opens by branch levels
+created_by: AAfolabi
+creation_date: 2017-07-25T12:01:42Z
+
+[Term]
+id: CO_334:0100011
+name: days
+namespace: CassavaScale
+def: "Number of days." [CO:curator, XX:<new dbxref>]
+relationship: scale_of CO_334:0010016 ! Visual Observation :Days to senescence by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T12:28:42Z
+
+[Term]
+id: CO_334:0100012
+name: Branches
+namespace: CassavaScale
+relationship: scale_of CO_334:0010017 ! Counting :number of forks by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T15:09:59Z
+
+[Term]
+id: CO_334:0100013
+name: buds
+namespace: CassavaScale
+def: "Number of flower buds." [CO:curator]
+relationship: scale_of CO_334:0010019 ! Counting :Number of buds by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T16:24:36Z
+
+[Term]
+id: CO_334:0100014
+name: inflorescence
+namespace: CassavaScale
+def: "Number of inflorescence." [CO:curator]
+relationship: scale_of CO_334:0010018 ! Counting :Number of inflorescence by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T16:06:30Z
+
+[Term]
+id: CO_334:0100015
+name: Flowers
+namespace: CassavaScale
+relationship: scale_of CO_334:0010020 ! Counting :male flower number by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T16:41:40Z
+
+[Term]
+id: CO_334:0100016
+name: days
+namespace: CassavaScale
+def: "Number of days." [CO:curator]
+relationship: scale_of CO_334:0010021 ! Visual Observation : Days to fruitset by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T16:55:59Z
+
+[Term]
+id: CO_334:0100017
+name: Fruitset
+namespace: CassavaScale
+relationship: scale_of CO_334:0010022 ! Counting :number of fruitset by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T17:06:23Z
 
 [Term]
 id: CO_334:0100434
