@@ -1581,6 +1581,7 @@ id: CO_334:0000163
 name: specific gravity
 def: "Estimated value obtained by weighing 4-5 kilogram of cassava root in air, and in water." [CO:curators]
 synonym: "spgrv" EXACT []
+relationship: variable_of CO_334:0000447 ! Dry Matter Content
 relationship: variable_of CO_334:0010417 ! Measurement :specific gravity_method
 relationship: variable_of CO_334:0100623 ! g
 
