@@ -1,8 +1,9 @@
 format-version: 1.2
-date: 04:01:2017 14:35
-saved-by: naama
+date: 25:07:2017 17:10
+saved-by: AAfolabi
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: cassava_trait
+namespace-id-rule: * CO_334:$sequence(7,0100000,0999999)$
 ontology: co_334
 
 [Term]
@@ -65,7 +66,7 @@ relationship: variable_of CO_334:0100582 ! ratio
 [Term]
 id: CO_334:0000009
 name: initial vigor assessment 1-7
-def: "Visual assessment of plant vigor during establishment scored one month after planting." [CO:curators]
+def: "Visual assessment of plant vigor during establishment scored one month after planting. 3 = Not vigorous, 5 = Medium vigor, 7 = highly vigorous." [CO:curators]
 synonym: "IVig_IITAVisScg_1to7" EXACT []
 synonym: "vigor" EXACT []
 xref: TO:0000250
@@ -95,7 +96,7 @@ relationship: variable_of CO_334:0100491 ! Root
 
 [Term]
 id: CO_334:0000012
-name: fresh root weight per plot
+name: fresh storage root weight per plot
 def: "Total fresh weight of storage roots harvested per plot measured in kilogram (kg)." [CO:curators]
 synonym: "rtwt" EXACT []
 synonym: "RtWt_Wgh_kg" EXACT []
@@ -177,8 +178,8 @@ relationship: variable_of CO_334:0100494 ! 7pt scale
 
 [Term]
 id: CO_334:0000020
-name: storage root shape visual rating 1-4
-def: "Visual rating of storage root shape with 1 = conical, 2 = conical-cylindrical, 3 = cylindrical, and 4 = fusiform." [CO:curators]
+name: storage root shape visual rating 1-6
+def: "Visual rating of storage root shape with 1 = conical, 2 = conical-cylindrical, 3 = cylindrical, 4 = fusiform, 5 = Irrregular, and 6 = Combination of shapes." [CO:curators]
 synonym: "rtshp" EXACT []
 synonym: "RtShp_VisClsn_1to6" EXACT []
 relationship: variable_of CO_334:0000491 ! Storage Root Shape
@@ -201,7 +202,7 @@ name: root neck length visual rating 0-7
 def: "Visual rating of root neck length with 0 = absent or sessile, 3 = short, 5 = intermediate, and 7 = long." [CO:curators]
 synonym: "nklgt" EXACT []
 synonym: "NkLng_VisClsn_0to7" EXACT []
-relationship: variable_of CO_334:0000451 ! Root Neck Length
+relationship: variable_of CO_334:0000451 ! Storage root neck length
 relationship: variable_of CO_334:0010293 ! Visual Rating:Root Neck Length_method
 relationship: variable_of CO_334:0100499 ! 8pt scale
 
@@ -490,7 +491,7 @@ name: root surface color visual rating 1-3
 def: "Visual rating of storage root surface color with 1 = white or cream, 2 =light brown, and 3 = dark brown." [CO:curators]
 synonym: "rtscol" EXACT []
 synonym: "RtSurfCol_VisClsn_1to3" EXACT []
-relationship: variable_of CO_334:0000454 ! Root Surface Color
+relationship: variable_of CO_334:0000454 ! Storage root surface color
 relationship: variable_of CO_334:0010311 ! Visual Rating:Root Surface Color_method
 relationship: variable_of CO_334:0100517 ! 3pt scale
 
@@ -500,7 +501,7 @@ name: root surface texture visual rating 1-7
 def: "Visual rating of storage root texture with 3 = smooth, 5 = intermediate, and 7 = rough." [CO:curators]
 synonym: "RtSurfTex_VisClsn_1to7" EXACT []
 synonym: "rttext" EXACT []
-relationship: variable_of CO_334:0000455 ! Root Surface Texture
+relationship: variable_of CO_334:0000455 ! Storage root surface texture
 relationship: variable_of CO_334:0010312 ! Visual Rating:Root Surface Texture_method
 relationship: variable_of CO_334:0100518 ! 3pt scale
 
@@ -577,7 +578,7 @@ relationship: variable_of CO_334:0100563 ! 3pt scale
 [Term]
 id: CO_334:0000062
 name: stem color visual scoring 1-4
-def: "Visual scoring of stem color with 1 = silver green, 2 = light brown or orange, 3 = dark brown, and 4 = dark green." [CO:curators]
+def: "Visual scoring of stem color with 1 = silver green, 2 = light brown or orange, 3 = dark brown, 4 = dark green, and 5 = golden." [CO:curators]
 synonym: "stmcol" EXACT []
 synonym: "StmCol_VisClsn_1to4" EXACT []
 relationship: variable_of CO_334:0000475 ! Stem Color
@@ -719,7 +720,7 @@ name: hydrogen cyanide potential enzymatic method
 def: "Cyanogenic potential is an indicator of the potential production of hydrogen cyanide in cassava storage roots with less than 5mg/100g fresh weight of root = low, 5-10mg/100g fresh weight of root = medium, and 10mg/100g fresh weight of root = high." [CO:curators]
 synonym: "hcn_enz" EXACT []
 synonym: "RtCyanCt_Enz_1to3" EXACT []
-relationship: variable_of CO_334:0000502 ! Tuberous root cyanide content
+relationship: variable_of CO_334:0000502 ! Storage root cyanide content
 relationship: variable_of CO_334:0010334 ! Estimation :hydrogen cyanide potential enzymatic method_method
 relationship: variable_of CO_334:0100540 ! 3pt scale
 
@@ -796,16 +797,16 @@ name: rotted storage root counting
 def: "A count of the number of rotted storage roots per plot at the time of harvest." [CO:curators]
 synonym: "NoRotRt_Count_Rt" EXACT []
 synonym: "rtrot" EXACT []
-relationship: variable_of CO_334:0000457 ! Rotted Storage Roots
+relationship: variable_of CO_334:0000457 ! Rotted storage roots
 relationship: variable_of CO_334:0010295 ! Counting:Rotted Storage Roots _method
 relationship: variable_of CO_334:0100491 ! Root
 
 [Term]
 id: CO_334:0000085
 name: taste of boiled root rating 1-3
-def: "Taste of boiled root rating as 1 = bland, 2 = sweet, and 3 = bitter." [CO:curators]
+def: "Taste of boiled root rating as 1 = sweet, 2 = bland, and 3 = bitter." [CO:curators]
 synonym: "pdtas" EXACT []
-synonym: "RtTast_SensClsn_0to3" EXACT []
+synonym: "RtTast_SensClsn_1to3" EXACT []
 relationship: variable_of CO_334:0000498 ! Taste Of Boiled Roots
 relationship: variable_of CO_334:0010297 ! Gustation :Taste Of Boiled Roots_method
 relationship: variable_of CO_334:0100503 ! 3pt scale
@@ -864,7 +865,7 @@ def: "Estimate of storage root cyanide content by picrate test with 1 = not dete
 synonym: "hcnpic" EXACT []
 synonym: "RtCyanCt_Picrate_1to9" EXACT []
 xref: TO:0000955
-relationship: variable_of CO_334:0000502 ! Tuberous root cyanide content
+relationship: variable_of CO_334:0000502 ! Storage root cyanide content
 relationship: variable_of CO_334:0010299 ! Estimation :Hydrogen cyanide potential picrate method_method
 relationship: variable_of CO_334:0100505 ! 9pt scale
 
@@ -874,7 +875,7 @@ name: dry matter content percentage
 def: "Percentage dry matter storage root." [CO:curators]
 synonym: "dm" EXACT []
 synonym: "DMCt_Comp_r" EXACT []
-relationship: variable_of CO_334:0000447 ! Root Dry Matter Content
+relationship: variable_of CO_334:0000424 ! Root dry matter content
 relationship: variable_of CO_334:0010300 ! Estimation :Root Dry Matter Content_method
 relationship: variable_of CO_334:0100582 ! ratio
 
@@ -1090,12 +1091,12 @@ relationship: variable_of CO_334:0100567 ! 4pt scale
 
 [Term]
 id: CO_334:0000114
-name: boiled tuberous root color visual 1-3
-def: "Colour of boiled tuberous roots with  1 = white , 2 = cream , 3 = yellow." [CO:curators]
+name: boiled storage root color visual 1-3
+def: "Colour of boiled storage roots with  1 = white , 2 = cream , 3 = yellow." [CO:curators]
 synonym: "BoilRtCol_VisClsn_1to3" EXACT []
 synonym: "pdcol" EXACT []
-relationship: variable_of CO_334:0000355 ! Color Of Boiled Tuberous Roots
-relationship: variable_of CO_334:0010298 ! Visual Rating :Color Of Boiled Tuberous Roots_method
+relationship: variable_of CO_334:0000355 ! Color Of Boiled Storage Roots
+relationship: variable_of CO_334:0010298 ! Visual Rating :Color Of Boiled Storage Roots_method
 relationship: variable_of CO_334:0100504 ! 3pt scale
 
 [Term]
@@ -1114,7 +1115,7 @@ name: ease of peeling root cortex visual rating 1-7
 def: "Visual rating of ease of peeling root cortex with 3 = easy and 7 = difficult." [CO:curators]
 synonym: "easepl" EXACT []
 synonym: "PeelEase_Clsn_1to7" EXACT []
-relationship: variable_of CO_334:0000362 ! Ease Of Peeling Root Cortex
+relationship: variable_of CO_334:0000362 ! Ease of peeling storage root cortex
 relationship: variable_of CO_334:0010294 ! Visual Scoring :Ease Of Peeling Root Cortex_method
 relationship: variable_of CO_334:0100500 ! 7pt scale
 
@@ -1377,8 +1378,8 @@ relationship: variable_of CO_334:0100611 ! days
 
 [Term]
 id: CO_334:0000143
-name: female flower number counting
-def: "A count of the number female flowers after the buds appears, matures, and grows in size to become distinctive at the first, second, and third branch levels." [CO:curators]
+name: female flower number at the first 3 branching levels counting
+def: "A count of the Number female flowers after the buds appear, mature, and grow in size to become distinctive at the first, second, and third branch levels." [CO:curators]
 synonym: "FFlwNo_Count_Flw" EXACT []
 synonym: "flwfno" EXACT []
 relationship: variable_of CO_334:0000364 ! Female flower number
@@ -1411,7 +1412,7 @@ name: number of forks counting
 def: "Number of branches (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) at every branching level." [CO:curators]
 synonym: "BrnchNo_Count_Brnch" EXACT []
 synonym: "flwfrk" EXACT []
-relationship: variable_of CO_334:0000413 ! Number of forks
+relationship: variable_of CO_334:0000413 ! Number of  forks
 relationship: variable_of CO_334:0010403 ! Counting:number of forks_method
 relationship: variable_of CO_334:0100609 ! Branches
 
@@ -1551,7 +1552,7 @@ name: dry matter content by specific gravity method
 def: "Percentage dry matter content estimated from the specific gravity value of weighted cassava (4-5kg)." [CO:curators]
 synonym: "DMCt_Est_kg" EXACT []
 synonym: "dmspg" EXACT []
-relationship: variable_of CO_334:0000447 ! Root Dry Matter Content
+relationship: variable_of CO_334:0000424 ! Root dry matter content
 relationship: variable_of CO_334:0010318 ! Estimation :dry matter content by specific gravity method_method
 relationship: variable_of CO_334:0100493 ! kg
 
@@ -1580,7 +1581,6 @@ id: CO_334:0000163
 name: specific gravity
 def: "Estimated value obtained by weighing 4-5 kilogram of cassava root in air, and in water." [CO:curators]
 synonym: "spgrv" EXACT []
-relationship: variable_of CO_334:0000447 ! Root Dry Matter Content
 relationship: variable_of CO_334:0010417 ! Measurement :specific gravity_method
 relationship: variable_of CO_334:0100623 ! g
 
@@ -1697,7 +1697,7 @@ relationship: variable_of CO_334:0100583 ! Pct (%)
 [Term]
 id: CO_334:0000175
 name: cassava bacterial blight severity 3-month evaluation
-def: "Visual rating of symptoms in response to the bacterial blight disease caused by Xanthonomas axonopodis pv. Manihotis symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased) evaluated between two and three months after planting." [CO:curators]
+def: "Visual rating of symptoms in response to the bacterial blight disease caused by Xanthonomas axonopodis pv. Manihotis, evaluated between two and three months after planting. Symptoms rated from 1 = (clean, no infection), 2 = Small lesions around points of infections on the leaves, 3 = Extension and appearance of new lesions on leaves and stems. Some leaves wilt, 4 = Extensive leaf wilting and defoliation,  5 = extremely severe with leaf wilting, defoliation and dieback." [CO:curators]
 synonym: "cbb3s" EXACT []
 synonym: "CBBSev_VisScg_1to5_T3m" EXACT []
 relationship: variable_of CO_334:0000031 ! Cassava bacterial blight severity
@@ -1707,7 +1707,7 @@ relationship: variable_of CO_334:0100448 ! 5 pt scale
 [Term]
 id: CO_334:0000176
 name: cassava bacterial blight severity 6-month evaluation
-def: "Visual rating of symptoms in response to the bacterial blight disease caused by Xanthonomas axonopodis pv. Manihotis symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased) evaluated four and six months after planting." [CO:curators]
+def: "Visual rating of symptoms in response to the bacterial blight disease caused by Xanthonomas axonopodis pv. Manihotis,evaluated four and six months after planting. Symptoms rated from 1 = (clean, no infection), 2 = Small lesions around points of infections on the leaves, 3 = Extension and appearance of new lesions on leaves and stems. Some leaves wilt, 4 = Extensive leaf wilting and defoliation,  5 = extremely severe with leaf wilting, defoliation and dieback." [CO:curators]
 synonym: "cbb6s" EXACT []
 synonym: "CBBSev_VisScg_1to5_T6m" EXACT []
 relationship: variable_of CO_334:0000031 ! Cassava bacterial blight severity
@@ -1717,7 +1717,7 @@ relationship: variable_of CO_334:0100449 ! 5 pt scale
 [Term]
 id: CO_334:0000177
 name: cassava bacterial blight severity 9-month evaluation
-def: "Visual rating of symptoms in response to the bacterial blight disease caused by Xanthonomas axonopodis pv. Manihotis symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased) evaluated between seven and nine months after planting." [CO:curators]
+def: "Visual rating of symptoms in response to the bacterial blight disease caused by Xanthonomas axonopodis pv. Manihotis,evaluated between seven and nine months after planting. Symptoms rated from 1 = (clean, no infection), 2 = Small lesions around points of infections on the leaves, 3 = Extension and appearance of new lesions on leaves and stems. Some leaves wilt, 4 = Extensive leaf wilting and defoliation,  5 = extremely severe with leaf wilting, defoliation and dieback." [CO:curators]
 synonym: "cbb9s" EXACT []
 synonym: "CBBSev_VisScg_1to5_T9m" EXACT []
 relationship: variable_of CO_334:0000031 ! Cassava bacterial blight severity
@@ -1787,7 +1787,7 @@ relationship: variable_of CO_334:0100582 ! ratio
 [Term]
 id: CO_334:0000184
 name: cassava anthractnose disease severity in 6-month
-def: "Visual rating of symptoms in response to the anthracnose disease caused by Colletotrichum gloeosporioides f. sp. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased), evaluated between four and six months after planting (6MAP)." [CO:curators]
+def: "Visual rating of symptoms in response to the anthracnose disease caused by Colletotrichum gloeosporioides f. sp., evaluated between four and six months after planting (6MAP). Symptoms rated from 1 = (clean, no infection) 2 = Few shallow cankers on stem late in the growing season, 3 = Many deep cankers on stems followed by distortion, 4 = Many oval lesions on hard and woody stems, 5 = Highly severe with many lesions on hard and woody stems and severe necrosis at leaf axils followed by wilting and severe defoliation." [CO:curators]
 synonym: "cad6s" EXACT []
 synonym: "CADisSev_VisScg_1to5_T6m" EXACT []
 relationship: variable_of CO_334:0000032 ! Cassava anthracnose disease severity
@@ -1797,7 +1797,7 @@ relationship: variable_of CO_334:0100459 ! 5 pt scale
 [Term]
 id: CO_334:0000185
 name: cassava anthractnose disease severity in 9-month
-def: "Visual rating of symptoms in response to the anthracnose disease caused by Colletotrichum gloeosporioides f. sp. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased), evaluated between seven and nine months after planting (9MAP)." [CO:curators]
+def: "Visual rating of symptoms in response to the anthracnose disease caused by Colletotrichum gloeosporioides f. sp., evaluated between seven and nine months after planting (9MAP). Symptoms rated from 1 = (clean, no infection) 2 = Few shallow cankers on stem late in the growing season, 3 = Many deep cankers on stems followed by distortion, 4 = Many oval lesions on hard and woody stems, 5 = Highly severe with many lesions on hard and woody stems and severe necrosis at leaf axils followed by wilting and severe defoliation." [CO:curators]
 synonym: "cad9s" EXACT []
 synonym: "CADisSev_VisScg_1to5_T9m" EXACT []
 relationship: variable_of CO_334:0000032 ! Cassava anthracnose disease severity
@@ -1807,7 +1807,7 @@ relationship: variable_of CO_334:0100460 ! 5 pt scale
 [Term]
 id: CO_334:0000186
 name: cassava anthractnose disease severity in12-month
-def: "Visual rating of symptoms in response to the anthracnose disease caused by Colletotrichum gloeosporioides f. sp. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased), evaluated between ten and twelve months after planting (12MAP)." [CO:curators]
+def: "Visual rating of symptoms in response to the anthracnose disease caused by Colletotrichum gloeosporioides f. sp., evaluated between ten and twelve months after planting (12MAP). Symptoms rated from 1 = (clean, no infection) 2 = Few shallow cankers on stem late in the growing season, 3 = Many deep cankers on stems followed by distortion, 4 = Many oval lesions on hard and woody stems, 5 = Highly severe with many lesions on hard and woody stems and severe necrosis at leaf axils followed by wilting and severe defoliation." [CO:curators]
 synonym: "cad12s" EXACT []
 synonym: "CADisSev_VisScg_1to5_T12m" EXACT []
 relationship: variable_of CO_334:0000032 ! Cassava anthracnose disease severity
@@ -1837,7 +1837,7 @@ relationship: variable_of CO_334:0100582 ! ratio
 [Term]
 id: CO_334:0000189
 name: cassava green mite severity first evaluation
-def: "Visual rating of damage caused by cassava green mite, Mononychellus tanajoa. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased), evaluated at the early period of the peak of dry season." [CO:curators]
+def: "Visual rating of damage caused by cassava green mite (Mononychellus tanajoa), evaluated at the early period of the peak of dry season. Symptoms rated from 1 = (clean, no infection) 2 = Slight spackling and reduction in leaf size, 3 = Serious spackling and reduction in leaf size, 4 = Bunchy top symptoms , obvious reduction of internode length, severe reduction in lead size and leaf area,  to 5 = Candlestick appearance, internode length reduction, young portion of shoot curved and completely defoliated." [CO:curators]
 synonym: "cgm1" EXACT []
 synonym: "CGMsev_VisScg_1to5" EXACT []
 relationship: variable_of CO_334:0000033 ! Cassava green mite severity
@@ -1847,7 +1847,7 @@ relationship: variable_of CO_334:0100471 ! 5 pt scale
 [Term]
 id: CO_334:0000190
 name: cassava green mite severity second evaluation
-def: "Visual rating of damage caused by cassava green mite, Mononychellus tanajoa. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased), evaluated late into the peak of dry season." [CO:curators]
+def: "Visual rating of damage caused by cassava green mite (Mononychellus tanajoa), evaluated late into the peak of dry season. Symptoms rated from 1 = (clean, no infection) 2 = Slight spackling and reduction in leaf size, 3 = Serious spackling and reduction in leaf size, 4 = Bunchy top symptoms , obvious reduction of internode length, severe reduction in lead size and leaf area,  to 5 = Candlestick appearance, internode length reduction, young portion of shoot curved and completely defoliated." [CO:curators]
 synonym: "cgm2" EXACT []
 synonym: "CGMsev_VisScg_1to5" EXACT []
 relationship: variable_of CO_334:0000033 ! Cassava green mite severity
@@ -1857,7 +1857,7 @@ relationship: variable_of CO_334:0100472 ! 5 pt scale
 [Term]
 id: CO_334:0000191
 name: cassava mosaic disease severity 1-month evaluation
-def: "Visual rating of symptoms caused by cassava mosaic virus,in the family Geminiviridae and genus Begomovirus , evalutaed between one to six weeks after planting. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased." [CO:curators]
+def: "Visual rating of symptoms caused by cassava mosaic virus,in the family Geminiviridae and genus Begomovirus , evalutaed between one to six weeks after planting. Symptoms rated from 1 = (clean, no infection), 2= Up to 25% leaf area chlorotic, mild leaf distortion, no stunting, 3 = 25-50% leaf area chlorotic, moderate leaf distortion, no stunting, 4 = 50-75% leaf area chlorotic, severe leaf distortion, moderate stunting, 5 = 75 - 100% leaf area chlorotic, severe leaf distortion, small leaflets (almost no lamina), severe stunting." [CO:curators]
 synonym: "cmd1s" EXACT []
 synonym: "CMDisSev_VisScg_1to5_T1m" EXACT []
 relationship: variable_of CO_334:0000035 ! Cassava mosaic disease severity
@@ -1867,7 +1867,7 @@ relationship: variable_of CO_334:0100436 ! 5 pt scale
 [Term]
 id: CO_334:0000192
 name: cassava mosaic disease severity 3-month evaluation
-def: "Visual rating of symptoms caused by cassava mosaic virus,in the family Geminiviridae and genus Begomovirus , evalutaed between two and three months after planting. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased." [CO:curators]
+def: "Visual rating of symptoms caused by cassava mosaic virus,in the family Geminiviridae and genus Begomovirus , evalutaed between two and three months after planting.  Symptoms rated from 1 = (clean, no infection), 2= Up to 25% leaf area chlorotic, mild leaf distortion, no stunting, 3 = 25-50% leaf area chlorotic, moderate leaf distortion, no stunting, 4 = 50-75% leaf area chlorotic, severe leaf distortion, moderate stunting, 5 = 75 - 100% leaf area chlorotic, severe leaf distortion, small leaflets (almost no lamina), severe stunting." [CO:curators]
 synonym: "cmd3s" EXACT []
 synonym: "CMDisSev_VisScg_1to5_T3m" EXACT []
 relationship: variable_of CO_334:0000035 ! Cassava mosaic disease severity
@@ -1887,7 +1887,7 @@ relationship: variable_of CO_334:0100439 ! 5 pt scale
 [Term]
 id: CO_334:0000194
 name: cassava mosaic disease severity 6-month evaluation
-def: "Visual rating of symptoms caused by cassava mosaic virus,in the family Geminiviridae and genus Begomovirus , evalutaed between four and six months after planting. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased." [CO:curators]
+def: "Visual rating of symptoms caused by cassava mosaic virus,in the family Geminiviridae and genus Begomovirus , evalutaed between four and six months after planting.  Symptoms rated from 1 = (clean, no infection), 2= Up to 25% leaf area chlorotic, mild leaf distortion, no stunting, 3 = 25-50% leaf area chlorotic, moderate leaf distortion, no stunting, 4 = 50-75% leaf area chlorotic, severe leaf distortion, moderate stunting, 5 = 75 - 100% leaf area chlorotic, severe leaf distortion, small leaflets (almost no lamina), severe stunting." [CO:curators]
 synonym: "cmd6s" EXACT []
 synonym: "CMDisSev_VisScg_1to5_T6m" EXACT []
 relationship: variable_of CO_334:0000035 ! Cassava mosaic disease severity
@@ -1937,7 +1937,7 @@ relationship: variable_of CO_334:0100582 ! ratio
 [Term]
 id: CO_334:0000199
 name: cassava mosaic disease severity 12-month evaluation
-def: "Visual rating of symptoms caused by cassava mosaic virus,in the family Geminiviridae and genus Begomovirus , evalutaed between ten and  twelve months after planting. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased." [CO:curators]
+def: "Visual rating of symptoms caused by cassava mosaic virus,in the family Geminiviridae and genus Begomovirus , evalutaed between ten and  twelve months after planting. Symptoms rated from 1 = (clean, no infection), 2= Up to 25% leaf area chlorotic, mild leaf distortion, no stunting, 3 = 25-50% leaf area chlorotic, moderate leaf distortion, no stunting, 4 = 50-75% leaf area chlorotic, severe leaf distortion, moderate stunting, 5 = 75 - 100% leaf area chlorotic, severe leaf distortion, small leaflets (almost no lamina), severe stunting." [CO:curators]
 synonym: "cmd12s" EXACT []
 synonym: "CMDisSev_VisScg_1to5_T12m" EXACT []
 relationship: variable_of CO_334:0000035 ! Cassava mosaic disease severity
@@ -1957,7 +1957,7 @@ relationship: variable_of CO_334:0100582 ! ratio
 [Term]
 id: CO_334:0000201
 name: cassava brown streak disease root severity 12-month evaluation
-def: "Visual rating of root symptoms caused by cassava brown streak virus at twelve months after planting, in the family Potyviridae and genus Ipomovirus. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased)." [CO:curators]
+def: "Visual rating of root symptoms caused by cassava brown streak virus at twelve months after planting, in the family Potyviridae and genus Ipomovirus. Symptoms rated from 1 = (clean, no infection), 2 = less than 5% of storage root tissue is necrotic, 3 = 5-10% of storage root tissue is necrotic 4 = 10-50% of storage root tissue is necrotic,   5 = More than 50% of storage root tissue is necrotic." [CO:curators]
 synonym: "CBSDisRtSev_Scg_1to5" EXACT []
 synonym: "cbsdr12s" EXACT []
 relationship: variable_of CO_334:0000090 ! Cassava brown streak disease root severity
@@ -1977,7 +1977,7 @@ relationship: variable_of CO_334:0100582 ! ratio
 [Term]
 id: CO_334:0000203
 name: cassava brown streak disease leaf severity 1-month evaluation
-def: "Visual rating of leaf symptoms caused by cassava brown streak virus evaluated between one and six weeks after planting, in the family Potyviridae and genus Ipomovirus. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased)." [CO:curators]
+def: "Visual rating of leaf symptoms caused by cassava brown streak virus evaluated between one and six weeks after planting, in the family Potyviridae and genus Ipomovirus. Symptoms rated from 1 = (clean, no infection), 2 = mild/slight vein yellowing or chlorotic blotches on leaves, no brown streaks/lesions on green stem portions\n, 3 = mild/slight vein yellowing or chlorotic blotches on leaves mild brown streaks/lesions on green stem portions, 4 = severe/extensive vein yellowing or chlorotic blotches on leaves severe brown streaks/lesions on green stem portions no defoliation, stem dieback or stunting, 4 =  to 5 = severe/extensive vein yellowing or chlorotic blotches on leaves severe brown streaks/lesions on green stem portions defoliation, stem dieback or stunting." [CO:curators]
 synonym: "CBSDisLfSev_Scg_1to5_T1m" EXACT []
 synonym: "cbsdl1s" EXACT []
 relationship: variable_of CO_334:0000036 ! Cassava brown streak disease leaf severity
@@ -1987,7 +1987,7 @@ relationship: variable_of CO_334:0100476 ! 5 pt scale
 [Term]
 id: CO_334:0000204
 name: cassava brown streak disease leaf severity 3-month evaluation
-def: "Visual rating of leaf symptoms caused by cassava brown streak virus evaluated between two and three months after planting, in the family Potyviridae and genus Ipomovirus. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased)." [CO:curators]
+def: "Visual rating of leaf symptoms caused by cassava brown streak virus evaluated between two and three months after planting, in the family Potyviridae and genus Ipomovirus. Symptoms rated from 1 = (clean, no infection), 2 = mild/slight vein yellowing or chlorotic blotches on leaves, no brown streaks/lesions on green stem portions\n, 3 = mild/slight vein yellowing or chlorotic blotches on leaves mild brown streaks/lesions on green stem portions, 4 = severe/extensive vein yellowing or chlorotic blotches on leaves severe brown streaks/lesions on green stem portions no defoliation, stem dieback or stunting, 4 =  to 5 = severe/extensive vein yellowing or chlorotic blotches on leaves severe brown streaks/lesions on green stem portions defoliation, stem dieback or stunting." [CO:curators]
 synonym: "CBSDisLfSev_Scg_1to5_T3m" EXACT []
 synonym: "cbsdl3s" EXACT []
 relationship: variable_of CO_334:0000036 ! Cassava brown streak disease leaf severity
@@ -1997,7 +1997,7 @@ relationship: variable_of CO_334:0100477 ! 5 pt scale
 [Term]
 id: CO_334:0000205
 name: cassava brown streak disease leaf severity 6-month evaluation
-def: "Visual rating of leaf symptoms caused by cassava brown streak virus between four and months after planting, in the family Potyviridae and genus Ipomovirus. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased)." [CO:curators]
+def: "Visual rating of leaf symptoms caused by cassava brown streak virus between four and months after planting, in the family Potyviridae and genus Ipomovirus.Symptoms rated from 1 = (clean, no infection), 2 = mild/slight vein yellowing or chlorotic blotches on leaves, no brown streaks/lesions on green stem portions\n, 3 = mild/slight vein yellowing or chlorotic blotches on leaves mild brown streaks/lesions on green stem portions, 4 = severe/extensive vein yellowing or chlorotic blotches on leaves severe brown streaks/lesions on green stem portions no defoliation, stem dieback or stunting, 4 =  to 5 = severe/extensive vein yellowing or chlorotic blotches on leaves severe brown streaks/lesions on green stem portions defoliation, stem dieback or stunting." [CO:curators]
 synonym: "CBSDisLfSev_Scg_1to5_6m" EXACT []
 synonym: "cbsdl6s" EXACT []
 relationship: variable_of CO_334:0000036 ! Cassava brown streak disease leaf severity
@@ -2007,7 +2007,7 @@ relationship: variable_of CO_334:0100478 ! 5 pt scale
 [Term]
 id: CO_334:0000206
 name: cassava brown streak disease leaf severity 9-month evaluation
-def: "Visual rating of leaf symptoms caused by cassava brown streak virus between seven and nine months after planting, in the family Potyviridae and genus Ipomovirus. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased)." [CO:curators]
+def: "Visual rating of leaf symptoms caused by cassava brown streak virus between seven and nine months after planting, in the family Potyviridae and genus Ipomovirus.Symptoms rated from 1 = (clean, no infection), 2 = mild/slight vein yellowing or chlorotic blotches on leaves, no brown streaks/lesions on green stem portions\n, 3 = mild/slight vein yellowing or chlorotic blotches on leaves mild brown streaks/lesions on green stem portions, 4 = severe/extensive vein yellowing or chlorotic blotches on leaves severe brown streaks/lesions on green stem portions no defoliation, stem dieback or stunting, 4 =  to 5 = severe/extensive vein yellowing or chlorotic blotches on leaves severe brown streaks/lesions on green stem portions defoliation, stem dieback or stunting." [CO:curators]
 synonym: "CBSDisLfSev_Scg_1to5_9m" EXACT []
 synonym: "cbsdl9s" EXACT []
 relationship: variable_of CO_334:0000036 ! Cassava brown streak disease leaf severity
@@ -2067,7 +2067,7 @@ relationship: variable_of CO_334:0100582 ! ratio
 [Term]
 id: CO_334:0000212
 name: cassava bacterial blight severity 12-month evaluation
-def: "Visual rating of symptoms in response to the bacterial blight disease caused by Xanthonomas axonopodis pv. Manihotis symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased) evaluated bewteen ten and twelve months after planting." [CO:curators]
+def: "Visual rating of symptoms in response to the bacterial blight disease caused by Xanthonomas axonopodis pv. Manihotis ,evaluated bewteen ten and twelve months after planting. Symptoms rated from 1 = (clean, no infection), 2 = Small lesions around points of infections on the leaves, 3 = Extension and appearance of new lesions on leaves and stems. Some leaves wilt, 4 = Extensive leaf wilting and defoliation,  5 = extremely severe with leaf wilting, defoliation and dieback." [CO:curators]
 synonym: "cbb12s" EXACT []
 synonym: "CBBSev_VisScg_1to5_T12m" EXACT []
 relationship: variable_of CO_334:0000031 ! Cassava bacterial blight severity
@@ -2127,7 +2127,7 @@ relationship: variable_of CO_334:0100546 ! Number
 [Term]
 id: CO_334:0000218
 name: cassava anthractnose disease severity in 3-month
-def: "Visual rating of symptoms in response to the anthracnose disease caused by Colletotrichum gloeosporioides f. sp. Symptoms rated from 1 = (clean, no infection) to 5 = (extremely severe, severely diseased), evaluated between two and three months after planting." [CO:curators]
+def: "Visual rating of symptoms in response to the anthracnose disease caused by Colletotrichum gloeosporioides f. sp., evaluated between two and three months after planting. Symptoms rated from 1 = (clean, no infection) 2 = Few shallow cankers on stem late in the growing season, 3 = Many deep cankers on stems followed by distortion, 4 = Many oval lesions on hard and woody stems, 5 = Highly severe with many lesions on hard and woody stems and severe necrosis at leaf axils followed by wilting and severe defoliation." [CO:curators]
 synonym: "cad3s" EXACT []
 synonym: "CADisSev_VisScg_1to5_T3m" EXACT []
 relationship: variable_of CO_334:0000032 ! Cassava anthracnose disease severity
@@ -2160,7 +2160,7 @@ name: root color visual rating 1-3
 def: "Visual rating of storage root surface color with 1 = white , 2 = intermediate, and 3 = dark brown, as being evaluated by CIAT." [CO:curators]
 synonym: "rtcol" EXACT []
 synonym: "RtSurfCol_ClsnCIAT_1to3" EXACT []
-relationship: variable_of CO_334:0000454 ! Root Surface Color
+relationship: variable_of CO_334:0000454 ! Storage root surface color
 relationship: variable_of CO_334:0010436 ! Visual Rating:root color_method
 relationship: variable_of CO_334:0100642 ! 3pt scale
 
@@ -2181,7 +2181,7 @@ name: storage root neck length visual rating 1-3
 def: "Visual rating of root neck length with 1 = short, 2 = intermediate, 3 = long, as being evaluated by CIAT." [CO:curators]
 synonym: "RtNeckLng_ClsnCIAT_1to3" EXACT []
 synonym: "rtnklgt" EXACT []
-relationship: variable_of CO_334:0000451 ! Root Neck Length
+relationship: variable_of CO_334:0000451 ! Storage root neck length
 relationship: variable_of CO_334:0010438 ! Visual Rating:root neck length_method
 relationship: variable_of CO_334:0100644 ! 3pt scale
 
@@ -2657,6 +2657,7 @@ creation_date: 2015-09-29T12:26:06Z
 [Term]
 id: CO_334:0000272
 name: female flower number counting on all levels
+def: "Count the number of female flowers after the buds appear, mature, and grow in size to become distinctive at all branch levels." []
 relationship: variable_of CO_334:0000364 ! Female flower number
 relationship: variable_of CO_334:0010006 ! Counting:female flower number all levels_method
 relationship: variable_of CO_334:0100606 ! Flowers
@@ -2723,7 +2724,7 @@ name: Anther Color
 def: "Color of anthers" [CO:curators]
 synonym: "anther" EXACT []
 xref: TO:0000187
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000281
@@ -2762,7 +2763,7 @@ id: CO_334:0000285
 name: Ash Content
 def: "Ash content" [CO:curators]
 synonym: "ash" EXACT []
-synonym: "Tuberous root mineral salt content" EXACT []
+synonym: "Storage root mineral salt content" EXACT []
 xref: TO:0000607
 is_a: CO_334:0000004 ! Quality trait
 
@@ -2771,7 +2772,7 @@ id: CO_334:0000286
 name: Days to first male flower opens
 def: "First male flower (pistillate) mature and opens." []
 synonym: "flwdmo" EXACT []
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 created_by: aafolabi
 creation_date: 2016-05-12T17:24:01Z
 
@@ -2830,7 +2831,7 @@ def: "Branch height" [CO:curators]
 synonym: "branching" EXACT []
 synonym: "BrnchHt" EXACT []
 xref: TO:1000008
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch morphological trait
 
 [Term]
 id: CO_334:0000294
@@ -2838,7 +2839,7 @@ name: Branching Angle
 def: "Angle of branching (Angle between vertical plane and first branches)" [CO:curators]
 synonym: "brnang" EXACT []
 xref: TO:1000009
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch morphological trait
 
 [Term]
 id: CO_334:0000295
@@ -2846,7 +2847,7 @@ name: Branching habit
 def: "Branching habit" [CO:curators]
 synonym: "brnhbt" EXACT []
 xref: TO:0000740
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch morphological trait
 
 [Term]
 id: CO_334:0000296
@@ -2854,7 +2855,7 @@ name: Branching Levels
 def: "Number of levels of branching (Actual number of levels (at or before harvest))." [CO:curators]
 synonym: "brnlev" EXACT []
 xref: TO:0000740
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch morphological trait
 
 [Term]
 id: CO_334:0000297
@@ -2870,7 +2871,7 @@ name: Caruncle Color
 def: "Color of caruncle" [CO:curators]
 synonym: "carcol" EXACT []
 xref: TO:1000010
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000299
@@ -2915,7 +2916,7 @@ creation_date: 2016-12-22T16:15:30Z
 
 [Term]
 id: CO_334:0000304
-name: fresh root weight per plant
+name: fresh storage root weight per plant
 def: "Total fresh weight of storage roots harvested per plant measured in kilogram (kg)." [CO:Curators]
 relationship: variable_of CO_334:0000303 ! Storage root weight by plant
 created_by: naama
@@ -2945,26 +2946,248 @@ creation_date: 2016-12-22T16:24:39Z
 
 [Term]
 id: CO_334:0000308
-name: Total fresh weight
-is_a: CO_334:0000001 ! Agronomic trait
-created_by: naama
-creation_date: 2017-01-04T14:33:38Z
+name: ease of peeling root cortex visual rating 1-3
+def: "Visual rating of ease of peeling root cortex with 1 = easy, 2 = intermediate and 3 = difficult." []
+synonym: "easepl" RELATED []
+relationship: variable_of CO_334:0000362 ! Ease of peeling storage root cortex
+created_by: AAfolabi
+creation_date: 2017-02-10T10:54:15Z
 
 [Term]
 id: CO_334:0000309
-name: total fresh weight by plot
-def: "The sum of fresh root weight + fresh root weight by plot." [CO:curators]
-relationship: variable_of CO_334:0000308 ! Total fresh weight
-created_by: naama
-creation_date: 2017-01-04T14:34:03Z
+name: apical pubescence visual rating 0-2
+def: "Visual rating of young leaf pubescence with 0 = absent, 1 = Moderate pubescence, 2 = high pubescence." []
+synonym: "apubes" RELATED []
+relationship: variable_of CO_334:0000283 ! Apical Pubescence
+created_by: AAfolabi
+creation_date: 2017-02-10T11:02:13Z
 
 [Term]
 id: CO_334:0000310
+name: Plantable stem
+def: "A plantable stem (stick), has an estimated length of about 20cm." [CO:AA]
+synonym: "plantable stem" EXACT []
+is_a: CO_334:0000001 ! Agronomic trait
+created_by: naama
+creation_date: 2017-04-07T13:20:56Z
+
+[Term]
+id: CO_334:0000311
+name: stick length
+def: "Length of the planting stick at the sampling time point in centimeters." []
+synonym: "stem length" EXACT []
+is_a: CO_334:0000310 ! Plantable stem
+created_by: naama
+creation_date: 2017-04-07T13:24:49Z
+
+[Term]
+id: CO_334:0000312
+name: planting stick internode number
+def: "Number of the internodes of the planting stick." []
+is_a: CO_334:0000310 ! Plantable stem
+created_by: naama
+creation_date: 2017-04-07T13:26:23Z
+
+[Term]
+id: CO_334:0000313
+name: Number of planting stick internodes with roots
+def: "Number of the internodes which developed fibrous or storage roots." []
+is_a: CO_334:0000310 ! Plantable stem
+created_by: naama
+creation_date: 2017-04-07T13:27:09Z
+
+[Term]
+id: CO_334:0000314
+name: Number of fibrous roots on planting stick
+def: "Total number of fibrous roots emerging from the planting stick." []
+is_a: CO_334:0000310 ! Plantable stem
+created_by: naama
+creation_date: 2017-04-07T13:39:34Z
+
+[Term]
+id: CO_334:0000315
+name: Number storage roots on planting stick
+def: "Total number of storage roots emerging from the planting stick." []
+is_a: CO_334:0000310 ! Plantable stem
+created_by: naama
+creation_date: 2017-04-07T13:40:26Z
+
+[Term]
+id: CO_334:0000316
+name: Number roots at end of the planting stick
+def: "Total number of roots (fibrous and storage) which emerged from the cutting side at the end of the planting stick." []
+is_a: CO_334:0000310 ! Plantable stem
+created_by: naama
+creation_date: 2017-04-07T13:40:56Z
+
+[Term]
+id: CO_334:0000317
+name: Starch properties
+def: "Measurements related to starch traits." []
+is_a: CO_334:0000004 ! Quality trait
+created_by: naama
+creation_date: 2017-04-07T14:03:18Z
+
+[Term]
+id: CO_334:0000318
+name: Starch granule morphology
+is_a: CO_334:0000317 ! Starch properties
+created_by: naama
+creation_date: 2017-04-07T14:04:47Z
+
+[Term]
+id: CO_334:0000319
+name: Starch granule morphology (pictures)
+relationship: variable_of CO_334:0000318 ! Starch granule morphology
+created_by: naama
+creation_date: 2017-04-07T14:05:27Z
+
+[Term]
+id: CO_334:0000320
+name: Starch granule size
+is_a: CO_334:0000317 ! Starch properties
+created_by: naama
+creation_date: 2017-04-07T14:06:43Z
+
+[Term]
+id: CO_334:0000321
+name: starch granule average diameter
+def: "Starch granule average diameter (µm)" []
+relationship: variable_of CO_334:0000320 ! Starch granule size
+created_by: naama
+creation_date: 2017-04-07T14:06:56Z
+
+[Term]
+id: CO_334:0000322
+name: starch granule size distribution
+def: "Starch granule size distribution with three categories. 1: between 0-7µm ; 2: 8-14 µm ; 3: 15 - 22 µm." []
+relationship: variable_of CO_334:0000320 ! Starch granule size
+created_by: naama
+creation_date: 2017-04-07T14:07:28Z
+
+[Term]
+id: CO_334:0000323
+name: starch chain length distribution
+def: "Starch chain length distribution, values range from dp3 to dp82." []
+relationship: variable_of CO_334:0000320 ! Starch granule size
+created_by: naama
+creation_date: 2017-04-07T14:08:52Z
+
+[Term]
+id: CO_334:0000324
+name: Total fresh weight
+is_a: CO_334:0000001 ! Agronomic trait
+created_by: naama
+creation_date: 2017-04-10T12:26:09Z
+
+[Term]
+id: CO_334:0000325
+name: total fresh weight by plot
+def: "The sum of fresh root weight + fresh root weight by plot." [CO:curators]
+relationship: variable_of CO_334:0000324 ! Total fresh weight
+created_by: naama
+creation_date: 2017-04-10T12:26:56Z
+
+[Term]
+id: CO_334:0000326
 name: total fresh weight by plant
 def: "The sum of fresh root weight + fresh root weight by plant." [CO:curators]
-relationship: variable_of CO_334:0000308 ! Total fresh weight
+relationship: variable_of CO_334:0000324 ! Total fresh weight
 created_by: naama
-creation_date: 2017-01-04T14:35:02Z
+creation_date: 2017-04-10T12:41:21Z
+
+[Term]
+id: CO_334:0000327
+name: fresh fibrous root weight per plant
+def: "Total fresh weight of fibrous roots harvested per plant measured in kilogram (kg)." [CO:Curators]
+relationship: variable_of CO_334:0000303 ! Storage root weight by plant
+created_by: naama
+creation_date: 2017-05-04T15:44:25Z
+
+[Term]
+id: CO_334:0000328
+name: fresh fibrous root weight per plot
+def: "Total fresh weight of fibrous roots harvested per plot measured in kilogram (kg)." [CO:curators]
+synonym: "rtwt" EXACT []
+synonym: "RtWt_Wgh_kg" EXACT []
+relationship: variable_of CO_334:0000302 ! Storage root weight by plot
+relationship: variable_of CO_334:0010286 ! Measurement :Fresh Weight of Storage Root_method
+relationship: variable_of CO_334:0100493 ! kg
+created_by: naama
+creation_date: 2017-05-04T15:47:58Z
+
+[Term]
+id: CO_334:0000329
+name: Plant branch morphological trait
+def: "Traits associated with branch and branching morphology." [CO:curators]
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T10:52:49Z
+
+[Term]
+id: CO_334:0000330
+name: Leaf morphological trait
+def: "Traits associated with leaf morphology." [CO:curators]
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T10:58:52Z
+
+[Term]
+id: CO_334:0000331
+name: Leaf lobe
+is_a: CO_334:0000330 ! Leaf morphological trait
+created_by: naama
+creation_date: 2017-06-22T10:59:47Z
+
+[Term]
+id: CO_334:0000332
+name: Leaf scar
+is_a: CO_334:0000330 ! Leaf morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:00:17Z
+
+[Term]
+id: CO_334:0000333
+name: Root morphological trait
+def: "Traits associated with root morphology" []
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:06:53Z
+
+[Term]
+id: CO_334:0000334
+name: Storage root morphological trait
+is_a: CO_334:0000333 ! Root morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:07:39Z
+
+[Term]
+id: CO_334:0000335
+name: Fibrous root morphological trait
+is_a: CO_334:0000333 ! Root morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:08:25Z
+
+[Term]
+id: CO_334:0000336
+name: Flower and flowering morphological trait
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:16:26Z
+
+[Term]
+id: CO_334:0000337
+name: Fruit morphological trait
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:27:39Z
+
+[Term]
+id: CO_334:0000338
+name: Stem morphological trait
+is_a: CO_334:0000002 ! Morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:31:39Z
 
 [Term]
 id: CO_334:0000339
@@ -2984,12 +3207,108 @@ xref: TO:0000261
 is_a: CO_334:0000030 ! insect damage
 
 [Term]
+id: CO_334:0000341
+name: Leaf petiole
+def: "Traits associated with the leaf petiole morphology." []
+is_a: CO_334:0000330 ! Leaf morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:33:00Z
+
+[Term]
+id: CO_334:0000342
+name: Node number
+def: "Number of nodes on a stem." [CO:curators]
+is_a: CO_334:0000338 ! Stem morphological trait
+created_by: naama
+creation_date: 2017-06-22T11:44:36Z
+
+[Term]
+id: CO_334:0000343
+name: Average number of nodes per plot counting
+def: "Average number of nodes per branch level.\nCounting all nodes per branch at each level. If more than one branch, select one branch and count nodes up to the apical shoot. Value averaged per plot." [CO:curators]
+relationship: variable_of CO_334:0000342 ! Node number
+created_by: naama
+creation_date: 2017-06-22T11:46:27Z
+
+[Term]
+id: CO_334:0000344
+name: female flower number at specific branching level
+def: "Count of number of female flowers at a predefined branching level." []
+is_a: CO_334:0000364 ! Female flower number
+created_by: naama
+creation_date: 2017-06-26T12:02:41Z
+
+[Term]
+id: CO_334:0000345
+name: Female flower number at branching level 1 counting
+def: "Count of number of female flowers at the first branching level." []
+relationship: variable_of CO_334:0000344 ! female flower number at specific branching level
+created_by: naama
+creation_date: 2017-06-26T12:05:00Z
+
+[Term]
+id: CO_334:0000346
+name: Female flower number at branching level 2 counting
+def: "Count of number of female flowers at the second branching level." []
+relationship: variable_of CO_334:0000344 ! female flower number at specific branching level
+created_by: naama
+creation_date: 2017-06-26T12:05:00Z
+
+[Term]
+id: CO_334:0000347
+name: Female flower number at branching level 3 counting
+def: "Count of number of female flowers at the third branching level." []
+relationship: variable_of CO_334:0000344 ! female flower number at specific branching level
+created_by: naama
+creation_date: 2017-06-26T12:05:00Z
+
+[Term]
+id: CO_334:0000348
+name: Female flower number at branching level 4 counting
+def: "Count of number of female flowers at the forth branching level." []
+relationship: variable_of CO_334:0000344 ! female flower number at specific branching level
+created_by: naama
+creation_date: 2017-06-26T12:05:00Z
+
+[Term]
+id: CO_334:0000349
+name: Female flower number at branching level 5 counting
+def: "Count of number of female flowers at the fifth branching level." []
+relationship: variable_of CO_334:0000344 ! female flower number at specific branching level
+created_by: naama
+creation_date: 2017-06-26T12:05:00Z
+
+[Term]
+id: CO_334:0000350
+name: Female flower number at branching level 6 counting
+def: "Count of number of female flowers at the sixth branching level." []
+relationship: variable_of CO_334:0000344 ! female flower number at specific branching level
+created_by: naama
+creation_date: 2017-06-26T12:05:00Z
+
+[Term]
+id: CO_334:0000351
+name: Node number per branch
+def: "Number of nodes at each branching level." []
+is_a: CO_334:0000342 ! Node number
+created_by: naama
+creation_date: 2017-07-11T10:55:33Z
+
+[Term]
+id: CO_334:0000352
+name: Number of nodes at branching level 1 counting
+def: "Number of nodes at the first branching level." []
+relationship: variable_of CO_334:0000351 ! Node number per branch
+created_by: naama
+creation_date: 2017-07-11T10:57:20Z
+
+[Term]
 id: CO_334:0000353
 name: Central Leaf Shape
 def: "Shape of central leaf taken from a mid-height position." [CO:curators]
 synonym: "lfshp" EXACT []
 xref: TO:0000492
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000330 ! Leaf morphological trait
 
 [Term]
 id: CO_334:0000354
@@ -3001,8 +3320,8 @@ is_a: CO_334:0000004 ! Quality trait
 
 [Term]
 id: CO_334:0000355
-name: Color Of Boiled Tuberous Roots
-def: "Color of boiled tuberous roots" [CO:curators]
+name: Color Of Boiled Storage Roots
+def: "Color of boiled storage roots" [CO:curators]
 synonym: "pdcol" EXACT []
 xref: TO:1000007
 is_a: CO_334:0000004 ! Quality trait
@@ -3014,7 +3333,7 @@ def: "50% of the female flower opened to expose the pistils per plot" [CO:curato
 synonym: "dyfl" EXACT []
 synonym: "flw50a" EXACT []
 xref: TO:0002616
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000357
@@ -3022,7 +3341,7 @@ name: Days to 50% branching
 def: "Time to reach 50% of the plants at the branching stage" [CO:curators]
 synonym: "flw50b" EXACT []
 xref: TO:0000933
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch morphological trait
 
 [Term]
 id: CO_334:0000358
@@ -3030,15 +3349,15 @@ name: Days to first anthesis
 def: "Exposing of the pistil per plot of any female flower" [CO:curators]
 synonym: "flwdfa" EXACT []
 xref: TO:0002616
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000359
 name: Days to first inflorescence
-def: "Time to reach the first inflorescence" [CO:curators]
+def: "Time to reach the first inflorescence." [CO:curators]
 synonym: "flwdfi" EXACT []
 xref: TO:0002616
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000360
@@ -3058,11 +3377,19 @@ is_a: CO_334:0000001 ! Agronomic trait
 
 [Term]
 id: CO_334:0000362
-name: Ease Of Peeling Root Cortex
-def: "Ease of root cortex removal" [CO:curators]
+name: Ease of peeling storage root cortex
+def: "Ease of storage root cortex removal." [CO:curators]
 synonym: "easepl" EXACT []
 xref: TO:0001042
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000333 ! Root morphological trait
+
+[Term]
+id: CO_334:0000363
+name: Number of nodes at branching level 2 counting
+def: "Number of nodes at the second branching level." []
+relationship: variable_of CO_334:0000351 ! Node number per branch
+created_by: naama
+creation_date: 2017-07-11T10:57:20Z
 
 [Term]
 id: CO_334:0000364
@@ -3070,7 +3397,7 @@ name: Female flower number
 def: "Number of female flowers after the buds appear" [CO:curators]
 synonym: "FFlwNo" EXACT []
 xref: TO:0002736
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000365
@@ -3094,7 +3421,15 @@ name: Flowering
 def: "Abundance of flower" [CO:curators]
 synonym: "flowerab" EXACT []
 xref: TO:0002736
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
+
+[Term]
+id: CO_334:0000368
+name: Number of nodes at branching level 3 counting
+def: "Number of nodes at the third branching level." []
+relationship: variable_of CO_334:0000351 ! Node number per branch
+created_by: naama
+creation_date: 2017-07-11T10:57:20Z
 
 [Term]
 id: CO_334:0000369
@@ -3210,6 +3545,32 @@ xref: TO:0000398
 is_a: CO_334:0000002 ! Morphological trait
 
 [Term]
+id: CO_334:0000383
+name: Number of nodes at branching level 4 counting
+def: "Number of nodes at the fourth branching level." []
+relationship: variable_of CO_334:0000351 ! Node number per branch
+created_by: naama
+creation_date: 2017-07-11T10:57:20Z
+
+[Term]
+id: CO_334:0000384
+name: dry matter content of fibrous root percentage
+def: "Ratio of measured fibrous root dry weight and fibrous root fresh weight multiplied by 100." [CO:curator]
+relationship: variable_of CO_334:0000424 ! Root dry matter content
+relationship: variable_of CO_334:0010011 ! Estimation :dry matter content of fibrous root percentage
+created_by: AAfolabi
+creation_date: 2017-07-18T14:45:13Z
+
+[Term]
+id: CO_334:0000385
+name: dry matter content of lower stem percentage
+def: "Ratio of measured lower stem dry weight and lower stem fresh weight multiplied by 100." [CO:curator]
+relationship: variable_of CO_334:0000447 ! Dry Matter Content
+relationship: variable_of CO_334:0010010 ! Estimation :dry matter content of lower stem percentage
+created_by: AAfolabi
+creation_date: 2017-07-18T14:49:00Z
+
+[Term]
 id: CO_334:0000386
 name: Initial Vigor
 def: "Initial plant vigor at one month after planting" [CO:curators]
@@ -3239,7 +3600,7 @@ name: Leaf color
 def: "Leaf color" [CO:curators]
 synonym: "LfCol" EXACT []
 xref: TO:0000326
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000330 ! Leaf morphological trait
 
 [Term]
 id: CO_334:0000390
@@ -3255,7 +3616,7 @@ name: Leaf lobe length
 def: "Length of middle finger or lobe of matured leaf" [CO:curators]
 synonym: "LfLbLng" EXACT []
 xref: TO:1000014
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000331 ! Leaf lobe
 
 [Term]
 id: CO_334:0000392
@@ -3263,7 +3624,7 @@ name: Leaf lobe margin
 def: "leaf lobe margin." [CO:curators]
 synonym: "LobMgnShp" EXACT []
 xref: TO:1000013
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000331 ! Leaf lobe
 
 [Term]
 id: CO_334:0000393
@@ -3271,7 +3632,7 @@ name: Leaf Lobe Position
 def: "Position in which leaf lobes are held" [CO:curators]
 synonym: "lflobp" EXACT []
 xref: TO:1000013
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000331 ! Leaf lobe
 
 [Term]
 id: CO_334:0000394
@@ -3279,7 +3640,7 @@ name: Leaf lobe width
 def: "Width of middle finger or lobe of matured leaf" [CO:curators]
 synonym: "LfLbWdth" EXACT []
 xref: TO:1000015
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000331 ! Leaf lobe
 
 [Term]
 id: CO_334:0000395
@@ -3287,7 +3648,7 @@ name: Leaf Lobes Number
 def: "Number of leaf lobes" [CO:curators]
 synonym: "lflbno" EXACT []
 xref: TO:1000013
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000331 ! Leaf lobe
 
 [Term]
 id: CO_334:0000396
@@ -3304,7 +3665,7 @@ name: Leaf scar distance
 def: "Distance between leaf scar" [CO:curators]
 synonym: "lfscdist" EXACT []
 xref: TO:0000361
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000332 ! Leaf scar
 
 [Term]
 id: CO_334:0000398
@@ -3312,7 +3673,7 @@ name: Leaf scar height
 def: "Height from ground to leaf scar." [CO:curators]
 synonym: "ScarHt" EXACT []
 xref: TO:0000362
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000332 ! Leaf scar
 
 [Term]
 id: CO_334:0000399
@@ -3320,7 +3681,7 @@ name: Leaf scar number
 def: "Number of leaf scars" [CO:curators]
 synonym: "lfscno" EXACT []
 xref: TO:0000363
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000332 ! Leaf scar
 
 [Term]
 id: CO_334:0000400
@@ -3328,7 +3689,7 @@ name: Leaf Scar Prominence
 def: "Prominence of fresh leaf scars" [CO:curators]
 synonym: "lfscar" EXACT []
 xref: TO:0000364
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000332 ! Leaf scar
 
 [Term]
 id: CO_334:0000401
@@ -3336,7 +3697,7 @@ name: Leaf Vein Color
 def: "Color of leaf vein" [CO:curators]
 synonym: "lfvnco" EXACT []
 xref: TO:0000719
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000330 ! Leaf morphological trait
 
 [Term]
 id: CO_334:0000402
@@ -3352,7 +3713,7 @@ name: Male flower number
 def: "Number of male flowers after the buds appear" [CO:curators]
 synonym: "flwmno" EXACT []
 xref: TO:0002736
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000404
@@ -3424,15 +3785,15 @@ name: Number of flowering stalks
 def: "Number of stalks carrying buds" [CO:curators]
 synonym: "FlwStlkNo" EXACT []
 xref: TO:0000894
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000413
-name: Number of forks
+name: Number of  forks
 def: "Number of branches" [CO:curators]
 synonym: "flwfrk" EXACT []
 xref: TO:0000740
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000329 ! Plant branch morphological trait
 
 [Term]
 id: CO_334:0000414
@@ -3440,7 +3801,7 @@ name: Number of fruits
 def: "Number of fruits" [CO:curators]
 synonym: "fruitno" EXACT []
 xref: TO:0000894
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000337 ! Fruit morphological trait
 
 [Term]
 id: CO_334:0000415
@@ -3448,7 +3809,7 @@ name: Number of fruitset
 def: "Number of fruits formed after pollination" [CO:curators]
 synonym: "flwfrt" EXACT []
 xref: TO:0002640
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000337 ! Fruit morphological trait
 
 [Term]
 id: CO_334:0000416
@@ -3487,7 +3848,7 @@ name: Number of terminal branches with inflorescence
 def: "Number of terminal branches with inflorescence" [CO:curators]
 synonym: "TermBrnchNo" EXACT []
 xref: TO:0000582
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000421
@@ -3495,7 +3856,7 @@ name: Ovary Color
 def: "Color of ovary" [CO:curators]
 synonym: "ovryco" EXACT []
 xref: TO:1000016
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000422
@@ -3506,12 +3867,46 @@ xref: TO:0001042
 is_a: CO_334:0000001 ! Agronomic trait
 
 [Term]
+id: CO_334:0000423
+name: dry matter content of leaf percentage
+def: "Ratio of measured leaf dry weight and leaf fresh weight multiplied by 100." [CO:curator]
+relationship: variable_of CO_334:0000447 ! Dry Matter Content
+relationship: variable_of CO_334:0010009 ! Estimation :dry matter content of leaf percentage
+created_by: AAfolabi
+creation_date: 2017-07-18T14:52:38Z
+
+[Term]
+id: CO_334:0000424
+name: Root dry matter content
+def: "Dry matter content of root related terms." [CO:curator]
+is_a: CO_334:0000447 ! Dry Matter Content
+created_by: AAfolabi
+creation_date: 2017-07-18T14:58:31Z
+
+[Term]
+id: CO_334:0000425
+name: Total leaf area
+def: "Measurement of leaf area." [CO:curator]
+is_a: CO_334:0000330 ! Leaf morphological trait
+created_by: AAfolabi
+creation_date: 2017-07-18T15:29:42Z
+
+[Term]
+id: CO_334:0000426
+name: total leaf area estimation
+def: "Estimation of leaf area by scanning all leaves of a plant on centimeter square using a handheld device." [CO:curator]
+relationship: variable_of CO_334:0000425 ! Total leaf area
+relationship: variable_of CO_334:0010012 ! Estimation :Total leaf area_method
+created_by: AAfolabi
+creation_date: 2017-07-18T15:30:58Z
+
+[Term]
 id: CO_334:0000427
 name: Petiole Color
 def: "Petiole color" [CO:curators]
 synonym: "petcol" EXACT []
 xref: TO:0002707
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000341 ! Leaf petiole
 
 [Term]
 id: CO_334:0000428
@@ -3519,7 +3914,7 @@ name: Petiole Insertion Angle
 def: "Angle between branch and petiole" [CO:curators]
 synonym: "petang" EXACT []
 xref: TO:0000765
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000341 ! Leaf petiole
 
 [Term]
 id: CO_334:0000429
@@ -3527,7 +3922,7 @@ name: Petiole length
 def: "petiole length" [CO:curators]
 synonym: "PetLng" EXACT []
 xref: TO:0000766
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000341 ! Leaf petiole
 
 [Term]
 id: CO_334:0000430
@@ -3535,7 +3930,7 @@ name: Petiole orientation
 def: "petiole orientation" [CO:curators]
 synonym: "PetOrt" EXACT []
 xref: TO:0000765
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000341 ! Leaf petiole
 
 [Term]
 id: CO_334:0000431
@@ -3599,7 +3994,7 @@ name: Presence of pollen
 def: "Presence of pollen" [CO:curators]
 synonym: "pollen" EXACT []
 xref: TO:0000420
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000439
@@ -3607,7 +4002,7 @@ name: Proportion of female flower
 def: "Proportion of female flower" [CO:curators]
 synonym: "FFlwProp" EXACT []
 xref: TO:0000987
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000440
@@ -3622,7 +4017,7 @@ name: Proportion of plant with inflorescence
 def: "Proportion of plants per plot that have an inflorescence at varying growth stages. Plant with pollinated and unpollinated flowers are all counted together" [CO:curators]
 synonym: "pnoinf" EXACT []
 xref: TO:0000582
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000442
@@ -3649,18 +4044,26 @@ xref: TO:0000261
 is_a: CO_334:0000030 ! insect damage
 
 [Term]
+id: CO_334:0000445
+name: Days to branching
+def: "Days to forking event." [CO:curator]
+is_a: CO_334:0000329 ! Plant branch morphological trait
+created_by: AAfolabi
+creation_date: 2017-07-25T09:29:55Z
+
+[Term]
 id: CO_334:0000446
 name: Root constrictions number
 def: "Number of constrictions on the storage root" [CO:curators]
 synonym: "RtConsNo" EXACT []
-synonym: "Tuberous root constriction presence" EXACT []
+synonym: "Storage root constriction presence" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000333 ! Root morphological trait
 
 [Term]
 id: CO_334:0000447
-name: Root Dry Matter Content
-def: "Dry matter content of storage roots" [CO:curators]
+name: Dry Matter Content
+def: "Dry matter content of storage roots." [CO:curators]
 synonym: "dm" EXACT []
 xref: TO:1000007
 is_a: CO_334:0000004 ! Quality trait
@@ -3674,6 +4077,14 @@ xref: TO:0001042
 is_a: CO_334:0000001 ! Agronomic trait
 
 [Term]
+id: CO_334:0000449
+name: Days to branching event
+def: "Days when forking event occured." [CO:curator]
+is_a: CO_334:0000445 ! Days to branching
+created_by: AAfolabi
+creation_date: 2017-07-25T09:39:03Z
+
+[Term]
 id: CO_334:0000450
 name: Root length
 def: "Root length" [CO:curators]
@@ -3683,11 +4094,11 @@ is_a: CO_334:0000001 ! Agronomic trait
 
 [Term]
 id: CO_334:0000451
-name: Root Neck Length
+name: Storage root neck length
 def: "Root neck length" [CO:curators]
 synonym: "nklgt" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000452
@@ -3704,40 +4115,40 @@ name: Root Position
 def: "Position of roots" [CO:curators]
 synonym: "rtpost" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000333 ! Root morphological trait
 
 [Term]
 id: CO_334:0000454
-name: Root Surface Color
+name: Storage root surface color
 def: "Storage root surface color" [CO:curators]
 synonym: "rtscol" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000455
-name: Root Surface Texture
-def: "Storage root surface texture" [CO:curators]
+name: Storage root surface texture
+def: "Storage root surface texture." [CO:curators]
 synonym: "rttext" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000456
 name: Root Yield
-def: "Tuberous root yield" [CO:curators]
+def: "Storage root yield" [CO:curators]
 synonym: "RtYld" EXACT []
 xref: TO:0001041
 is_a: CO_334:0000001 ! Agronomic trait
 
 [Term]
 id: CO_334:0000457
-name: Rotted Storage Roots
-def: "Number of rotted storage roots" [CO:curators]
+name: Rotted storage roots
+def: "Number of rotted storage roots." [CO:curators]
 synonym: "RotRtNo" EXACT []
 synonym: "Unmarketable roots, Rotted Storage Roots - Cassavabase" EXACT []
 xref: TO:0001042
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000458
@@ -3776,7 +4187,7 @@ name: Sepal Color
 def: "Color of sepals" [CO:curators]
 synonym: "splcol" EXACT []
 xref: TO:0000573
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000463
@@ -3811,6 +4222,51 @@ xref: TO:1000007
 is_a: CO_334:0000001 ! Agronomic trait
 
 [Term]
+id: CO_334:0000467
+name: Days to first forking event visual observation
+def: "Visual observation of when (actual date in the format of dd/mm/yyyy from the date of planting) first forking event occured." [CO:curator]
+relationship: variable_of CO_334:0000449 ! Days to branching event
+relationship: variable_of CO_334:0010013 ! Visual Observation :days to branching event
+relationship: variable_of CO_334:0100008 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T10:00:07Z
+
+[Term]
+id: CO_334:0000468
+name: Days to second forking event visual observation
+def: "Visual observation of when (actual date in the format of dd/mm/yyyy from the date of planting) second forking event occured." [CO:curator]
+relationship: variable_of CO_334:0000449 ! Days to branching event
+relationship: variable_of CO_334:0010013 ! Visual Observation :days to branching event
+relationship: variable_of CO_334:0100008 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T10:05:36Z
+
+[Term]
+id: CO_334:0000469
+name: Days to third forking event visual observation
+def: "Visual observation of when (actual date in the format of dd/mm/yyyy from the date of planting) third forking event occured." [CO:<new dbxref>curator]
+relationship: variable_of CO_334:0000449 ! Days to branching event
+relationship: variable_of CO_334:0010013 ! Visual Observation :days to branching event
+relationship: variable_of CO_334:0100008 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T10:06:51Z
+
+[Term]
+id: CO_334:0000470
+name: Days to abortion
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
+created_by: AAfolabi
+creation_date: 2017-07-25T11:13:40Z
+
+[Term]
+id: CO_334:0000471
+name: Days to abortion by branching levels
+def: "Days to the death of immatured flower." [CO:curator]
+is_a: CO_334:0000470 ! Days to abortion
+created_by: AAfolabi
+creation_date: 2017-07-25T11:14:47Z
+
+[Term]
 id: CO_334:0000472
 name: Sprouting
 def: "Proportion of stakes germinated" [CO:curators]
@@ -3833,7 +4289,7 @@ name: Starch Content
 def: "Starch content" [CO:curators]
 synonym: "starch" EXACT []
 xref: TO:0000696
-is_a: CO_334:0000004 ! Quality trait
+is_a: CO_334:0000317 ! Starch properties
 
 [Term]
 id: CO_334:0000475
@@ -3841,7 +4297,7 @@ name: Stem Color
 def: "Stem color" [CO:curators]
 synonym: "stmcol" EXACT []
 xref: TO:0000056
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000338 ! Stem morphological trait
 
 [Term]
 id: CO_334:0000476
@@ -3849,7 +4305,7 @@ name: Stem cortex color
 def: "Color of stem cortex" [CO:curators]
 synonym: "stmctcol" EXACT []
 xref: TO:1000017
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000338 ! Stem morphological trait
 
 [Term]
 id: CO_334:0000477
@@ -3857,7 +4313,7 @@ name: Stem epidermis color
 def: "Color of stem epidermis" [CO:curators]
 synonym: "stmepcol" EXACT []
 xref: TO:1000018
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000338 ! Stem morphological trait
 
 [Term]
 id: CO_334:0000478
@@ -3891,7 +4347,7 @@ name: Stigma Color
 def: "Color of stigma" [CO:curators]
 synonym: "stgmco" EXACT []
 xref: TO:0000185
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
 
 [Term]
 id: CO_334:0000482
@@ -3922,9 +4378,9 @@ id: CO_334:0000485
 name: Storage Root Constrictions
 def: "Presence of constrictions on the storage root" [CO:curators]
 synonym: "rtcons" EXACT []
-synonym: "Tuberous root constriction presence" EXACT []
+synonym: "Storage root constriction presence" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000486
@@ -3933,7 +4389,7 @@ def: "Color of outer surface of storage root cortex (inner skin)" [CO:curators]
 synonym: "inncol" EXACT []
 synonym: "Inner skin color" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000487
@@ -3941,7 +4397,7 @@ name: Storage Root Diameter
 def: "Storage root diameter" [CO:curators]
 synonym: "rtdiam" EXACT []
 xref: TO:1000006
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000488
@@ -3949,7 +4405,7 @@ name: Storage Root Peduncle
 def: "Storage Root Peduncle" [CO:curators]
 synonym: "rtpedu" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000489
@@ -3958,7 +4414,7 @@ def: "Color of outer surface of storage root periderm (outer skin)" [CO:curators
 synonym: "outcol" EXACT []
 synonym: "Outer skin color" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000490
@@ -3966,7 +4422,7 @@ name: Storage Root Pulp Color
 def: "Storage root pulp color" [CO:curators]
 synonym: "plpcol" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000491
@@ -3974,7 +4430,7 @@ name: Storage Root Shape
 def: "Storage root shape" [CO:curators]
 synonym: "rtshp" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000492
@@ -3983,7 +4439,7 @@ def: "Storage root length" [CO:curators]
 synonym: "rtsz" EXACT []
 synonym: "Storage root length" EXACT []
 xref: TO:1000007
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000334 ! Storage root morphological trait
 
 [Term]
 id: CO_334:0000493
@@ -4059,7 +4515,7 @@ is_a: CO_334:0000004 ! Quality trait
 
 [Term]
 id: CO_334:0000502
-name: Tuberous root cyanide content
+name: Storage root cyanide content
 def: "Cyanide content in storage roots" [CO:curators]
 synonym: "RtCyanC" EXACT []
 xref: TO:0000465
@@ -4087,7 +4543,7 @@ name: Young Stem Growth Habit
 def: "Growth habit of young stem" [CO:curators]
 synonym: "stemgh" EXACT []
 xref: TO:0000361
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000338 ! Stem morphological trait
 
 [Term]
 id: CO_334:0000506
@@ -4095,7 +4551,7 @@ name: Young Stem Pubescence
 def: "Pubescence of young stem" [CO:curators]
 synonym: "stmpub" EXACT []
 xref: TO:0000361
-is_a: CO_334:0000002 ! Morphological trait
+is_a: CO_334:0000338 ! Stem morphological trait
 
 [Term]
 id: CO_334:0000507
@@ -4103,6 +4559,363 @@ name: Zinc Content
 def: "Zinc content" [CO:curators]
 synonym: "zn" EXACT []
 is_a: CO_334:0000004 ! Quality trait
+
+[Term]
+id: CO_334:0000508
+name: Days to abortion on the first branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the death of immatured on the first branching level. Color of buds changes from green to brown." [CO:curator]
+relationship: variable_of CO_334:0000471 ! Days to abortion by branching levels
+relationship: variable_of CO_334:0010014 ! Visual Observation: days to abortion by branching level
+relationship: variable_of CO_334:0100009 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T11:17:03Z
+
+[Term]
+id: CO_334:0000509
+name: Days to abortion on the second branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the death of immatured on the second branching level. Color of buds changes from green to brown." [CO:curator]
+relationship: variable_of CO_334:0000471 ! Days to abortion by branching levels
+relationship: variable_of CO_334:0010014 ! Visual Observation: days to abortion by branching level
+relationship: variable_of CO_334:0100009 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T11:22:50Z
+
+[Term]
+id: CO_334:0000510
+name: Days to abortion on the third branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the death of immatured on the third branching level. Color of buds changes from green to brown." [CO:curator]
+relationship: variable_of CO_334:0000471 ! Days to abortion by branching levels
+relationship: variable_of CO_334:0010014 ! Visual Observation: days to abortion by branching level
+relationship: variable_of CO_334:0100009 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T11:26:48Z
+
+[Term]
+id: CO_334:0000511
+name: Days to first female flower opens
+def: "First female flower (pistillate) mature and opens." [CO:curator]
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
+created_by: AAfolabi
+creation_date: 2017-07-25T11:46:46Z
+
+[Term]
+id: CO_334:0000512
+name: Days to first female flower opens by branch levels
+def: "First female flower (pistillate) mature and opens by branching levels." [CO:curator]
+is_a: CO_334:0000511 ! Days to first female flower opens
+created_by: AAfolabi
+creation_date: 2017-07-25T11:49:20Z
+
+[Term]
+id: CO_334:0000513
+name: Days to first female flower open on the first branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the opening of the first female flower on the first branching level." [CO:curator]
+relationship: variable_of CO_334:0000512 ! Days to first female flower opens by branch levels
+relationship: variable_of CO_334:0010015 ! Visual Observation :Days to first female flower opens by branch levels
+relationship: variable_of CO_334:0100010 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T11:52:02Z
+
+[Term]
+id: CO_334:0000514
+name: Days to first female flower open on the second branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the opening of the first female flower on the second branching level." [CO:curator]
+relationship: variable_of CO_334:0000512 ! Days to first female flower opens by branch levels
+relationship: variable_of CO_334:0010015 ! Visual Observation :Days to first female flower opens by branch levels
+relationship: variable_of CO_334:0100010 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T11:53:47Z
+
+[Term]
+id: CO_334:0000515
+name: Days to first female flower open on the third branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the opening of the first female flower on the third branching level." [CO:curator]
+relationship: variable_of CO_334:0000512 ! Days to first female flower opens by branch levels
+relationship: variable_of CO_334:0010015 ! Visual Observation :Days to first female flower opens by branch levels
+relationship: variable_of CO_334:0100010 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T11:55:08Z
+
+[Term]
+id: CO_334:0000516
+name: Days to senescence
+def: "Days to senescence." [CO:curator]
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
+created_by: AAfolabi
+creation_date: 2017-07-25T12:16:27Z
+
+[Term]
+id: CO_334:0000517
+name: Days to senescence by branch level
+is_a: CO_334:0000516 ! Days to senescence
+created_by: AAfolabi
+creation_date: 2017-07-25T12:17:45Z
+
+[Term]
+id: CO_334:0000518
+name: Days to senescence on the first branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the death of matured flowers on the first branching level. Usually done by observing the change in color of petal from yellow to brown." [CO:curator]
+relationship: variable_of CO_334:0000517 ! Days to senescence by branch level
+relationship: variable_of CO_334:0010016 ! Visual Observation :Days to senescence by branch level
+relationship: variable_of CO_334:0100011 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T12:18:35Z
+
+[Term]
+id: CO_334:0000519
+name: Days to senescence on the second branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the death of matured flowers on the second branching level. Usually done by observing the change in color of petal from yellow to brown." [CO:curator]
+relationship: variable_of CO_334:0000517 ! Days to senescence by branch level
+relationship: variable_of CO_334:0010016 ! Visual Observation :Days to senescence by branch level
+relationship: variable_of CO_334:0100011 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T12:24:11Z
+
+[Term]
+id: CO_334:0000520
+name: Days to senescence on the third branch visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the death of matured flowers on the third branching level. Usually done by observing the change in color of petal from yellow to brown." [CO:curator]
+relationship: variable_of CO_334:0000517 ! Days to senescence by branch level
+relationship: variable_of CO_334:0010016 ! Visual Observation :Days to senescence by branch level
+relationship: variable_of CO_334:0100011 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T12:26:27Z
+
+[Term]
+id: CO_334:0000521
+name: Number of forks by branch level
+def: "Number of forks or branches at specific branching levels." [CO:curator]
+is_a: CO_334:0000413 ! Number of  forks
+created_by: AAfolabi
+creation_date: 2017-07-25T14:53:49Z
+
+[Term]
+id: CO_334:0000522
+name: number of forks on branching level 1 counting
+def: "Number of forks (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) on the first branching level." [CO:curator]
+relationship: variable_of CO_334:0000521 ! Number of forks by branch level
+relationship: variable_of CO_334:0010017 ! Counting :number of forks by branch level
+relationship: variable_of CO_334:0100012 ! Branches
+created_by: AAfolabi
+creation_date: 2017-07-25T14:56:41Z
+
+[Term]
+id: CO_334:0000523
+name: number of forks on branching level 2 counting
+def: "Number of forks (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) on the second branching level." [CO:curator]
+relationship: variable_of CO_334:0000521 ! Number of forks by branch level
+relationship: variable_of CO_334:0010017 ! Counting :number of forks by branch level
+relationship: variable_of CO_334:0100012 ! Branches
+created_by: AAfolabi
+creation_date: 2017-07-25T15:01:01Z
+
+[Term]
+id: CO_334:0000524
+name: number of forks on branching level 3 counting
+def: "Number of forks (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) on the third branching level." [CO:curator]
+relationship: variable_of CO_334:0000521 ! Number of forks by branch level
+relationship: variable_of CO_334:0010017 ! Counting :number of forks by branch level
+relationship: variable_of CO_334:0100012 ! Branches
+created_by: AAfolabi
+creation_date: 2017-07-25T15:02:13Z
+
+[Term]
+id: CO_334:0000525
+name: Number of inflorescence by branch level
+def: "Number of inflorescence at specific branching level." [CO:curator]
+is_a: CO_334:0000359 ! Days to first inflorescence
+created_by: AAfolabi
+creation_date: 2017-07-25T15:54:07Z
+
+[Term]
+id: CO_334:0000526
+name: number of inflorescence on the first branch counting
+def: "Number of inflorescence on the first branching level." [CO:curator]
+relationship: variable_of CO_334:0000525 ! Number of inflorescence by branch level
+relationship: variable_of CO_334:0010018 ! Counting :Number of inflorescence by branch level
+relationship: variable_of CO_334:0100014 ! inflorescence
+created_by: AAfolabi
+creation_date: 2017-07-25T15:58:19Z
+
+[Term]
+id: CO_334:0000527
+name: number of inflorescence on the second branch counting
+def: "Number of inflorescence on the second branching level." [CO:curator]
+relationship: variable_of CO_334:0000525 ! Number of inflorescence by branch level
+relationship: variable_of CO_334:0010018 ! Counting :Number of inflorescence by branch level
+relationship: variable_of CO_334:0100014 ! inflorescence
+created_by: AAfolabi
+creation_date: 2017-07-25T16:00:49Z
+
+[Term]
+id: CO_334:0000528
+name: number of inflorescence on the third branch counting
+def: "Number of inflorescence on the third branching level." [CO:curator]
+relationship: variable_of CO_334:0000525 ! Number of inflorescence by branch level
+relationship: variable_of CO_334:0010018 ! Counting :Number of inflorescence by branch level
+relationship: variable_of CO_334:0100014 ! inflorescence
+created_by: AAfolabi
+creation_date: 2017-07-25T16:02:21Z
+
+[Term]
+id: CO_334:0000529
+name: Number of buds
+def: "Number of buds." [CO:curator]
+is_a: CO_334:0000336 ! Flower and flowering morphological trait
+created_by: AAfolabi
+creation_date: 2017-07-25T16:16:00Z
+
+[Term]
+id: CO_334:0000530
+name: Number of buds by branch level
+def: "Count of the number of buds at different branching level." [CO:curator]
+is_a: CO_334:0000529 ! Number of buds
+created_by: AAfolabi
+creation_date: 2017-07-25T16:16:30Z
+
+[Term]
+id: CO_334:0000531
+name: number of buds on branch 1 counting
+def: "Count of the number of flower buds (inability to distinguish a flower bud as a male Or female) on the first branching level." [CO:curator]
+relationship: variable_of CO_334:0000530 ! Number of buds by branch level
+relationship: variable_of CO_334:0010019 ! Counting :Number of buds by branch level
+relationship: variable_of CO_334:0100013 ! buds
+created_by: AAfolabi
+creation_date: 2017-07-25T16:19:03Z
+
+[Term]
+id: CO_334:0000532
+name: number of buds on branch 2 counting
+def: "Counnt of the number of flower buds (inability to distinguish a flower bud as a male Or female) on the second branching level." [CO:curator]
+relationship: variable_of CO_334:0000530 ! Number of buds by branch level
+relationship: variable_of CO_334:0010019 ! Counting :Number of buds by branch level
+relationship: variable_of CO_334:0100013 ! buds
+created_by: AAfolabi
+creation_date: 2017-07-25T16:21:57Z
+
+[Term]
+id: CO_334:0000533
+name: number of buds on branch 3 counting
+def: "Counnt of the number of flower buds (inability to distinguish a flower bud as a male Or female) on the third branching level." [CO:curator]
+relationship: variable_of CO_334:0000530 ! Number of buds by branch level
+relationship: variable_of CO_334:0010019 ! Counting :Number of buds by branch level
+relationship: variable_of CO_334:0100013 ! buds
+created_by: AAfolabi
+creation_date: 2017-07-25T16:22:40Z
+
+[Term]
+id: CO_334:0000534
+name: male flower number counting by branch level
+def: "Number male flowers after the buds appears, matures, and grows in size to become distinctive at specific branch levels." [CO:curator]
+is_a: CO_334:0000403 ! Male flower number
+created_by: AAfolabi
+creation_date: 2017-07-25T16:30:45Z
+
+[Term]
+id: CO_334:0000535
+name: male flower number counting on branch 1
+def: "A count of the number male flowers after the buds appears, matures, and grows in size to become distinctive on the first branch levels." [CO:curator]
+relationship: variable_of CO_334:0000534 ! male flower number counting by branch level
+relationship: variable_of CO_334:0010020 ! Counting :male flower number by branch level
+relationship: variable_of CO_334:0100015 ! Flowers
+created_by: AAfolabi
+creation_date: 2017-07-25T16:33:09Z
+
+[Term]
+id: CO_334:0000536
+name: male flower number counting on branch 2
+def: "A count of the number male flowers after the buds appears, matures, and grows in size to become distinctive on the second branch levels." [CO:curator]
+relationship: variable_of CO_334:0000534 ! male flower number counting by branch level
+relationship: variable_of CO_334:0010020 ! Counting :male flower number by branch level
+relationship: variable_of CO_334:0100015 ! Flowers
+created_by: AAfolabi
+creation_date: 2017-07-25T16:34:25Z
+
+[Term]
+id: CO_334:0000537
+name: male flower number counting on branch 3
+def: "A count of the number male flowers after the buds appears, matures, and grows in size to become distinctive on the third branch levels." [CO:curator]
+relationship: variable_of CO_334:0000534 ! male flower number counting by branch level
+relationship: variable_of CO_334:0010020 ! Counting :male flower number by branch level
+relationship: variable_of CO_334:0100015 ! Flowers
+created_by: AAfolabi
+creation_date: 2017-07-25T16:35:19Z
+
+[Term]
+id: CO_334:0000538
+name: Days to fruitset by branch level
+def: "Days to fruitset in a plant." [CO:curator]
+is_a: CO_334:0000337 ! Fruit morphological trait
+created_by: AAfolabi
+creation_date: 2017-07-25T16:49:04Z
+
+[Term]
+id: CO_334:0000539
+name: days to fruitset on branch 1 visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the date when fruit is first seen on the first branching level." [CO:curator]
+relationship: variable_of CO_334:0000538 ! Days to fruitset by branch level
+relationship: variable_of CO_334:0010021 ! Visual Observation : Days to fruitset by branch level
+relationship: variable_of CO_334:0100016 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T16:50:17Z
+
+[Term]
+id: CO_334:0000540
+name: days to fruitset on branch 2 visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the date when fruit is first seen on the second branching level." [CO:curator]
+relationship: variable_of CO_334:0000538 ! Days to fruitset by branch level
+relationship: variable_of CO_334:0010021 ! Visual Observation : Days to fruitset by branch level
+relationship: variable_of CO_334:0100016 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T16:52:43Z
+
+[Term]
+id: CO_334:0000541
+name: days to fruitset on branch 3 visual observation
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the date when fruit is first seen on the third branching level." [CO:curator]
+relationship: variable_of CO_334:0000538 ! Days to fruitset by branch level
+relationship: variable_of CO_334:0010021 ! Visual Observation : Days to fruitset by branch level
+relationship: variable_of CO_334:0100016 ! days
+created_by: AAfolabi
+creation_date: 2017-07-25T16:53:21Z
+
+[Term]
+id: CO_334:0000542
+name: number of fruitset by branch level
+def: "Number of fruits formed from the seeds after pollination at different branching level." [CO:curator]
+is_a: CO_334:0000415 ! Number of fruitset
+created_by: AAfolabi
+creation_date: 2017-07-25T16:58:36Z
+
+[Term]
+id: CO_334:0000543
+name: number of fruitset on branch 1 counting
+def: "A count of the number of fruits formed from the seeds after pollination on the first branching level." [CO:curator]
+relationship: variable_of CO_334:0000542 ! number of fruitset by branch level
+relationship: variable_of CO_334:0010022 ! Counting :number of fruitset by branch level
+relationship: variable_of CO_334:0100017 ! Fruitset
+created_by: AAfolabi
+creation_date: 2017-07-25T17:00:04Z
+
+[Term]
+id: CO_334:0000544
+name: number of fruitset on branch 2 counting
+def: "A count of the number of fruits formed from the seeds after pollination on the second branching level." [CO:curator]
+relationship: variable_of CO_334:0000542 ! number of fruitset by branch level
+relationship: variable_of CO_334:0010022 ! Counting :number of fruitset by branch level
+relationship: variable_of CO_334:0100017 ! Fruitset
+created_by: AAfolabi
+creation_date: 2017-07-25T17:03:07Z
+
+[Term]
+id: CO_334:0000545
+name: number of fruitset on branch 3 counting
+def: "A count of the number of fruits formed from the seeds after pollination on the third branching level." [CO:curator]
+relationship: variable_of CO_334:0000542 ! number of fruitset by branch level
+relationship: variable_of CO_334:0010022 ! Counting :number of fruitset by branch level
+relationship: variable_of CO_334:0100017 ! Fruitset
+created_by: AAfolabi
+creation_date: 2017-07-25T17:04:28Z
 
 [Term]
 id: CO_334:0010000
@@ -4180,6 +4993,128 @@ def: "Observation of the actual date from the date of planting, when the first m
 relationship: method_of CO_334:0000286 ! Days to first male flower opens
 created_by: aafolabi
 creation_date: 2016-05-12T17:29:12Z
+
+[Term]
+id: CO_334:0010009
+name: Estimation :dry matter content of leaf percentage
+namespace: CassavaMethod
+def: "Leaf dry matter content estimated as the ratio of measured leaf dry weight and leaf fresh weight multiplied by 100." [CO:curator]
+relationship: method_of CO_334:0000447 ! Dry Matter Content
+created_by: AAfolabi
+creation_date: 2017-07-18T15:13:10Z
+
+[Term]
+id: CO_334:0010010
+name: Estimation :dry matter content of lower stem percentage
+namespace: CassavaMethod
+def: "Dry matter content of lower stem estimated as the ratio of measured lower stem dry weight and lower stem fresh weight multiplied by 100." [CO:curator, XX:<new dbxref>]
+relationship: method_of CO_334:0000447 ! Dry Matter Content
+created_by: AAfolabi
+creation_date: 2017-07-18T15:19:20Z
+
+[Term]
+id: CO_334:0010011
+name: Estimation :dry matter content of fibrous root percentage
+namespace: CassavaMethod
+def: "Estimation of fibrous root dry matter content as the ratio of measured fibrous root dry weight and fibrous root fresh weight multiplied by 100." [CO:curator]
+relationship: method_of CO_334:0000447 ! Dry Matter Content
+created_by: AAfolabi
+creation_date: 2017-07-18T15:24:49Z
+
+[Term]
+id: CO_334:0010012
+name: Estimation :Total leaf area_method
+namespace: CassavaMethod
+def: "Estimation of leaf area using handheld device." [CO:curator]
+relationship: method_of CO_334:0000425 ! Total leaf area
+created_by: AAfolabi
+creation_date: 2017-07-18T15:34:16Z
+
+[Term]
+id: CO_334:0010013
+name: Visual Observation :days to branching event
+namespace: CassavaMethod
+relationship: method_of CO_334:0000449 ! Days to branching event
+created_by: AAfolabi
+creation_date: 2017-07-25T10:18:21Z
+
+[Term]
+id: CO_334:0010014
+name: Visual Observation: days to abortion by branching level
+namespace: CassavaMethod
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the death of immatured flower." [CO:curator]
+relationship: method_of CO_334:0000471 ! Days to abortion by branching levels
+created_by: AAfolabi
+creation_date: 2017-07-25T11:28:02Z
+
+[Term]
+id: CO_334:0010015
+name: Visual Observation :Days to first female flower opens by branch levels
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the opening of the first female flower" [CO:curator]
+relationship: method_of CO_334:0000512 ! Days to first female flower opens by branch levels
+created_by: AAfolabi
+creation_date: 2017-07-25T12:00:48Z
+
+[Term]
+id: CO_334:0010016
+name: Visual Observation :Days to senescence by branch level
+namespace: CassavaMethod
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the death of matured flowers." [CO:curator]
+relationship: method_of CO_334:0000517 ! Days to senescence by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T12:27:33Z
+
+[Term]
+id: CO_334:0010017
+name: Counting :number of forks by branch level
+namespace: CassavaMethod
+def: "A count of the number of branches (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) at specific branching level." [CO:curator]
+relationship: method_of CO_334:0000521 ! Number of forks by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T15:06:07Z
+
+[Term]
+id: CO_334:0010018
+name: Counting :Number of inflorescence by branch level
+namespace: CassavaMethod
+def: "Count of the number of inflorescence by branch levels." [CO:curator]
+relationship: method_of CO_334:0000525 ! Number of inflorescence by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T16:04:51Z
+
+[Term]
+id: CO_334:0010019
+name: Counting :Number of buds by branch level
+namespace: CassavaMethod
+relationship: method_of CO_334:0000530 ! Number of buds by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T16:23:40Z
+
+[Term]
+id: CO_334:0010020
+name: Counting :male flower number by branch level
+namespace: CassavaMethod
+def: "Count of the number male flowers after the buds appears, matures, and grows in size to become distinctive." [CO:curator]
+relationship: method_of CO_334:0000534 ! male flower number counting by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T16:36:30Z
+
+[Term]
+id: CO_334:0010021
+name: Visual Observation : Days to fruitset by branch level
+namespace: CassavaMethod
+def: "Visual observation (actual date in the format of dd/mm/yyyy from the date of planting) of the date when fruit is first seen." [CO:curator]
+relationship: method_of CO_334:0000538 ! Days to fruitset by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T16:54:49Z
+
+[Term]
+id: CO_334:0010022
+name: Counting :number of fruitset by branch level
+def: "A count of the number of fruits formed from the seeds after pollination." [CO:curator]
+relationship: method_of CO_334:0000542 ! number of fruitset by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T17:05:17Z
 
 [Term]
 id: CO_334:0010220
@@ -4613,21 +5548,21 @@ id: CO_334:0010293
 name: Visual Rating:Root Neck Length_method
 namespace: CassavaMethod
 def: "Visual  rating of the root neck length" [CO:curators]
-relationship: method_of CO_334:0000451 ! Root Neck Length
+relationship: method_of CO_334:0000451 ! Storage root neck length
 
 [Term]
 id: CO_334:0010294
 name: Visual Scoring :Ease Of Peeling Root Cortex_method
 namespace: CassavaMethod
 def: "Qualitative rating of the ease of  peeling root cortex" [CO:curators]
-relationship: method_of CO_334:0000362 ! Ease Of Peeling Root Cortex
+relationship: method_of CO_334:0000362 ! Ease of peeling storage root cortex
 
 [Term]
 id: CO_334:0010295
 name: Counting:Rotted Storage Roots _method
 namespace: CassavaMethod
 def: "Count the number of rotted storage roots per plot at the time of harvest." [CO:curators]
-relationship: method_of CO_334:0000457 ! Rotted Storage Roots
+relationship: method_of CO_334:0000457 ! Rotted storage roots
 
 [Term]
 id: CO_334:0010296
@@ -4645,24 +5580,24 @@ relationship: method_of CO_334:0000498 ! Taste Of Boiled Roots
 
 [Term]
 id: CO_334:0010298
-name: Visual Rating :Color Of Boiled Tuberous Roots_method
+name: Visual Rating :Color Of Boiled Storage Roots_method
 namespace: CassavaMethod
 def: "Visual  rating of boiled roots" [CO:curators]
-relationship: method_of CO_334:0000355 ! Color Of Boiled Tuberous Roots
+relationship: method_of CO_334:0000355 ! Color Of Boiled Storage Roots
 
 [Term]
 id: CO_334:0010299
 name: Estimation :Hydrogen cyanide potential picrate method_method
 namespace: CassavaMethod
-def: "Visual scoring of the root cyanide content estimated using the sodium picrate test. This test consist is applying sodium picrate on the tuberous root and observing the reacting colour " [CO:curators]
-relationship: method_of CO_334:0000502 ! Tuberous root cyanide content
+def: "Visual scoring of the root cyanide content estimated using the sodium picrate test. This test consist is applying sodium picrate on the storage root and observing the reacting colour " [CO:curators]
+relationship: method_of CO_334:0000502 ! Storage root cyanide content
 
 [Term]
 id: CO_334:0010300
 name: Estimation :Root Dry Matter Content_method
 namespace: CassavaMethod
 def: "Estimated root dry matter estimated by multiplying 100 times the ratio of dry root weight after oven drying to constant weight divided by the weight of an approximately 100 gram sample of fresh roots" [CO:curators]
-relationship: method_of CO_334:0000447 ! Root Dry Matter Content
+relationship: method_of CO_334:0000447 ! Dry Matter Content
 
 [Term]
 id: CO_334:0010301
@@ -4732,14 +5667,14 @@ id: CO_334:0010311
 name: Visual Rating:Root Surface Color_method
 namespace: CassavaMethod
 def: "Visual rating of root surface color" [CO:curators]
-relationship: method_of CO_334:0000454 ! Root Surface Color
+relationship: method_of CO_334:0000454 ! Storage root surface color
 
 [Term]
 id: CO_334:0010312
 name: Visual Rating:Root Surface Texture_method
 namespace: CassavaMethod
 def: "Visual rating of root surface texture" [CO:curators]
-relationship: method_of CO_334:0000455 ! Root Surface Texture
+relationship: method_of CO_334:0000455 ! Storage root surface texture
 
 [Term]
 id: CO_334:0010313
@@ -4781,7 +5716,7 @@ id: CO_334:0010318
 name: Estimation :dry matter content by specific gravity method_method
 namespace: CassavaMethod
 def: "Estimated dry  matter content from the specific gravity value weighted cassava (4-5kg)" [CO:curators]
-relationship: method_of CO_334:0000447 ! Root Dry Matter Content
+relationship: method_of CO_334:0000447 ! Dry Matter Content
 
 [Term]
 id: CO_334:0010319
@@ -4886,7 +5821,7 @@ id: CO_334:0010334
 name: Estimation :hydrogen cyanide potential enzymatic method_method
 namespace: CassavaMethod
 def: "Visual scoring of the root cyanide content evaluated using the enzymatic method" [CO:curators]
-relationship: method_of CO_334:0000502 ! Tuberous root cyanide content
+relationship: method_of CO_334:0000502 ! Storage root cyanide content
 
 [Term]
 id: CO_334:0010335
@@ -5369,7 +6304,7 @@ id: CO_334:0010403
 name: Counting:number of forks_method
 namespace: CassavaMethod
 def: "A count of the number of branches (2 forks/branches (dichotomous), 3 forks/branches (trichotomous), or 4 forks/branches (tetrachotomous)) at every branching level." [CO:curators]
-relationship: method_of CO_334:0000413 ! Number of forks
+relationship: method_of CO_334:0000413 ! Number of  forks
 
 [Term]
 id: CO_334:0010404
@@ -5467,7 +6402,7 @@ id: CO_334:0010417
 name: Measurement :specific gravity_method
 namespace: CassavaMethod
 def: "Estimated value obtained by weighing 4-5kg of cassava in air and in water" [CO:curators]
-relationship: method_of CO_334:0000447 ! Root Dry Matter Content
+relationship: method_of CO_334:0000447 ! Dry Matter Content
 
 [Term]
 id: CO_334:0010418
@@ -5600,7 +6535,7 @@ id: CO_334:0010436
 name: Visual Rating:root color_method
 namespace: CassavaMethod
 def: "Visual rating of storage root surface color as evaluated by CIAT" [CO:curators]
-relationship: method_of CO_334:0000454 ! Root Surface Color
+relationship: method_of CO_334:0000454 ! Storage root surface color
 
 [Term]
 id: CO_334:0010437
@@ -5614,7 +6549,7 @@ id: CO_334:0010438
 name: Visual Rating:root neck length_method
 namespace: CassavaMethod
 def: "Visual rating of root neck length as evaluated by CIAT" [CO:curators]
-relationship: method_of CO_334:0000451 ! Root Neck Length
+relationship: method_of CO_334:0000451 ! Storage root neck length
 
 [Term]
 id: CO_334:0010439
@@ -5878,6 +6813,124 @@ namespace: CassavaScale
 relationship: scale_of CO_334:0010005 ! Measurement:Stem diameter_method
 created_by: AAfolabi
 creation_date: 2015-09-29T14:08:56Z
+
+[Term]
+id: CO_334:0100004
+name: ratio
+namespace: CassavaScale
+relationship: scale_of CO_334:0010009 ! Estimation :dry matter content of leaf percentage
+created_by: AAfolabi
+creation_date: 2017-07-18T15:15:13Z
+
+[Term]
+id: CO_334:0100005
+name: ratio
+namespace: CassavaScale
+relationship: scale_of CO_334:0010010 ! Estimation :dry matter content of lower stem percentage
+created_by: AAfolabi
+creation_date: 2017-07-18T15:22:30Z
+
+[Term]
+id: CO_334:0100006
+name: ratio
+namespace: CassavaScale
+relationship: scale_of CO_334:0010011 ! Estimation :dry matter content of fibrous root percentage
+created_by: AAfolabi
+creation_date: 2017-07-18T15:27:22Z
+
+[Term]
+id: CO_334:0100007
+name: cm square
+namespace: CassavaScale
+relationship: scale_of CO_334:0010012 ! Estimation :Total leaf area_method
+created_by: AAfolabi
+creation_date: 2017-07-18T15:37:40Z
+
+[Term]
+id: CO_334:0100008
+name: days
+namespace: CassavaScale
+relationship: scale_of CO_334:0010013 ! Visual Observation :days to branching event
+created_by: AAfolabi
+creation_date: 2017-07-25T11:01:57Z
+
+[Term]
+id: CO_334:0100009
+name: days
+namespace: CassavaScale
+def: "Number of days." [CO:curator]
+relationship: scale_of CO_334:0010014 ! Visual Observation: days to abortion by branching level
+created_by: AAfolabi
+creation_date: 2017-07-25T11:36:23Z
+
+[Term]
+id: CO_334:0100010
+name: days
+namespace: CassavaScale
+def: "Number of days." [CO:curator]
+relationship: scale_of CO_334:0010015 ! Visual Observation :Days to first female flower opens by branch levels
+created_by: AAfolabi
+creation_date: 2017-07-25T12:01:42Z
+
+[Term]
+id: CO_334:0100011
+name: days
+namespace: CassavaScale
+def: "Number of days." [CO:curator, XX:<new dbxref>]
+relationship: scale_of CO_334:0010016 ! Visual Observation :Days to senescence by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T12:28:42Z
+
+[Term]
+id: CO_334:0100012
+name: Branches
+namespace: CassavaScale
+relationship: scale_of CO_334:0010017 ! Counting :number of forks by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T15:09:59Z
+
+[Term]
+id: CO_334:0100013
+name: buds
+namespace: CassavaScale
+def: "Number of flower buds." [CO:curator]
+relationship: scale_of CO_334:0010019 ! Counting :Number of buds by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T16:24:36Z
+
+[Term]
+id: CO_334:0100014
+name: inflorescence
+namespace: CassavaScale
+def: "Number of inflorescence." [CO:curator]
+relationship: scale_of CO_334:0010018 ! Counting :Number of inflorescence by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T16:06:30Z
+
+[Term]
+id: CO_334:0100015
+name: Flowers
+namespace: CassavaScale
+relationship: scale_of CO_334:0010020 ! Counting :male flower number by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T16:41:40Z
+
+[Term]
+id: CO_334:0100016
+name: days
+namespace: CassavaScale
+def: "Number of days." [CO:curator]
+relationship: scale_of CO_334:0010021 ! Visual Observation : Days to fruitset by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T16:55:59Z
+
+[Term]
+id: CO_334:0100017
+name: Fruitset
+namespace: CassavaScale
+relationship: scale_of CO_334:0010022 ! Counting :number of fruitset by branch level
+created_by: AAfolabi
+creation_date: 2017-07-25T17:06:23Z
 
 [Term]
 id: CO_334:0100434
@@ -7236,7 +8289,7 @@ is_a: CO_334:0100503 ! 3pt scale
 id: CO_334:0100504
 name: 3pt scale
 namespace: CassavaScale
-relationship: scale_of CO_334:0010298 ! Visual Rating :Color Of Boiled Tuberous Roots_method
+relationship: scale_of CO_334:0010298 ! Visual Rating :Color Of Boiled Storage Roots_method
 
 [Term]
 id: CO_334:0100504:1

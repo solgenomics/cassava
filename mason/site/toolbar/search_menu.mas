@@ -1,8 +1,10 @@
-<li class="dropdown"><a class="menu_click_dropdown dropdown-toggle" data-toggle="dropdown" href="/search/">Search</a>
+<li class="dropdown"><a class="menu_click_dropdown dropdown-toggle" data-toggle="dropdown">Search</a>
   <ul class="dropdown-menu">
     <li><a href="/breeders/search">Wizard</a></li>
     <li><a href="/search/phenotypes/stock">Accessions and Plots</a></li>
+    <li><a href="/search/cross">Progenies and Crosses</a></li>
     <li><a href="/search/trials">Trials</a></li>
+    <li><a href="/search/traits">Traits</a></li>
     <li><a href="/search/markers">Markers</a></li>
     <li><a href="/search/images">Images</a></li>
     <li><a href="/search/people">People</a></li>
