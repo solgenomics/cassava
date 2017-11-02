@@ -8,6 +8,7 @@
       <div class="modal-body">
         <div class="container-fluid">
 	  <h4>Cassavabase adheres to the Toronto agreement on prepublication data release</h4>
+    <div class="subheading"><b><a href="https://www.nature.com/nature/journal/v461/n7261/full/461168a.html">Toronto agreement on prepublication data release</a>&nbsp;
 All data deposited on cassavabase adheres to the Toronto Agreement on prepublication data release. To foster transparent and accessible data sharing culture, in accordance with the Toronto Agreement, all data deposited on cassavabase will be made public immediately. Data producers can provide information on the data they deposit, including planned analyses and publication timeline information, to indicate their publication intentions. Data users are expected to respect scientific etiquette and allow data producers the first global analyses of their data set, and should be aware that pre-publication data may not have been subject to full quality control and peer review, so caution must be applied when utilizing these data. More information is available on the <a href="/usage_policy">data usage policy</a> page.
         </div>
       </div>
@@ -23,22 +24,22 @@ All data deposited on cassavabase adheres to the Toronto Agreement on prepublica
 <script>
 
 //  jQuery(function() {
-//    jQuery( '#usage_policy' ).dialog( { 
+//    jQuery( '#usage_policy' ).dialog( {
 //      modal: true,
 //      title: "Please Note: Website Data Usage Policy",
-//      width:500, 
+//      width:500,
 //      closeOnEscape: false,
 //      dialogClass: "no-close",
 //      autoOpen: false,
-//  buttons: { 
-//        "Don't agree": function() { document.location.href="http://nextgencassava.org"; } , 
-//        "Agree": function() { jQuery.cookie("website_usage_policy_approved", "1", { expires: 10000 } ); jQuery(this).dialog("close") } 
+//  buttons: {
+//        "Don't agree": function() { document.location.href="http://nextgencassava.org"; } ,
+//        "Agree": function() { jQuery.cookie("website_usage_policy_approved", "1", { expires: 10000 } ); jQuery(this).dialog("close") }
 //}
 //    });
 //  });
 
   $('#usage_policy_agree_submit').click( function () {
-     jQuery.cookie("website_usage_policy_approved", "1", { expires: 10000 } ); 
+     jQuery.cookie("website_usage_policy_approved", "1", { expires: 10000 } );
      $('#usage_policy').modal("hide");
   });
 
@@ -47,24 +48,24 @@ All data deposited on cassavabase adheres to the Toronto Agreement on prepublica
   });
 
 
-  if (jQuery.cookie("website_usage_policy_approved") == 1) { 
+  if (jQuery.cookie("website_usage_policy_approved") == 1) {
     document.write('<div class="well well-sm">You have already accepted the <a href="/usage_policy">website usage policy</a>. Thank you.</div>');
   }
 
-  window.onload=function() { 
+  window.onload=function() {
     var cookie = jQuery.cookie("website_usage_policy_approved");
   //alert("have cookie: "+cookie);
- 
+
     if (cookie == undefined) {
     //  alert("showing!");
-  
+
       $('#usage_policy').modal("show");
   //alert("Done!");
-    } 
-    else { 
+    }
+    else {
       //alert("Hiding!");
       $('#usage_policy').modal("hide");
-  
+
     }
   }
 
