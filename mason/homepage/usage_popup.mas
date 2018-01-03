@@ -52,13 +52,8 @@ All data deposited on cassavabase adheres to the Toronto Agreement on prepublica
   });
 
 
-<<<<<<< HEAD
-  if (jQuery.cookie("website_usage_policy_approved") == 1) {
-    document.write('<div class="well well-sm">You have already accepted the <a href="/usage_policy">website usage policy</a>. Thank you.</div>');
-=======
   if (jQuery.cookie("website_usage_policy_approved") == 1) { 
     document.write('<div class="well well-sm">You have already accepted the <a href="/usage_policy">website usage policy</a>. Thank you. For more information, you can access the <a href="https://www.nature.com/nature/journal/v461/n7261/full/461168a.html"> Toronto Agreement publication </div>');
->>>>>>> 4762964346645c4c1476f9c6ecf54ca2323198be
   }
 
   window.onload=function() {
