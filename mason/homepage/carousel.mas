@@ -27,7 +27,6 @@
               <li><a href="http://phytozome.jgi.doe.gov/pz/portal.html#!bulk?org=Org_Mesculenta_er">Download the annotations @ JGI</li></a>
               <li><a href="http://phytozome.jgi.doe.gov/pz/portal.html#!info?alias=Org_Mesculenta_er">Download the Genome Sequence v6.1 @ JGI</li></a>
 	      <li><a href="http://vigs.solgenomics.net">Design VIGS constructs</li></a>
-	      <li><a class="footer" href="http://expression.cassavabase.org/Expression_viewer/input/">Cassava Expression Atlas</li></a>
             </ul>
           </div>
         </div>
