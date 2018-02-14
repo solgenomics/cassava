@@ -9,6 +9,7 @@
     <li><a href="/pca/analysis">Population Structure</a></li>
     <li><a href="/accession_usage">Accession Usage</a></li>
     <li><a href="/tools/trial/comparison/list">Compare Trials</a></li>
+    <li><a href="/tools/graphicalfiltering">Graphical Filtering</a></li>
 
     <li role="separator" class="divider"></li>
     <li class="dropdown-header">Sequence Analysis</li>
