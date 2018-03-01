@@ -7,7 +7,7 @@
     
     <li role="separator" class="divider"></li>
     
-    <li><a href="https://docs.google.com/document/d/1ZJjxsarGqGTv4HgJTt-EodOoaEmJ3lgSeV0Qq_YKJaY/edit" class="footer">Manual</a></li>
+    <li><a href="https://solgenomics.github.io/sgn/" class="footer">Manual</a></li>
     <li><a href="http://cassavabase.wikispaces.com/" class="footer">Wiki</a></li>
     <li><a href="/help/faq.pl">FAQ</a></li>
     <li><a href="/forum/topics.pl">Forum</a></li>
