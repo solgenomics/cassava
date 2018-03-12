@@ -2,6 +2,7 @@
 $schema
 $static_content_path => undef
 $show_accept_dialog => undef
+$phenotype_files => undef
 </%args>
 
 <center>
@@ -81,6 +82,9 @@ $show_accept_dialog => undef
 
 <& homepage/github_pullrequests.mas &>
 
+% if ($phenotype_files) {
+     <& homepage/phenotype_uploads.mas, phenotype_files=>$phenotype_files &>
+% }
 
 
 
