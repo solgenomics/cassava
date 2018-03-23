@@ -332,60 +332,60 @@
 
   jQuery(document).ready(function() {
 
-    var $item = $('.carousel .item');
+    var $item = jQuery('.carousel .item');
     // var $wHeight = $(window).height();
 
-    var numberofSlides = $('.item').length;
+    var numberofSlides = jQuery('.item').length;
     var randomSlide = Math.floor((Math.random() * numberofSlides));
     var currentSlide = randomSlide;
 
-    $('.carousel-indicators li').each(function(){
-      var $slideValue = $(this).attr('data-slide-to');
+    jQuery('.carousel-indicators li').each(function(){
+      var $slideValue = jQuery(this).attr('data-slide-to');
       if (randomSlide == $slideValue) {
-        $(this).addClass('active');
+        jQuery(this).addClass('active');
         $item.eq($slideValue).addClass('active');
       } else {
-        $(this).removeClass('active');
+        jQuery(this).removeClass('active');
         $item.eq($slideValue).removeClass('active');
       }
     });
 
-    $('#btn_carousel_indicators a').each(function(){
-      var $slideValue = $(this).attr('data-slide-to');
+    jQuery('#btn_carousel_indicators a').each(function(){
+      var $slideValue = jQuery(this).attr('data-slide-to');
       // alert("currentSlide: "+$currentSlide+", slideValue: "+$slideValue)
       if (randomSlide == $slideValue) {
-        $(this).parent().addClass('active');
+        jQuery(this).parent().addClass('active');
       } else {
-        $(this).parent().removeClass('active');
+        jQuery(this).parent().removeClass('active');
       }
     });
 
-    $('#myCarousel').bind('slid.bs.carousel', function (e) {
-      $('.carousel-indicators li').each(function(){
-        if ($(this).hasClass('active')) {
-          currentSlide = $(this).attr('data-slide-to');;
+    jQuery('#myCarousel').bind('slid.bs.carousel', function (e) {
+      jQuery('.carousel-indicators li').each(function(){
+        if (jQuery(this).hasClass('active')) {
+          currentSlide = jQuery(this).attr('data-slide-to');;
         }
       });
 
-      $('#btn_carousel_indicators li').removeClass('active');
+      jQuery('#btn_carousel_indicators li').removeClass('active');
 
-      $('#btn_carousel_indicators a').each(function(){
-        var $slideValue = $(this).attr('data-slide-to');
+      jQuery('#btn_carousel_indicators a').each(function(){
+        var $slideValue = jQuery(this).attr('data-slide-to');
         // alert("currentSlide: "+currentSlide+", slideValue: "+$slideValue)
         if(currentSlide == $slideValue) {
-          $(this).parent().addClass('active');
+          jQuery(this).parent().addClass('active');
         }
       });
 
     });
 
     // touch screen
-       //     $("#myCarousel").swiperight(function() {
-       	      //       $("#myCarousel").carousel('prev');
+       //     jQuery("#myCarousel").swiperight(function() {
+       	      //       jQuery("#myCarousel").carousel('prev');
 	      	       //     });
 		       	      //
-				// $("#myCarousel").swipeleft(function() {
-				   //       $("#myCarousel").carousel('next');
+				// jQuery("#myCarousel").swipeleft(function() {
+				   //       jQuery("#myCarousel").carousel('next');
 				   	    //     });
        
     
@@ -394,8 +394,8 @@
   //progress bar
   var percent = 0,
       interval = 50,//time showing each slide
-    $bar = $('.transition-timer-carousel-progress-bar'),
-    $crsl = $('#myCarousel');
+    $bar = jQuery('.transition-timer-carousel-progress-bar'),
+    $crsl = jQuery('#myCarousel');
 
     $crsl.carousel({//initialize
       interval: false,
@@ -424,7 +424,7 @@
     
     
     
-    $(".ui-loading").css("display","none");
-    $(".ui-loader").css("display","none");
+    jQuery(".ui-loading").css("display","none");
+    jQuery(".ui-loader").css("display","none");
   });
 </script>
