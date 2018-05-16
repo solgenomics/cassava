@@ -9,12 +9,12 @@
     <li><a href="/pca/analysis">Population Structure</a></li>
     <li><a href="/accession_usage">Accession Usage</a></li>
     <li><a href="/tools/trial/comparison/list">Compare Trials</a></li>
+    <li><a href="/tools/graphicalfiltering">Graphical Filtering</a></li>
 
     <li role="separator" class="divider"></li>
     <li class="dropdown-header">Sequence Analysis</li>
     <li><a class="footer" href="http://www.phytozome.net/search.php?show=blast">BLAST</a></li>
     <li><a class="footer" href="http://vigs.solgenomics.net/">VIGS Tool</a></li>
-    <li><a class="footer" href="http://expression.cassavabase.org/Expression_viewer/input/">Expression Atlas</a></li>
     <li><a class="footer" href="https://cassavabase.org/jbrowse_cassavabase/?data=data/json/hapmap_variants">HapMap Jbrowse</a></li> 
 
     <li role="separator" class="divider"></li>

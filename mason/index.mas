@@ -2,6 +2,12 @@
 $schema
 $static_content_path => undef
 $show_accept_dialog => undef
+$phenotype_files => undef
+$breeding_programs => undef
+$locations => undef
+$preferred_species => undef
+$editable_stock_props => {}
+$timestamp
 </%args>
 
 <center>
@@ -10,6 +16,9 @@ $show_accept_dialog => undef
 <br></br>
 
 <div class="container-fluid">
+
+    <& /help/workflow_guided/begin.mas, breeding_programs=>$breeding_programs, locations=>$locations, preferred_species=>$preferred_species, editable_stock_props=>$editable_stock_props, timestamp=>$timestamp &>
+
   <div class="well well-sm">
     <& /util/include_file.mas, file=>  $static_content_path."/general_info.txt" &>
   </div>
@@ -81,6 +90,9 @@ $show_accept_dialog => undef
 
 <& homepage/github_pullrequests.mas &>
 
+% if ($phenotype_files) {
+     <& homepage/phenotype_uploads.mas, phenotype_files=>$phenotype_files &>
+% }
 
 
 
