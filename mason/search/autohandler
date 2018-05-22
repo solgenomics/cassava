@@ -28,6 +28,7 @@ Lukas Mueller &st;lam87@cornell.edu&gt;. Based on Perl code by Rob Buels.
     ['/breeders/search', 'Wizard' ],
     ['/search/phenotypes/stock','Accessions and plots'],
     ['/search/trials', 'Trials' ],
+    ['/search/traits', 'Traits' ],
     ['/search/markers','Markers'],
     ['/search/images','Images'],
     ['/search/people', 'People' ],
