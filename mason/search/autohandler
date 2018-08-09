@@ -29,8 +29,9 @@ Lukas Mueller &st;lam87@cornell.edu&gt;. Based on Perl code by Rob Buels.
     ['/search/phenotypes/stock','Accessions and plots'],
     ['/search/trials', 'Field Trials' ],
     ['/search/genotyping_trials', 'Genotyping Trials' ],
+    ['/search/genotyping_data_projects', 'Genotyping Data Project' ],
     ['/search/traits', 'Traits' ],
-    ['/search/markers','Markers'],
+    #['/search/markers','Markers'],
     ['/search/images','Images'],
     ['/search/people', 'People' ],
 
