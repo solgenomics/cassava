@@ -30,6 +30,7 @@ Lukas Mueller &st;lam87@cornell.edu&gt;. Based on Perl code by Rob Buels.
     ['/search/trials', 'Field Trials' ],
     ['/search/genotyping_trials', 'Genotyping Trials' ],
     ['/search/genotyping_data_projects', 'Genotyping Data Project' ],
+    ['/search/genotyping_protocols', 'Genotyping Protocol' ],
     ['/search/traits', 'Traits' ],
     #['/search/markers','Markers'],
     ['/search/images','Images'],
