@@ -2,6 +2,7 @@
   <ul class="dropdown-menu">
     <li><a href="/breeders/search">Wizard</a></li>
     <li><a href="/search/phenotypes/stock">Accessions and Plots</a></li>
+    <li><a href="/search/organisms">Organisms</a></li>
     <li><a href="/search/cross">Progenies and Crosses</a></li>
     <li><a href="/search/trials">Field Trials</a></li>
     <li><a href="/search/genotyping_trials">Genotyping Plates</a></li>
