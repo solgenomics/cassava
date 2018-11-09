@@ -1,16 +1,16 @@
 
-<& /page/page_title.mas, title=>"Cassbase Help" &>
+<& /page/page_title.mas, title=>"CassavaBase Help" &>
 
 <div class="panel panel-default">
 <div class="panel-body">
-<p>The complete Cassbase help is available from the <a href="https://solgenomics.github.io/sgn/">CassavaBase Manual</a>.</p>
+<p>The complete CassavaBase help is available from the <a href="https://solgenomics.github.io/sgn/">CassavaBase Manual</a>.</p>
 <p>For frequently asked questions, see the <a href="/help/faq">FAQ page</a>.</p>
 </div>
 </div>
 
 <h4>Citing CassavaBase</h4>
 
-If Cassbase is useful in your research, please cite Cassbase in your publications using the following reference:
+If CassavaBase is useful in your research, please cite CassavaBase in your publications using the following reference:
 <br /><br />
 <div class="well">
 Fernandez-Pozo N, Menda N, Edwards JD, Saha S, Tecle IY, Strickler SR, Bombarely A, Fisher-York T, Pujar A, Foerster H, Yan A, Mueller LA. <b>The Sol Genomics Network (SGN)—from genotype to phenotype to breeding.</b> (2015) Nucleic Acids Res. Volume 43 (Database issue):D1036-41. <a href="http://www.ncbi.nlm.nih.gov/pubmed/25428362?dopt=Abstract">PubMed</a>.
