@@ -16,7 +16,7 @@
     <li><a href="/tools/label_designer">Label Designer</a></li>
     <li><a href="/breeders/download">Download</a></li>
     <li><a href="/breeders/upload">Upload</a></li>
-    <li><a href="/breeders/odk">ODK Data Collection</a></li>
+    <!-- li><a href="/breeders/odk">ODK Data Collection</a></li -->
     <li><a href="/breeders/identifier_generation">Identifier Generation</a></li>
   </ul>
 </li>
