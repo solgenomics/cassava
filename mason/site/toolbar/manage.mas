@@ -18,5 +18,7 @@
     <li><a href="/breeders/upload">Upload</a></li>
     <li><a href="/breeders/odk">ODK Data Collection</a></li>
     <li><a href="/breeders/identifier_generation">Identifier Generation</a></li>
+    <li><a href="/breeders/drone_imagery">Drone Imagery</a></li>
+    <li><a href="/breeders/genotype_qc">Genotyping QC</a></li>
   </ul>
 </li>
