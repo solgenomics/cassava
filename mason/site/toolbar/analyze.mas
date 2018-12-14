@@ -11,6 +11,7 @@
     <li><a href="/accession_usage">Accession Usage</a></li>
     <li><a href="/tools/trial/comparison/list">Compare Trials</a></li>
     <li><a href="/tools/graphicalfiltering">Graphical Filtering</a></li>
+    <li><a href="/tools/boxplotter">BoxPlotter Tool</a></li>
     <li><a href="/tools/solgwas">GWAS</a></li>
 
     <li role="separator" class="divider"></li>
