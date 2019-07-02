@@ -16,7 +16,8 @@
 
     <li role="separator" class="divider"></li>
     <li class="dropdown-header">Sequence Analysis</li>
-    <li><a class="footer" href="https://phytozome.jgi.doe.gov/pz/portal.html#!search?show=BLAST">BLAST</a></li>
+    <li><a class="footer" href="/tools/blast/">BLAST</a></li>
+   <!--  <li><a class="footer" href="https://phytozome.jgi.doe.gov/pz/portal.html#!search?show=BLAST">BLAST</a></li> -->
     <li><a class="footer" href="http://vigs.solgenomics.net/">VIGS Tool</a></li>
     <li><a class="footer" href="https://cassavabase.org/jbrowse_cassavabase/?data=data/json/hapmap_variants">HapMap Jbrowse</a></li> 
 
