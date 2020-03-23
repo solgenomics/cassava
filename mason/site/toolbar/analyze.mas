@@ -13,6 +13,8 @@
     <li><a href="/tools/graphicalfiltering">Graphical Filtering</a></li>
     <li><a href="/tools/boxplotter">BoxPlotter Tool</a></li>
     <li><a href="/tools/solgwas">GWAS</a></li>
+    <li><a href="/tools/stability">Stability AMMI</a></li>
+    <li><a href="/tools/heritability">Pheno Heritability</a></li>
     <li><a href="/tools/image_analysis">Image Analysis</a></li>
 
     <li role="separator" class="divider"></li>
