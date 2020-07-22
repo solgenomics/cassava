@@ -8,6 +8,9 @@ $locations => undef
 $preferred_species => undef
 $editable_stock_props => {}
 $timestamp
+$facilities => ()
+$management_factor_types => ()
+$design_types => ()
 </%args>
 
 <center>
@@ -17,7 +20,7 @@ $timestamp
 
 <div class="container-fluid">
 
-    <& /help/workflow_guided/begin.mas, breeding_programs=>$breeding_programs, locations=>$locations, preferred_species=>$preferred_species, editable_stock_props=>$editable_stock_props, timestamp=>$timestamp &>
+    <& /help/workflow_guided/begin.mas, breeding_programs=>$breeding_programs, locations=>$locations, preferred_species=>$preferred_species, editable_stock_props=>$editable_stock_props, timestamp=>$timestamp, management_factor_types => $management_factor_types, design_types => $design_types, facilities => $facilities &>
 
   <div class="well well-sm">
     <& /util/include_file.mas, file=>  $static_content_path."/general_info.txt" &>
