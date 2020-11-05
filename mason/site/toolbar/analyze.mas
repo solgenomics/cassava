@@ -10,9 +10,9 @@
     <li><a href="/solgs/search">Genomic Selection</a></li>
     <li><a href="/pca/analysis">Population Structure</a></li>
     <li><a href="/cluster/analysis">Clustering</a></li>
+    <li><a href="/kinship/analysis">Kinship & Inbreeding</a></li>
     <li><a href="/tools/stability">Stability AMMI/GGE</a></li>
     <li><a href="/tools/heritability">Heritability</a></li>
-
     <li role="separator" class="divider"></li>
     <li><a href="/accession_usage">Accession Usage</a></li>
     <li><a href="/tools/mixedmodels">Mixed Models</a></li>
