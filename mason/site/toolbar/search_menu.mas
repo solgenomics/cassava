@@ -9,6 +9,7 @@
     <li><a href="/search/genotyping_trials">Genotyping Plates</a></li>
     <li><a href="/search/genotyping_data_projects">Genotyping Data Projects</a></li>
     <li><a href="/search/genotyping_protocols">Genotyping Protocols</a></li>
+    <li><a href="/search/stocks_using_genotypes">Accessions Using Genotypes</a></li>
     <li role="separator" class="divider"></li>
     <li><a href="/search/traits">Traits</a></li>
     <!--<li><a href="/search/markers">Markers</a></li>-->

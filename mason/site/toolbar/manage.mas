@@ -17,6 +17,7 @@
     <li><a href="/barcode">Barcodes</a></li>
     <li><a href="/tools/label_designer">Label Designer</a></li>
     <li><a href="/breeders/nirs/">NIRS</a></li>
+    <li><a href="/breeders/markers/">Markerset</a></li>
      <li role="separator" class="divider"></li>
     <li><a href="/breeders/download">Download</a></li>
     <li><a href="/breeders/upload">Upload</a></li>
