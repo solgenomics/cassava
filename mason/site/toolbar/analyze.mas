@@ -7,10 +7,11 @@
     <li><a href="/selection/index">Selection Index</a></li>
     <!-- li><a href="/analyze/phenotypes">Analyze Phenotypes</a><li -->
     <!-- li><a href="/barcode">Barcode Tools</a></li -->
-    <li><a href="/solgs/search">Genomic Selection</a></li>
-    <li><a href="/pca/analysis">Population Structure</a></li>
+    <li><a href="/solgs/search">Genomic Selection (solGS)</a></li>
+    <li><a href="/pca/analysis">Population Structure (PCA)</a></li>
     <li><a href="/cluster/analysis">Clustering</a></li>
     <li><a href="/kinship/analysis">Kinship & Inbreeding</a></li>
+    <li><a href="/correlation/analysis">Correlation</a></li>
     <li><a href="/tools/stability">Stability AMMI/GGE</a></li>
     <li><a href="/tools/heritability">Heritability</a></li>
     <li role="separator" class="divider"></li>
