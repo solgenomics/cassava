@@ -8,9 +8,8 @@
     <!-- li><a href="/analyze/phenotypes">Analyze Phenotypes</a><li -->
     <!-- li><a href="/barcode">Barcode Tools</a></li -->
     <li><a href="/solgs/search">Genomic Selection (solGS)</a></li>
+    <li><a href="/tools/gcpc">Genomic Prediction of Parent Combinations</a></li>	
     <li><a href="/pca/analysis">Population Structure (PCA)</a></li>
-    <li><a href="/tools/gcpc">Genomic Prediction of Parent Combinations</a></li>
-    <li><a href="/pca/analysis">Population Structure</a></li>
     <li><a href="/cluster/analysis">Clustering</a></li>
     <li><a href="/kinship/analysis">Kinship & Inbreeding</a></li>
     <li><a href="/correlation/analysis">Correlation</a></li>
