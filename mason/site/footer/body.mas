@@ -46,8 +46,9 @@
 			<div class="col-sm-3">
 			     			    				      
 			    <center>
-			    powered by
-				&nbsp;&nbsp;<a class="footer" href="https://breedbase.org"><img src="/static/img/Breedbase_HighRes.png" width="300px" /><br />
+			    <br /><br />
+			    powered by<br />
+				&nbsp;&nbsp;&nbsp;<a class="footer" href="https://breedbase.org" target="_new" ><img src="/static/img/Breedbase_HighRes.png" width="240px" /><br />
 						  				    		<a href="https://brapi.org" target="_new"><img src="/documents/img/brapi-logo.svg" width="140" /></a><br />
                             				      
 			    </div>			      
