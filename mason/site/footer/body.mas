@@ -54,7 +54,7 @@
 			    </div>			      
 			    
 		<div class="col-sm-3">
-                                <a class="footer" href="https://btiscience.org"><img src="/static/img/bti_logo_2024.png" alt="BTI" class="footer" width="200px" />
+                                <a class="footer" href="https://btiscience.org" target="_new" ><img src="/static/img/bti_logo_2024.png" alt="BTI" class="footer" width="200px" />
                                 </a>
                             </center>
 
