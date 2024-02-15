@@ -18,8 +18,7 @@
     <li><a href="https://cassavabase.org/ftp/documents/">Project documents</a></li>
     
     <li role="separator" class="divider"></li>
-    
-    <li><a href="https://twitter.com/solgenomics">Twitter</a></li>
-    <li><a href="https://www.facebook.com/CassavaBase">Facebook</a></li>
+    <li><a href="/breeders/dbstats">DB Stats</a></li>
+    <li><a href="/dbstats/recent_activity">Recent Activity</a></li>
   </ul>
 </li>
