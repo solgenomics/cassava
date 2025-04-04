@@ -1,0 +1,16 @@
+
+<%args>
+</%args>
+
+<li class="dropdown"><a class="menu_click_dropdown dropdown-toggle" data-toggle="dropdown">SOPs</a>
+  <ul class="dropdown-menu">
+    <li><a href="/ftp/SOPs/iita_cassava_sop01-hybridization-and-crossing-block-management_ver1.pdf">IITA Hybridization and crossing block management</a></li>
+    <li><a href="/ftp/SOPs/iita_cassava_sop02-seed-processing-and-inventory-management_ver1.pdf">IITA Seed Processing and Inventory Management</a></li>
+    <li><a href="/ftp/SOPs/iita_cassava_sop03-trial-management_ver1.pdf">IITA Trial Management</a></li>
+    <li><a href="/ftp/SOPs/iita_cassava_sop04-weed-control-and-management_ver1.pdf">IITA Weed Control and Management</a></li>
+    <li><a href="/ftp/SOPs/iita_cassava_sop05-phenotyping-data-management_ver1_.pdf">IITA Phenotyping Data Management</a></li>
+    <li><a href="/ftp/SOPs/iita_cassava_sop06-harvesting-and-harvest-evaluation_ver1.pdf">IITA Harvesting and Harvest Evaluation</a></li>
+    <li><a href="/ftp/SOPs/iita_cassava_sop08-dna-extraction_ver1.pdf">IITA DNA extration</a></li>
+    <li><a href="/ftp/SOPs/iita-cassava-sop09-high-throughput-phenotyping-using-nirs_ver1.pdf">IITA High Throughput Phenotyping using NIRS</a></li>
+  </ul>
+</li>

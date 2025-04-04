@@ -14,6 +14,7 @@
         <& toolbar/search_menu.mas &>
         <& toolbar/manage.mas &>
         <& toolbar/analyze.mas &>
+	<& toolbar/SOPs.mas &>
         <& toolbar/maps.mas &>
         <& toolbar/about.mas &>
       </ul>
