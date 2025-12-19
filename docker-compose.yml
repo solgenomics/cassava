@@ -1,0 +1,36 @@
+
+services:
+  breedbase:
+    image: breedbase/breedbase:latest
+
+    container_name: breedbase_web_cassava
+    ports:
+      - 8999:8080
+    volumes:
+      - type: bind
+        source: /export/prod/public_cassava
+        target: /home/production/volume
+      - type: bind
+        source: /export/prod/archive
+        target: /home/production/archive
+      - type: bind
+        source: /export/prod/blast
+        target: /home/production/blast
+      - type: bind
+        source: /export/prod/tmp
+        target: /home/production/tmp
+#      - type: bind
+#        source: /home/production/sgn
+#        target: /home/production/cxgn/sgn
+      - type: bind
+        source: sgn_local.conf
+        target: /home/production/cxgn/sgn/sgn_local.conf
+      - type: bind
+        source: /home/production/db_dumps
+        target: /db_dumps
+#      - type: bind
+#        source: crontab
+#        target: /etc/crontab
+      - type: bind
+        source: bash_history
+        target: /home/production/.bash_history
