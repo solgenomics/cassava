@@ -4,6 +4,7 @@ services:
     image: breedbase/breedbase:latest
 
     container_name: breedbase_web_cassava
+    restart: unless-stopped
     ports:
       - 8999:8080
     volumes:
